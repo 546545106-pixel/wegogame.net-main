@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+coverage
+*.local
+
+# System files
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TypeScript
+*.tsbuildinfo
+
+# Development tools (Python scripts and batch files)
+*.py
+*.bat
+*.txt
+!README.md
+
+# Backup files
+*.backup
+*.backup*
+*_backup.*
+
+# Archive files
+*.zip
+
+# Old project folders
+xixi-games/
+431套H5小游戏源码大合集*/
+xiaoyouxi/
+
+# Test files
+/cypress/videos/
+/cypress/screenshots/
