@@ -58,9 +58,10 @@
                     :src="obj.url" 
                     frameborder="0"
                     allowfullscreen
-                    allow="autoplay; fullscreen; gamepad; microphone; camera"
-                    sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
+                    allow="autoplay; fullscreen; gamepad; microphone; camera; geolocation; payment"
+                    sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation allow-modals allow-presentation allow-downloads"
                     @load="handleIframeLoad"
+                    @error="handleIframeError"
                 ></iframe>
             </div>
             <div class="h-[50px]"></div>
@@ -120,6 +121,25 @@
     const toPlay = () => {
         // 记录当前路由作为来源
         fromRoute.value = route.path;
+        
+        // 检查游戏对象和URL
+        if (!obj.value) {
+            console.error('Game object not found for id:', route.query.id);
+            return;
+        }
+        
+        if (!obj.value.url) {
+            console.error('Game URL is missing:', obj.value);
+            return;
+        }
+        
+        console.log('Loading game:', {
+            id: obj.value.id,
+            title: obj.value.title,
+            url: obj.value.url,
+            fullUrl: window.location.origin + obj.value.url
+        });
+        
         isLoading.value = true;
         show.value = true;
         
@@ -169,10 +189,18 @@
     }
 
     const handleIframeLoad = () => {
+        console.log('Iframe loaded successfully');
         // iframe加载完成后隐藏加载动画
         setTimeout(() => {
             isLoading.value = false;
         }, 500);
+    }
+
+    const handleIframeError = (event) => {
+        console.error('Iframe load error:', event);
+        isLoading.value = false;
+        // 可以在这里显示错误提示
+        alert('游戏加载失败，请检查游戏文件是否存在或刷新页面重试。');
     }
 
     const handleImageError = (event) => {

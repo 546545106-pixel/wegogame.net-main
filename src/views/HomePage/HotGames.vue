@@ -12,14 +12,14 @@
                     height="300px"
                 >
                     <el-carousel-item
-                        v-for="item in carouselGames"
-                        :key="item.id"
-                        :style="{ backgroundImage: `url(${item.thumb || 'https://img.gamemonetize.com/default/512x512.jpg'})` }"
+                        v-for="banner in hotBanners"
+                        :key="banner.id"
                     >
-                        <div class="entrance">
-                            <div class="name">{{ item.title }}</div>
-                            <div class="btn ui-optimized-button" @click="toDetail(item.id)">PLAY NOW</div>
-                        </div>
+                        <img
+                          class="hot-banner-image"
+                          :src="banner.image"
+                          :alt="banner.title"
+                        />
                     </el-carousel-item>
                 </el-carousel>
             </div>
@@ -38,7 +38,7 @@
                             />
                         </div>
                         <div class="card-content">
-                            <div class="card-title ui-optimized-game-name">{{ item.title }}</div>
+                            <div class="card-title ui-optimized-game-name">{{ getDisplayTitle(item) }}</div>
                             <div class="card-footer">
                                 <span class="difficulty-tag ui-optimized-auxiliary-text" :class="getDifficultyClass(item)">
                                     {{ getDifficultyText(item) }}
@@ -58,18 +58,41 @@
     import { ElCarousel, ElCarouselItem } from 'element-plus';
     import { useRouter } from "vue-router";
     import localGamesData from '@/data/games.js';
-    import { getDifficultyClass, getDifficultyText, getPlayCount } from '@/utils';
+    import { getDifficultyClass, getDifficultyText, getPlayCount, getDisplayTitle, getRandomElements } from '@/utils';
     import { triggerHapticFeedback } from '@/utils/haptic';
     
     const router = useRouter();
     
     const GamesList = localGamesData;
 
-    // 轮播区：优先取前几款游戏，避免索引范围导致空列表
-    const carouselGames = computed(() => {
-      if (!Array.isArray(GamesList) || GamesList.length === 0) return [];
-      // 兼容老数据结构：原来是第 10-13 个，这里直接取前 6 个做热门轮播
-      return GamesList.slice(9, 13).length > 0 ? GamesList.slice(9, 13) : GamesList.slice(0, Math.min(6, GamesList.length));
+    // Hot Games 顶部轮播横幅（使用 public/排行榜 下的 1.png-4.png）
+    const hotBanners = computed(() => {
+      return [
+        {
+          id: 'rank-1',
+          image: '/排行榜/1.png',
+          title: 'Top Ranked Arcade Hits',
+          buttonText: 'PLAY HOT GAME'
+        },
+        {
+          id: 'rank-2',
+          image: '/排行榜/2.png',
+          title: 'Trending Now',
+          buttonText: 'TRY POPULAR GAME'
+        },
+        {
+          id: 'rank-3',
+          image: '/排行榜/3.png',
+          title: 'High Score Challenge',
+          buttonText: 'CHALLENGE YOURSELF'
+        },
+        {
+          id: 'rank-4',
+          image: '/排行榜/4.png',
+          title: 'Daily Hot Picks',
+          buttonText: 'START PLAYING'
+        }
+      ];
     });
 
     // 下方热门列表：紧接着轮播之后的若干游戏
@@ -85,6 +108,14 @@
       });
     };
 
+    // 顶部轮播的按钮：随机进入一个热门游戏详情
+    const playRandomHotGame = () => {
+      if (!Array.isArray(GamesList) || GamesList.length === 0) return;
+      const picked = getRandomElements(GamesList, 1)[0];
+      if (!picked) return;
+      toDetail(picked.id);
+    };
+
     const handleTouchStart = () => {
       triggerHapticFeedback('light');
     };
@@ -92,6 +123,14 @@
     const handleImageError = (event) => {
       if (event.target.src !== 'https://img.gamemonetize.com/default/512x512.jpg') {
         event.target.src = 'https://img.gamemonetize.com/default/512x512.jpg';
+      }
+    };
+
+    const handleBannerError = (event) => {
+      // 如果轮播图加载失败，使用顶部轮播同一套灰色背景做兜底
+      if (!event.target.dataset.fallback) {
+        event.target.dataset.fallback = '1';
+        event.target.src = 'https://img.gamemonetize.com/default/1024x1024.jpg';
       }
     };
 </script>
@@ -108,7 +147,7 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box; /* 确保与游戏列表宽度对齐 */
+            box-sizing: border-box;
         }
         
         .el-carousel {
@@ -117,42 +156,19 @@
             overflow: hidden;
             border-radius: 12px;
         }
-        
+
         .el-carousel__item {
             height: 300px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            
-            .entrance {
-                width: 100%;
-                height: 60px;
-                color: #fff;
-                background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                display: flex;
-                align-items: center;
-                padding: 0 20px;
-                backdrop-filter: blur(5px);
-                
-                .name {
-                    flex: 1;
-                    font-size: 22px;
-                    font-weight: bold;
-                    padding-right: 15px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-                }
-                
-                .btn {
-                    flex-shrink: 0;
-                }
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hot-banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
         
         /* 轮播箭头样式优化 */
@@ -178,6 +194,20 @@
         
         :deep(.el-carousel__arrow--right) {
             right: 15px;
+        }
+    }
+
+    .hot-banner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+
+        .hot-banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
     }
 

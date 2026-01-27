@@ -5,27 +5,27 @@
                 trigger="click" 
                 indicator-position="outside" 
                 arrow="always"
-                :interval="4000"
+                :interval="5000"
                 :autoplay="true"
                 height="350px"
                 @change="handleCarouselChange"
             >
+                <!-- 使用精选的快乐/健康/合规展示图，而不是直接用游戏封面 -->
                 <el-carousel-item
-                    v-for="item in carouselGames"
-                    :key="item.id"
+                    v-for="banner in heroBanners"
+                    :key="banner.id"
                     class="carousel-item"
-                    @click="toDetail(item.id)"
                 >
                     <div 
                         class="carousel-background"
-                        :style="{ backgroundImage: `url(${getHighResImage(item.thumb)})` }"
+                        :style="{ backgroundImage: `url('${banner.image}')` }"
                     >
                         <div class="carousel-overlay">
                             <div class="carousel-content">
-                                <h3 class="game-title">{{ item.title }}</h3>
-                                <p class="game-description">{{ getShortDescription(item) }}</p>
-                                <button class="play-button ui-optimized-button" @click.stop="toDetail(item.id)">
-                                    PLAY NOW
+                                <h3 class="game-title">{{ banner.title }}</h3>
+                                <p class="game-description">{{ banner.subtitle }}</p>
+                                <button class="play-button ui-optimized-button" @click="toRandomGame">
+                                    {{ banner.buttonText }}
                                 </button>
                             </div>
                         </div>
@@ -41,14 +41,45 @@
     import { ElCarousel, ElCarouselItem } from 'element-plus';
     import { useRouter } from "vue-router";
     import localGamesData from '@/data/games.js';
+    import { getRandomElements, getDisplayTitle } from '@/utils';
     
     const router = useRouter();
     
     const GamesList = localGamesData;
-    
-    // 获取前6个游戏作为轮播内容
-    const carouselGames = computed(() => {
-        return GamesList.filter((ele, index) => index < 6);
+
+    // 快乐、健康、合规的轮播横幅数据（使用 public/首页大轮播 下的 1.png-4.png）
+    const heroBanners = computed(() => {
+        const baseBanners = [
+            {
+                id: 'fun-arcade',
+                image: '/首页大轮播/1.png',
+                title: 'Play Fun & Relaxing Games',
+                subtitle: 'Enjoy hundreds of casual mini games. Safe, family-friendly and full of joy.',
+                buttonText: 'START A RANDOM GAME'
+            },
+            {
+                id: 'brain-training',
+                image: '/首页大轮播/2.png',
+                title: 'Train Your Brain, Have Fun',
+                subtitle: 'Puzzle, logic and reaction challenges that keep your mind sharp.',
+                buttonText: 'TRY A NEW CHALLENGE'
+            },
+            {
+                id: 'happy-time',
+                image: '/首页大轮播/3.png',
+                title: 'Happy Game Time, Anytime',
+                subtitle: 'No downloads, no pressure — just pure gaming happiness.',
+                buttonText: 'PLAY NOW'
+            },
+            {
+                id: 'colorful-world',
+                image: '/首页大轮播/4.png',
+                title: 'Colorful Arcade World',
+                subtitle: 'Bright colors, simple controls and endless joyful moments.',
+                buttonText: 'DISCOVER GAMES'
+            }
+        ];
+        return baseBanners;
     });
     
     const toDetail = (id) => {
@@ -58,35 +89,12 @@
         });
     };
     
-    const getShortDescription = (item) => {
-        if (item.description && item.description.length > 150) {
-            return item.description.substring(0, 150) + '...';
-        }
-        return item.description || 'Enjoy this exciting game now!';
-    };
-    
-    // 获取高分辨率图片URL
-    const getHighResImage = (thumbUrl) => {
-        if (!thumbUrl) return 'https://img.gamemonetize.com/default/1024x1024.jpg';
-        
-        // gamemonetize的图片URL格式通常是: https://img.gamemonetize.com/{id}/{width}x{height}.jpg
-        // 尝试获取更大尺寸的图片用于轮播（1024x1024或更大）
-        if (thumbUrl.includes('gamemonetize.com')) {
-            // 如果URL包含尺寸参数，替换为更大的尺寸
-            if (thumbUrl.match(/\/\d+x\d+\.jpg/)) {
-                // 替换为1024x1024或更大
-                const largeSizeUrl = thumbUrl.replace(/\/\d+x\d+\.jpg/, '/1024x1024.jpg');
-                return largeSizeUrl;
-            } else if (thumbUrl.includes('/512x512.jpg')) {
-                // 如果明确是512x512，替换为1024x1024
-                return thumbUrl.replace('/512x512.jpg', '/1024x1024.jpg');
-            } else if (!thumbUrl.includes('/')) {
-                // 如果URL格式不同，尝试添加大尺寸参数
-                return thumbUrl.replace('.jpg', '/1024x1024.jpg');
-            }
-        }
-        
-        return thumbUrl;
+    // 轮播按钮：随机跳转到一个英文展示标题的游戏
+    const toRandomGame = () => {
+        if (!GamesList || GamesList.length === 0) return;
+        const picked = getRandomElements(GamesList, 1)[0];
+        if (!picked) return;
+        toDetail(picked.id);
     };
     
     const handleCarouselChange = (index) => {

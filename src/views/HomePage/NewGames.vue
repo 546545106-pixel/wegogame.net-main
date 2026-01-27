@@ -19,7 +19,7 @@
             </div>
             <div class="card-content">
               <div class="card-title ui-optimized-game-name">
-                {{ item.title }}
+                {{ getDisplayTitle(item) }}
               </div>
               <div class="card-footer">
                 <span
@@ -44,7 +44,7 @@
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 import localGamesData from '@/data/games.js'
-import { getDifficultyClass, getDifficultyText, getPlayCount } from '@/utils'
+import { getDifficultyClass, getDifficultyText, getPlayCount, getDisplayTitle } from '@/utils'
 import { triggerHapticFeedback } from '@/utils/haptic'
 
 const router = useRouter()

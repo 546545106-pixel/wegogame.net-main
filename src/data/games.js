@@ -7,7 +7,7 @@ const games = [
     url: '/games/2048/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/2048/icon.png',
     link: '2048',
     null: '',
     star: 3
@@ -20,7 +20,7 @@ const games = [
     url: '/games/baozi/cgi.waiting.css.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/baozi/icon.png',
     link: 'baozi',
     null: '',
     star: 3
@@ -33,7 +33,7 @@ const games = [
     url: '/games/bbjx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/bbjx/icon.png',
     link: 'bbjx',
     null: '',
     star: 3
@@ -46,7 +46,7 @@ const games = [
     url: '/games/bdsjm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/bdsjm/images/2000.png',
     link: 'bdsjm',
     null: '',
     star: 3
@@ -59,7 +59,7 @@ const games = [
     url: '/games/bingtong/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/bingtong/img/bg.png',
     link: 'bingtong',
     null: '',
     star: 3
@@ -72,7 +72,7 @@ const games = [
     url: '/games/bunengsi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/bunengsi/2000.png',
     link: 'bunengsi',
     null: '',
     star: 3
@@ -85,7 +85,7 @@ const games = [
     url: '/games/cdd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/cdd/icon.png',
     link: 'cdd',
     null: '',
     star: 3
@@ -98,7 +98,7 @@ const games = [
     url: '/games/cjrst/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/cjrst/icon.png',
     link: 'cjrst',
     null: '',
     star: 3
@@ -108,10 +108,10 @@ const games = [
     title: 'Codefans 1.Net',
     description: 'Play Codefans 1.Net - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/codefans-1_net/index.html',
+    url: '/games/codefans-1_net/donkeyjump/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/codefans-1_net/donkeyjump/images/system/icon.png',
     link: 'codefans-1-net',
     null: '',
     star: 3
@@ -121,10 +121,10 @@ const games = [
     title: 'Codefans 2.Net',
     description: 'Play Codefans 2.Net - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/codefans-2_net/index.html',
+    url: '/games/codefans-2_net/HTML5跑动的小人/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/codefans-2_net/HTML5跑动的小人/go.png',
     link: 'codefans-2-net',
     null: '',
     star: 3
@@ -134,10 +134,10 @@ const games = [
     title: 'Codefans.Net',
     description: 'Play Codefans.Net - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/codefans_net/index.html',
+    url: '/games/codefans_net/fishjoy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/codefans_net/fishjoy/images/bottom-bar.png',
     link: 'codefans-net',
     null: '',
     star: 3
@@ -150,7 +150,7 @@ const games = [
     url: '/games/cpp/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/cpp/icon.png',
     link: 'cpp',
     null: '',
     star: 3
@@ -163,7 +163,7 @@ const games = [
     url: '/games/cube/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/cube/rect.png',
     link: 'cube',
     null: '',
     star: 3
@@ -176,7 +176,7 @@ const games = [
     url: '/games/ddb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/ddb/logo.jpg',
     link: 'ddb',
     null: '',
     star: 3
@@ -189,7 +189,7 @@ const games = [
     url: '/games/diandeng/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/diandeng/img/icon.png',
     link: 'diandeng',
     null: '',
     star: 3
@@ -202,7 +202,7 @@ const games = [
     url: '/games/duimutou/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/duimutou/icon.png',
     link: 'duimutou',
     null: '',
     star: 3
@@ -215,7 +215,7 @@ const games = [
     url: '/games/duolao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/duolao/460.jpg',
     link: 'duolao',
     null: '',
     star: 3
@@ -228,7 +228,7 @@ const games = [
     url: '/games/fangyan/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/fangyan/20140725ywh1200.jpg',
     link: 'fangyan',
     null: '',
     star: 3
@@ -241,7 +241,7 @@ const games = [
     url: '/games/gzyys/enchantedway.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/gzyys/data/fonts/font.png',
     link: 'gzyys',
     null: '',
     star: 3
@@ -254,21 +254,8 @@ const games = [
     url: '/games/honghaishilv/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/honghaishilv/logo.jpg',
     link: 'honghaishilv',
-    null: '',
-    star: 3
-  },
-  {
-    id: '21',
-    title: 'Jianren',
-    description: 'Play Jianren - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/jianren/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
-    link: 'jianren',
     null: '',
     star: 3
   },
@@ -280,7 +267,7 @@ const games = [
     url: '/games/maomi/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/maomi/knydh.png',
     link: 'maomi',
     null: '',
     star: 3
@@ -290,10 +277,10 @@ const games = [
     title: 'Mozilla Browserquest 34D3C08',
     description: 'Play Mozilla Browserquest 34D3C08 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/mozilla-BrowserQuest-34d3c08/index.html',
+    url: '/games/mozilla-BrowserQuest-34d3c08/client/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/mozilla-BrowserQuest-34d3c08/client/img/common/favicon.png',
     link: 'mozilla-browserquest-34d3c08',
     null: '',
     star: 3
@@ -306,7 +293,7 @@ const games = [
     url: '/games/njdsb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/njdsb/icon.png',
     link: 'njdsb',
     null: '',
     star: 3
@@ -319,7 +306,7 @@ const games = [
     url: '/games/qbllk/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/qbllk/qpllk.jpg',
     link: 'qbllk',
     null: '',
     star: 3
@@ -332,7 +319,7 @@ const games = [
     url: '/games/shuqian/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/shuqian/icon.png',
     link: 'shuqian',
     null: '',
     star: 3
@@ -345,7 +332,7 @@ const games = [
     url: '/games/wxdfj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/wxdfj/image/background_1.png',
     link: 'wxdfj',
     null: '',
     star: 3
@@ -358,7 +345,7 @@ const games = [
     url: '/games/xiaopingguo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/xiaopingguo/2000.png',
     link: 'xiaopingguo',
     null: '',
     star: 3
@@ -371,7 +358,7 @@ const games = [
     url: '/games/xxoo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/xxoo/icon.png',
     link: 'xxoo',
     null: '',
     star: 3
@@ -384,7 +371,7 @@ const games = [
     url: '/games/yibihua/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/yibihua/460.jpg',
     link: 'yibihua',
     null: '',
     star: 3
@@ -397,7 +384,7 @@ const games = [
     url: '/games/zqyl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/zqyl/2000-1.png',
     link: 'zqyl',
     null: '',
     star: 3
@@ -410,7 +397,7 @@ const games = [
     url: '/games/zzx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/zzx/icon.png',
     link: 'zzx',
     null: '',
     star: 3
@@ -420,24 +407,11 @@ const games = [
     title: '一个都不能掉',
     description: 'Play 一个都不能掉 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_33/index.html',
+    url: '/games/game_33/pigbaby/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_33/pigbaby/img/logo.png',
     link: 'game-33',
-    null: '',
-    star: 3
-  },
-  {
-    id: '34',
-    title: '一张图片测试你的好色程度! 敢来测测吗',
-    description: 'Play 一张图片测试你的好色程度! 敢来测测吗 - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_34/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
-    link: 'game-34',
     null: '',
     star: 3
   },
@@ -446,10 +420,10 @@ const games = [
     title: '一根筋',
     description: 'Play 一根筋 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_35/index.html',
+    url: '/games/game_35/ygj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_35/ygj/resources/congruent_outline.png',
     link: 'game-35',
     null: '',
     star: 3
@@ -459,10 +433,10 @@ const games = [
     title: '一笔画',
     description: 'Play 一笔画 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_36/index.html',
+    url: '/games/game_36/yibihua/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_36/yibihua/460.jpg',
     link: 'game-36',
     null: '',
     star: 3
@@ -472,10 +446,10 @@ const games = [
     title: '为灾区祈福',
     description: 'Play 为灾区祈福 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_37/index.html',
+    url: '/games/game_37/qifu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_37/qifu/img/bg01.jpg',
     link: 'game-37',
     null: '',
     star: 3
@@ -485,10 +459,10 @@ const games = [
     title: '冰桶大战',
     description: 'Play 冰桶大战 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_38/index.html',
+    url: '/games/game_38/bingtong/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_38/bingtong/img/bg.png',
     link: 'game-38',
     null: '',
     star: 3
@@ -498,10 +472,10 @@ const games = [
     title: '功夫猫',
     description: 'Play 功夫猫 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_39/index.html',
+    url: '/games/game_39/gongfumao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_39/gongfumao/arrow.png',
     link: 'game-39',
     null: '',
     star: 3
@@ -511,10 +485,10 @@ const games = [
     title: '吃包子游戏源码',
     description: 'Play 吃包子游戏源码 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_40/cgi.waiting.css.html',
+    url: '/games/game_40/baozi/cgi.waiting.css.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_40/baozi/icon.png',
     link: 'game-40',
     null: '',
     star: 3
@@ -524,10 +498,10 @@ const games = [
     title: '吃月饼',
     description: 'Play 吃月饼 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_41/index.html',
+    url: '/games/game_41/yuebing/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_41/yuebing/images/c1.jpg',
     link: 'game-41',
     null: '',
     star: 3
@@ -537,10 +511,10 @@ const games = [
     title: '吃豆豆',
     description: 'Play 吃豆豆 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_42/index.html',
+    url: '/games/game_42/cdd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_42/cdd/icon.png',
     link: 'game-42',
     null: '',
     star: 3
@@ -550,10 +524,10 @@ const games = [
     title: '各种测试',
     description: 'Play 各种测试 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_43/index.html',
+    url: '/games/game_43/ceshi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_43/ceshi/chuanyue/1.gif',
     link: 'game-43',
     null: '',
     star: 3
@@ -563,10 +537,10 @@ const games = [
     title: '命悬一线',
     description: 'Play 命悬一线 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_44/index.html',
+    url: '/games/game_44/mingxuanyixian/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_44/mingxuanyixian/img/logo.png',
     link: 'game-44',
     null: '',
     star: 3
@@ -576,10 +550,10 @@ const games = [
     title: '大力射手',
     description: 'Play 大力射手 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_45/index.html',
+    url: '/games/game_45/sheqiu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_45/sheqiu/css/logo.png',
     link: 'game-45',
     null: '',
     star: 3
@@ -589,10 +563,10 @@ const games = [
     title: '寂寞钓鱼',
     description: 'Play 寂寞钓鱼 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_46/index.html',
+    url: '/games/game_46/diaoyu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_46/diaoyu/logo.png',
     link: 'game-46',
     null: '',
     star: 3
@@ -602,10 +576,10 @@ const games = [
     title: '密室逃脱',
     description: 'Play 密室逃脱 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_47/index.html',
+    url: '/games/game_47/mishi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_47/mishi/1.jpg',
     link: 'game-47',
     null: '',
     star: 3
@@ -615,10 +589,10 @@ const games = [
     title: '寻找房祖名',
     description: 'Play 寻找房祖名 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_48/index.html',
+    url: '/games/game_48/qmxzfzm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_48/qmxzfzm/share.png',
     link: 'game-48',
     null: '',
     star: 3
@@ -628,10 +602,10 @@ const games = [
     title: '小青蛙过河',
     description: 'Play 小青蛙过河 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_49/index.html',
+    url: '/games/game_49/qingwa/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_49/qingwa/1.png',
     link: 'game-49',
     null: '',
     star: 3
@@ -641,10 +615,10 @@ const games = [
     title: '小鸟飞飞飞',
     description: 'Play 小鸟飞飞飞 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_50/index.html',
+    url: '/games/game_50/xiaoniaofeifei/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_50/xiaoniaofeifei/2000.png',
     link: 'game-50',
     null: '',
     star: 3
@@ -654,10 +628,10 @@ const games = [
     title: '岛国么么哒',
     description: 'Play 岛国么么哒 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_51/index.html',
+    url: '/games/game_51/daoguo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_51/daoguo/icon.png',
     link: 'game-51',
     null: '',
     star: 3
@@ -667,24 +641,11 @@ const games = [
     title: '开心消消乐',
     description: 'Play 开心消消乐 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_52/index.html',
+    url: '/games/game_52/kaixinlian/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_52/kaixinlian/logo.jpg',
     link: 'game-52',
-    null: '',
-    star: 3
-  },
-  {
-    id: '53',
-    title: '微信游戏首页模板',
-    description: 'Play 微信游戏首页模板 - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_53/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
-    link: 'game-53',
     null: '',
     star: 3
   },
@@ -693,10 +654,10 @@ const games = [
     title: '快跑',
     description: 'Play 快跑 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_54/index (2).html',
+    url: '/games/game_54/kuaipao/index (2).html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_54/kuaipao/sheraicon (2).png',
     link: 'game-54',
     null: '',
     star: 3
@@ -706,10 +667,10 @@ const games = [
     title: '我是你的小苹果',
     description: 'Play 我是你的小苹果 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_55/index.html',
+    url: '/games/game_55/xiaopingguo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_55/xiaopingguo/2000.png',
     link: 'game-55',
     null: '',
     star: 3
@@ -719,10 +680,10 @@ const games = [
     title: '战斗飞机',
     description: 'Play 战斗飞机 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_56/ad.htm',
+    url: '/games/game_56/ld/ad.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_56/ld/library/appleicon.png',
     link: 'game-56',
     null: '',
     star: 3
@@ -732,10 +693,10 @@ const games = [
     title: '戳泡泡',
     description: 'Play 戳泡泡 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_57/index.html',
+    url: '/games/game_57/cpp/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_57/cpp/icon.png',
     link: 'game-57',
     null: '',
     star: 3
@@ -745,10 +706,10 @@ const games = [
     title: '手机捉鬼',
     description: 'Play 手机捉鬼 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_58/index.html',
+    url: '/games/game_58/zhuogui/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_58/zhuogui/logo.png',
     link: 'game-58',
     null: '',
     star: 3
@@ -758,10 +719,10 @@ const games = [
     title: '找你妹',
     description: 'Play 找你妹 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_59/index.html',
+    url: '/games/game_59/zhaonimei/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_59/zhaonimei/share.png',
     link: 'game-59',
     null: '',
     star: 3
@@ -771,10 +732,10 @@ const games = [
     title: '抓住Catch It',
     description: 'Play 抓住Catch It - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/catch_it/index.html',
+    url: '/games/catch_it/zhua/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/catch_it/zhua/logo.jpg',
     link: 'catch-it',
     null: '',
     star: 3
@@ -784,10 +745,10 @@ const games = [
     title: '挠痒痒',
     description: 'Play 挠痒痒 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_61/index.html',
+    url: '/games/game_61/naoyangyang/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_61/naoyangyang/naoyang.jpg',
     link: 'game-61',
     null: '',
     star: 3
@@ -797,10 +758,10 @@ const games = [
     title: '捡钱游戏',
     description: 'Play 捡钱游戏 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_62/index.htm',
+    url: '/games/game_62/money/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_62/money/files/2000.png',
     link: 'game-62',
     null: '',
     star: 3
@@ -810,10 +771,10 @@ const games = [
     title: '摸老虎屁股',
     description: 'Play 摸老虎屁股 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_63/index.html',
+    url: '/games/game_63/pigu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_63/pigu/icon.jpg',
     link: 'game-63',
     null: '',
     star: 3
@@ -823,10 +784,10 @@ const games = [
     title: '数钱数到手抽筋',
     description: 'Play 数钱数到手抽筋 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_64/index.html',
+    url: '/games/game_64/sqsdscj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_64/sqsdscj/img/tmicon.png',
     link: 'game-64',
     null: '',
     star: 3
@@ -836,10 +797,10 @@ const games = [
     title: '数钱游戏',
     description: 'Play 数钱游戏 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_65/index.html',
+    url: '/games/game_65/shuqian/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_65/shuqian/icon.png',
     link: 'game-65',
     null: '',
     star: 3
@@ -852,7 +813,7 @@ const games = [
     url: '/games/game_66/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_66/20140725ywh1200.jpg',
     link: 'game-66',
     null: '',
     star: 3
@@ -862,10 +823,10 @@ const games = [
     title: '方言测试',
     description: 'Play 方言测试 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_67/index.html',
+    url: '/games/game_67/fangyan/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_67/fangyan/icon.png',
     link: 'game-67',
     null: '',
     star: 3
@@ -875,10 +836,10 @@ const games = [
     title: '最强眼力',
     description: 'Play 最强眼力 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_68/index.html',
+    url: '/games/game_68/zuiqiangyanli/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_68/zuiqiangyanli/1.png',
     link: 'game-68',
     null: '',
     star: 3
@@ -891,7 +852,7 @@ const games = [
     url: '/games/game_69/Index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_69/images/icon_poolcleaner.png',
     link: 'game-69',
     null: '',
     star: 3
@@ -904,7 +865,7 @@ const games = [
     url: '/games/game_70/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_70/faner_cover.jpg',
     link: 'game-70',
     null: '',
     star: 3
@@ -917,7 +878,7 @@ const games = [
     url: '/games/2014/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/2014/1.png',
     link: '2014',
     null: '',
     star: 3
@@ -927,10 +888,10 @@ const games = [
     title: '测试你的性格味道',
     description: 'Play 测试你的性格味道 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_72/index.htm',
+    url: '/games/game_72/weidao/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_72/weidao/weidao/0.gif',
     link: 'game-72',
     null: '',
     star: 3
@@ -940,10 +901,10 @@ const games = [
     title: '滑你妹',
     description: 'Play 滑你妹 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_73/index.html',
+    url: '/games/game_73/daitao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_73/daitao/logo.jpg',
     link: 'game-73',
     null: '',
     star: 3
@@ -953,10 +914,10 @@ const games = [
     title: '激光防线',
     description: 'Play 激光防线 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_74/index.html',
+    url: '/games/game_74/jg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_74/jg/static/icon.png',
     link: 'game-74',
     null: '',
     star: 3
@@ -966,10 +927,10 @@ const games = [
     title: '炸屎奇遇记',
     description: 'Play 炸屎奇遇记 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_75/index.html',
+    url: '/games/game_75/shit/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_75/shit/vapp/3.jpg',
     link: 'game-75',
     null: '',
     star: 3
@@ -979,10 +940,10 @@ const games = [
     title: '点击夜空欣赏烟花',
     description: 'Play 点击夜空欣赏烟花 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_76/index.html',
+    url: '/games/game_76/yh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_76/yh/logo.JPG',
     link: 'game-76',
     null: '',
     star: 3
@@ -992,10 +953,10 @@ const games = [
     title: '熊出没',
     description: 'Play 熊出没 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_77/index.html',
+    url: '/games/game_77/xiongchumo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_77/xiongchumo/2000.png',
     link: 'game-77',
     null: '',
     star: 3
@@ -1005,10 +966,10 @@ const games = [
     title: '牛郎织女',
     description: 'Play 牛郎织女 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_78/index.html',
+    url: '/games/game_78/qixi1/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_78/qixi1/images/logo.jpg',
     link: 'game-78',
     null: '',
     star: 3
@@ -1021,7 +982,7 @@ const games = [
     url: '/games/game_79/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_79/images/bg2.gif',
     link: 'game-79',
     null: '',
     star: 3
@@ -1031,10 +992,10 @@ const games = [
     title: '疯狂手指',
     description: 'Play 疯狂手指 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_80/index.html',
+    url: '/games/game_80/shouzhi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_80/shouzhi/icon.png',
     link: 'game-80',
     null: '',
     star: 3
@@ -1044,10 +1005,10 @@ const games = [
     title: '疯狂打企鹅',
     description: 'Play 疯狂打企鹅 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_81/index.html',
+    url: '/games/game_81/dqe/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_81/qie/img/icon.png',
     link: 'game-81',
     null: '',
     star: 3
@@ -1057,10 +1018,10 @@ const games = [
     title: '看你有多色',
     description: 'Play 看你有多色 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_82/index.html',
+    url: '/games/game_82/se/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_82/se/icon.png',
     link: 'game-82',
     null: '',
     star: 3
@@ -1070,10 +1031,10 @@ const games = [
     title: '红还是绿',
     description: 'Play 红还是绿 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_83/index.html',
+    url: '/games/game_83/honghaishilv/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_83/honghaishilv/logo.jpg',
     link: 'game-83',
     null: '',
     star: 3
@@ -1083,10 +1044,10 @@ const games = [
     title: '色狼',
     description: 'Play 色狼 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_84/index.html',
+    url: '/games/game_84/selang/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_84/selang/icon.png',
     link: 'game-84',
     null: '',
     star: 3
@@ -1096,10 +1057,10 @@ const games = [
     title: '蜘蛛Spider Aircraft',
     description: 'Play 蜘蛛Spider Aircraft - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/spider_aircraft/ad.htm',
+    url: '/games/spider_aircraft/zz/ad.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/spider_aircraft/zz/library/appleicon.png',
     link: 'spider-aircraft',
     null: '',
     star: 3
@@ -1109,10 +1070,10 @@ const games = [
     title: '读心术',
     description: 'Play 读心术 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_86/index.html',
+    url: '/games/game_86/duxinshu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_86/duxinshu/images/logo-wx.png',
     link: 'game-86',
     null: '',
     star: 3
@@ -1122,10 +1083,10 @@ const games = [
     title: '贱人配对',
     description: 'Play 贱人配对 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_87/index.html',
+    url: '/games/game_87/jianren/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_87/jianren/img/icon.png',
     link: 'game-87',
     null: '',
     star: 3
@@ -1135,10 +1096,10 @@ const games = [
     title: '超级染色体',
     description: 'Play 超级染色体 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_88/index.html',
+    url: '/games/game_88/cjrst/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_88/cjrst/icon.png',
     link: 'game-88',
     null: '',
     star: 3
@@ -1148,10 +1109,10 @@ const games = [
     title: '路边的野花不要采',
     description: 'Play 路边的野花不要采 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_89/index.html',
+    url: '/games/game_89/lbyhbyc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_89/lbyhbyc/icon.png',
     link: 'game-89',
     null: '',
     star: 3
@@ -1161,10 +1122,10 @@ const games = [
     title: '连圈圈大作战',
     description: 'Play 连圈圈大作战 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_90/index.html',
+    url: '/games/game_90/lianqq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_90/lianqq/icon.jpg',
     link: 'game-90',
     null: '',
     star: 3
@@ -1174,10 +1135,10 @@ const games = [
     title: '遇差画勾',
     description: 'Play 遇差画勾 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_91/index.html',
+    url: '/games/game_91/xxoo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_91/xxoo/icon.png',
     link: 'game-91',
     null: '',
     star: 3
@@ -1187,10 +1148,10 @@ const games = [
     title: '降温摇可乐',
     description: 'Play 降温摇可乐 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_92/index.html',
+    url: '/games/game_92/qmykl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_92/qmykl/images/icons.png',
     link: 'game-92',
     null: '',
     star: 3
@@ -1203,7 +1164,7 @@ const games = [
     url: '/games/game_93/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_93/icon.png',
     link: 'game-93',
     null: '',
     star: 3
@@ -1213,10 +1174,10 @@ const games = [
     title: '龙丢石头',
     description: 'Play 龙丢石头 - An exciting HTML5 game. Challenge yourself and have fun!',
     instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/game_94/index.htm',
+    url: '/games/game_94/hl/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/game_94/hl/library/appleicon.png',
     link: 'game-94',
     null: '',
     star: 3
@@ -1229,7 +1190,7 @@ const games = [
     url: '/games/100c/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/123sst/icon.png',
+    thumb: '/games/100c/icon.png',
     link: '100c',
     null: '',
     star: 3
@@ -1242,7 +1203,7 @@ const games = [
     url: '/games/123sst/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/1942/icon.png',
+    thumb: '/games/123sst/icon.png',
     link: '123sst',
     null: '',
     star: 3
@@ -1255,7 +1216,7 @@ const games = [
     url: '/games/1942/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/2048/icon.png',
+    thumb: '/games/1942/icon.png',
     link: '1942',
     null: '',
     star: 3
@@ -1268,7 +1229,7 @@ const games = [
     url: '/games/2048sz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/3dboxing/icon.png',
+    thumb: '/games/2048sz/icon.png',
     link: '2048sz',
     null: '',
     star: 3
@@ -1281,7 +1242,7 @@ const games = [
     url: '/games/3dboxing/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/3dfkyx/icon.png',
+    thumb: '/games/3dboxing/icon.png',
     link: '3dboxing',
     null: '',
     star: 3
@@ -1294,7 +1255,7 @@ const games = [
     url: '/games/3dfkyx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/68xn/icon.png',
+    thumb: '/games/3dfkyx/icon.png',
     link: '3dfkyx',
     null: '',
     star: 3
@@ -1307,7 +1268,7 @@ const games = [
     url: '/games/68xn/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ai/icon.png',
+    thumb: '/games/68xn/icon.png',
     link: '68xn',
     null: '',
     star: 3
@@ -1320,7 +1281,7 @@ const games = [
     url: '/games/ai/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/baba/icon.png',
+    thumb: '/games/ai/icon.png',
     link: 'ai',
     null: '',
     star: 3
@@ -1333,7 +1294,7 @@ const games = [
     url: '/games/baba/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/baozi/icon.png',
+    thumb: '/games/baba/icon.png',
     link: 'baba',
     null: '',
     star: 3
@@ -1346,7 +1307,7 @@ const games = [
     url: '/games/bbqdf/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bdfm/icon.png',
+    thumb: '/games/bbqdf/icon.png',
     link: 'bbqdf',
     null: '',
     star: 3
@@ -1359,7 +1320,7 @@ const games = [
     url: '/games/bdfm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/bdfm/icon.png',
     link: 'bdfm',
     null: '',
     star: 3
@@ -1372,7 +1333,7 @@ const games = [
     url: '/games/bdxpg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bhlb/icon.png',
+    thumb: '/games/bdxpg/bdxpg.jpg',
     link: 'bdxpg',
     null: '',
     star: 3
@@ -1385,7 +1346,7 @@ const games = [
     url: '/games/bhlb/Index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bianpao/icon.png',
+    thumb: '/games/bhlb/icon.png',
     link: 'bhlb',
     null: '',
     star: 3
@@ -1398,7 +1359,7 @@ const games = [
     url: '/games/bianpao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/biaoche/biaoche.png',
+    thumb: '/games/bianpao/icon.png',
     link: 'bianpao',
     null: '',
     star: 3
@@ -1411,7 +1372,7 @@ const games = [
     url: '/games/biaoche/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/blackjack/icon.png',
+    thumb: '/games/biaoche/biaoche.png',
     link: 'biaoche',
     null: '',
     star: 3
@@ -1424,7 +1385,7 @@ const games = [
     url: '/games/blackjack/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/blfc/icon.png',
+    thumb: '/games/blackjack/icon.png',
     link: 'blackjack',
     null: '',
     star: 3
@@ -1437,7 +1398,7 @@ const games = [
     url: '/games/blfc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/blglez/blglez.png',
+    thumb: '/games/blfc/icon.png',
     link: 'blfc',
     null: '',
     star: 3
@@ -1450,7 +1411,7 @@ const games = [
     url: '/games/blglez/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bljqzffxwz/share.png',
+    thumb: '/games/blglez/blglez.png',
     link: 'blglez',
     null: '',
     star: 3
@@ -1463,7 +1424,7 @@ const games = [
     url: '/games/bljqzffxwz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/blockgame/icon.png',
+    thumb: '/games/bljqzffxwz/share.png',
     link: 'bljqzffxwz',
     null: '',
     star: 3
@@ -1476,7 +1437,7 @@ const games = [
     url: '/games/blockgame/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bmbmt/icon.png',
+    thumb: '/games/blockgame/icon.png',
     link: 'blockgame',
     null: '',
     star: 3
@@ -1489,7 +1450,7 @@ const games = [
     url: '/games/bmbmt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bpbnzh/icon.png',
+    thumb: '/games/bmbmt/icon.png',
     link: 'bmbmt',
     null: '',
     star: 3
@@ -1502,7 +1463,7 @@ const games = [
     url: '/games/bpbnzh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/brainie/icon.png',
+    thumb: '/games/bpbnzh/icon.png',
     link: 'bpbnzh',
     null: '',
     star: 3
@@ -1515,7 +1476,7 @@ const games = [
     url: '/games/brainie/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/brohunshu/icon.png',
+    thumb: '/games/brainie/icon.png',
     link: 'brainie',
     null: '',
     star: 3
@@ -1528,7 +1489,7 @@ const games = [
     url: '/games/brohunshu/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bsqpz/item0.jpg',
+    thumb: '/games/brohunshu/icon.png',
     link: 'brohunshu',
     null: '',
     star: 3
@@ -1541,7 +1502,7 @@ const games = [
     url: '/games/bsqpz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bsqpz2/icon.png',
+    thumb: '/games/bsqpz/item0.jpg',
     link: 'bsqpz',
     null: '',
     star: 3
@@ -1554,7 +1515,7 @@ const games = [
     url: '/games/bsqpz2/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/btcst/icon.png',
+    thumb: '/games/bsqpz2/icon.png',
     link: 'bsqpz2',
     null: '',
     star: 3
@@ -1567,7 +1528,7 @@ const games = [
     url: '/games/btcst/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bttz/share.png',
+    thumb: '/games/btcst/icon.png',
     link: 'btcst',
     null: '',
     star: 3
@@ -1580,7 +1541,7 @@ const games = [
     url: '/games/bttz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/Bubblefish/icon.png',
+    thumb: '/games/bttz/share.png',
     link: 'bttz',
     null: '',
     star: 3
@@ -1593,7 +1554,7 @@ const games = [
     url: '/games/Bubblefish/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/bunengsi/2000.png',
+    thumb: '/games/Bubblefish/icon.png',
     link: 'bubblefish',
     null: '',
     star: 3
@@ -1606,7 +1567,7 @@ const games = [
     url: '/games/bzylls/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/candyrain/icon.png',
+    thumb: '/games/bzylls/icon.png',
     link: 'bzylls',
     null: '',
     star: 3
@@ -1619,7 +1580,7 @@ const games = [
     url: '/games/candyrain/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cbd/icon.png',
+    thumb: '/games/candyrain/icon.png',
     link: 'candyrain',
     null: '',
     star: 3
@@ -1632,7 +1593,7 @@ const games = [
     url: '/games/cbd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cbtm/icon.png',
+    thumb: '/games/cbd/icon.png',
     link: 'cbd',
     null: '',
     star: 3
@@ -1645,21 +1606,8 @@ const games = [
     url: '/games/cbtm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ccgl/cggl.jpg',
+    thumb: '/games/cbtm/big_icon.jpg',
     link: 'cbtm',
-    null: '',
-    star: 3
-  },
-  {
-    id: '128',
-    title: 'Ccgl',
-    description: 'Play Ccgl - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/ccgl/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/cdd/icon.png',
-    link: 'ccgl',
     null: '',
     star: 3
   },
@@ -1671,7 +1619,7 @@ const games = [
     url: '/games/cdzj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ceast/icon.png',
+    thumb: '/games/cdzj/icon.png',
     link: 'cdzj',
     null: '',
     star: 3
@@ -1684,7 +1632,7 @@ const games = [
     url: '/games/ceast/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/chdazuozhan/icon.png',
+    thumb: '/games/ceast/icon.png',
     link: 'ceast',
     null: '',
     star: 3
@@ -1697,7 +1645,7 @@ const games = [
     url: '/games/chdazuozhan/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/chdtz/icon.png',
+    thumb: '/games/chdazuozhan/icon.png',
     link: 'chdazuozhan',
     null: '',
     star: 3
@@ -1710,7 +1658,7 @@ const games = [
     url: '/games/chdtz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/chdzz/icon.png',
+    thumb: '/games/chdtz/big_icon.jpg',
     link: 'chdtz',
     null: '',
     star: 3
@@ -1723,7 +1671,7 @@ const games = [
     url: '/games/chdzz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/chengyu/icon.png',
+    thumb: '/games/chdzz/icon.png',
     link: 'chdzz',
     null: '',
     star: 3
@@ -1736,7 +1684,7 @@ const games = [
     url: '/games/chengyu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/chezhi/logo.jpg',
+    thumb: '/games/chengyu/icon.png',
     link: 'chengyu',
     null: '',
     star: 3
@@ -1749,7 +1697,7 @@ const games = [
     url: '/games/chezhi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/chihuo/icon.png',
+    thumb: '/games/chezhi/logo.jpg',
     link: 'chezhi',
     null: '',
     star: 3
@@ -1762,7 +1710,7 @@ const games = [
     url: '/games/chihuo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/chou/icon.png',
+    thumb: '/games/chihuo/icon.png',
     link: 'chihuo',
     null: '',
     star: 3
@@ -1775,7 +1723,7 @@ const games = [
     url: '/games/chou/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/chujiang/icon.png',
+    thumb: '/games/chou/icon.png',
     link: 'chou',
     null: '',
     star: 3
@@ -1788,21 +1736,8 @@ const games = [
     url: '/games/chujiang/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/circle/icon.png',
+    thumb: '/games/chujiang/icon.png',
     link: 'chujiang',
-    null: '',
-    star: 3
-  },
-  {
-    id: '139',
-    title: 'Circle',
-    description: 'Play Circle - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/circle/hh.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/circle2/icon.png',
-    link: 'circle',
     null: '',
     star: 3
   },
@@ -1814,7 +1749,7 @@ const games = [
     url: '/games/circle2/hh.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/circle2/icon.png',
     link: 'circle2',
     null: '',
     star: 3
@@ -1827,7 +1762,7 @@ const games = [
     url: '/games/cj/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cjmla/icon.png',
+    thumb: '/games/cj/img/index-20141124111113.png',
     link: 'cj',
     null: '',
     star: 3
@@ -1840,7 +1775,7 @@ const games = [
     url: '/games/cjmla/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cjrst/icon.png',
+    thumb: '/games/cjmla/icon.png',
     link: 'cjmla',
     null: '',
     star: 3
@@ -1853,7 +1788,7 @@ const games = [
     url: '/games/ckf/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ckql/icon.png',
+    thumb: '/games/ckf/ckf.png',
     link: 'ckf',
     null: '',
     star: 3
@@ -1866,7 +1801,7 @@ const games = [
     url: '/games/ckql/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/coreball/icon.png',
+    thumb: '/games/ckql/icon.png',
     link: 'ckql',
     null: '',
     star: 3
@@ -1879,7 +1814,7 @@ const games = [
     url: '/games/coreball/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cpp/icon.png',
+    thumb: '/games/coreball/icon.png',
     link: 'coreball',
     null: '',
     star: 3
@@ -1892,7 +1827,7 @@ const games = [
     url: '/games/cpx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cs/logo.jpg',
+    thumb: '/games/cpx/icon.png',
     link: 'cpx',
     null: '',
     star: 3
@@ -1905,7 +1840,7 @@ const games = [
     url: '/games/cs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cscg/share.png',
+    thumb: '/games/cs/logo.jpg',
     link: 'cs',
     null: '',
     star: 3
@@ -1918,7 +1853,7 @@ const games = [
     url: '/games/cscg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cube/rect.png',
+    thumb: '/games/cscg/more.jpg',
     link: 'cscg',
     null: '',
     star: 3
@@ -1931,7 +1866,7 @@ const games = [
     url: '/games/cutfruit/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cwdyj/icon.png',
+    thumb: '/games/cutfruit/icon.png',
     link: 'cutfruit',
     null: '',
     star: 3
@@ -1944,7 +1879,7 @@ const games = [
     url: '/games/cwdyj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cyb/icon.png',
+    thumb: '/games/cwdyj/icon.png',
     link: 'cwdyj',
     null: '',
     star: 3
@@ -1957,7 +1892,7 @@ const games = [
     url: '/games/cyb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/cyydnf/icon.png',
+    thumb: '/games/cyb/icon.png',
     link: 'cyb',
     null: '',
     star: 3
@@ -1970,7 +1905,7 @@ const games = [
     url: '/games/cyydnf/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/cyydnf/icon.png',
     link: 'cyydnf',
     null: '',
     star: 3
@@ -1983,7 +1918,7 @@ const games = [
     url: '/games/dalaohu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dandan/icon.png',
+    thumb: '/games/dalaohu/vapp/4.png',
     link: 'dalaohu',
     null: '',
     star: 3
@@ -1996,7 +1931,7 @@ const games = [
     url: '/games/dandan/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/dandan/icon.png',
     link: 'dandan',
     null: '',
     star: 3
@@ -2009,7 +1944,7 @@ const games = [
     url: '/games/daoguo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dapopinata/icon.png',
+    thumb: '/games/daoguo/resource/1.jpg',
     link: 'daoguo',
     null: '',
     star: 3
@@ -2022,7 +1957,7 @@ const games = [
     url: '/games/dapopinata/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dbcs/dbcs.jpg',
+    thumb: '/games/dapopinata/icon.png',
     link: 'dapopinata',
     null: '',
     star: 3
@@ -2035,7 +1970,7 @@ const games = [
     url: '/games/dbcs/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dbj/icon.png',
+    thumb: '/games/dbcs/dbcs.jpg',
     link: 'dbcs',
     null: '',
     star: 3
@@ -2048,7 +1983,7 @@ const games = [
     url: '/games/dbj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dct/icon.png',
+    thumb: '/games/dbj/icon.png',
     link: 'dbj',
     null: '',
     star: 3
@@ -2061,7 +1996,7 @@ const games = [
     url: '/games/dct/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ddb/logo.jpg',
+    thumb: '/games/dct/icon.png',
     link: 'dct',
     null: '',
     star: 3
@@ -2074,7 +2009,7 @@ const games = [
     url: '/games/ddx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/demoncastle/icon.png',
+    thumb: '/games/ddx/icon.png',
     link: 'ddx',
     null: '',
     star: 3
@@ -2087,7 +2022,7 @@ const games = [
     url: '/games/demoncastle/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dhb/icon.png',
+    thumb: '/games/demoncastle/icon.png',
     link: 'demoncastle',
     null: '',
     star: 3
@@ -2100,7 +2035,7 @@ const games = [
     url: '/games/dhb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/dhb/icon.png',
     link: 'dhb',
     null: '',
     star: 3
@@ -2113,7 +2048,7 @@ const games = [
     url: '/games/dianpao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/diaoyu/logo.png',
+    thumb: '/games/dianpao/icon.png',
     link: 'dianpao',
     null: '',
     star: 3
@@ -2126,7 +2061,7 @@ const games = [
     url: '/games/diaoyu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/diqiuri/icon.png',
+    thumb: '/games/diaoyu/logo.png',
     link: 'diaoyu',
     null: '',
     star: 3
@@ -2139,7 +2074,7 @@ const games = [
     url: '/games/diqiuri/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/djz/icon.png',
+    thumb: '/games/diqiuri/icon.png',
     link: 'diqiuri',
     null: '',
     star: 3
@@ -2152,7 +2087,7 @@ const games = [
     url: '/games/djz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dldy/icon.png',
+    thumb: '/games/djz/icon.png',
     link: 'djz',
     null: '',
     star: 3
@@ -2165,7 +2100,7 @@ const games = [
     url: '/games/dldy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dlgt/icon.png',
+    thumb: '/games/dldy/icon.png',
     link: 'dldy',
     null: '',
     star: 3
@@ -2178,7 +2113,7 @@ const games = [
     url: '/games/dlgt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dlss/share.png',
+    thumb: '/games/dlgt/icon.png',
     link: 'dlgt',
     null: '',
     star: 3
@@ -2191,7 +2126,7 @@ const games = [
     url: '/games/dlss/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dlxfk/share.png',
+    thumb: '/games/dlss/share.png',
     link: 'dlss',
     null: '',
     star: 3
@@ -2204,7 +2139,7 @@ const games = [
     url: '/games/dlxfk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dndn/icon.png',
+    thumb: '/games/dlxfk/share.png',
     link: 'dlxfk',
     null: '',
     star: 3
@@ -2217,7 +2152,7 @@ const games = [
     url: '/games/dndn/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dqe/share.png',
+    thumb: '/games/dndn/icon.png',
     link: 'dndn',
     null: '',
     star: 3
@@ -2230,7 +2165,7 @@ const games = [
     url: '/games/dqe/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dtsl/dtsl.png',
+    thumb: '/games/dqe/share.png',
     link: 'dqe',
     null: '',
     star: 3
@@ -2243,7 +2178,7 @@ const games = [
     url: '/games/dtsl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/duimutou/icon.png',
+    thumb: '/games/dtsl/dtsl.png',
     link: 'dtsl',
     null: '',
     star: 3
@@ -2256,7 +2191,7 @@ const games = [
     url: '/games/dumpling/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/duolao/460.jpg',
+    thumb: '/games/dumpling/icon.png',
     link: 'dumpling',
     null: '',
     star: 3
@@ -2269,7 +2204,7 @@ const games = [
     url: '/games/duxinshu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dwlx/icon.png',
+    thumb: '/games/duxinshu/dxs.png',
     link: 'duxinshu',
     null: '',
     star: 3
@@ -2282,7 +2217,7 @@ const games = [
     url: '/games/dwlx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dwy/icon.png',
+    thumb: '/games/dwlx/icon.png',
     link: 'dwlx',
     null: '',
     star: 3
@@ -2295,7 +2230,7 @@ const games = [
     url: '/games/dwy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dwz/01.jpg',
+    thumb: '/games/dwy/icon.png',
     link: 'dwy',
     null: '',
     star: 3
@@ -2308,7 +2243,7 @@ const games = [
     url: '/games/dwz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/dzt/icon.png',
+    thumb: '/games/dwz/01.jpg',
     link: 'dwz',
     null: '',
     star: 3
@@ -2321,7 +2256,7 @@ const games = [
     url: '/games/dzt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/epicsnowman/icon.png',
+    thumb: '/games/dzt/icon.png',
     link: 'dzt',
     null: '',
     star: 3
@@ -2334,7 +2269,7 @@ const games = [
     url: '/games/epicsnowman/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/evolution/icon.png',
+    thumb: '/games/epicsnowman/icon.png',
     link: 'epicsnowman',
     null: '',
     star: 3
@@ -2347,7 +2282,7 @@ const games = [
     url: '/games/evolution/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fangyan/icon.png',
+    thumb: '/games/evolution/icon.png',
     link: 'evolution',
     null: '',
     star: 3
@@ -2360,7 +2295,7 @@ const games = [
     url: '/games/fangyuzjz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/farm/icon.png',
+    thumb: '/games/fangyuzjz/icon.png',
     link: 'fangyuzjz',
     null: '',
     star: 3
@@ -2373,7 +2308,7 @@ const games = [
     url: '/games/farm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/farm/icon.png',
     link: 'farm',
     null: '',
     star: 3
@@ -2386,7 +2321,7 @@ const games = [
     url: '/games/fcl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fcys/icon.png',
+    thumb: '/games/fcl/images/fcl.jpg',
     link: 'fcl',
     null: '',
     star: 3
@@ -2399,7 +2334,7 @@ const games = [
     url: '/games/fcys/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/feidegenggao/icon.png',
+    thumb: '/games/fcys/icon.png',
     link: 'fcys',
     null: '',
     star: 3
@@ -2412,7 +2347,7 @@ const games = [
     url: '/games/feidegenggao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fkbttz/icon.png',
+    thumb: '/games/feidegenggao/icon.png',
     link: 'feidegenggao',
     null: '',
     star: 3
@@ -2425,7 +2360,7 @@ const games = [
     url: '/games/fkbttz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fkcsg/icon.png',
+    thumb: '/games/fkbttz/icon.png',
     link: 'fkbttz',
     null: '',
     star: 3
@@ -2438,7 +2373,7 @@ const games = [
     url: '/games/fkcsg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fkct/icon.png',
+    thumb: '/games/fkcsg/icon.png',
     link: 'fkcsg',
     null: '',
     star: 3
@@ -2451,7 +2386,7 @@ const games = [
     url: '/games/fkct/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fkdfk/icon.png',
+    thumb: '/games/fkct/icon.png',
     link: 'fkct',
     null: '',
     star: 3
@@ -2464,7 +2399,7 @@ const games = [
     url: '/games/fkdfk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fkfzm/fkfzm.png',
+    thumb: '/games/fkdfk/icon.png',
     link: 'fkdfk',
     null: '',
     star: 3
@@ -2477,7 +2412,7 @@ const games = [
     url: '/games/fkfzm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fkqbg/icon.png',
+    thumb: '/games/fkfzm/fkfzm.png',
     link: 'fkfzm',
     null: '',
     star: 3
@@ -2490,7 +2425,7 @@ const games = [
     url: '/games/fkqbg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/flnu/share.png',
+    thumb: '/games/fkqbg/icon.png',
     link: 'fkqbg',
     null: '',
     star: 3
@@ -2503,7 +2438,7 @@ const games = [
     url: '/games/flnu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/flyhouse/icon.png',
+    thumb: '/games/flnu/share.png',
     link: 'flnu',
     null: '',
     star: 3
@@ -2516,7 +2451,7 @@ const games = [
     url: '/games/flyhouse/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fndxhm/icon.png',
+    thumb: '/games/flyhouse/icon.png',
     link: 'flyhouse',
     null: '',
     star: 3
@@ -2529,7 +2464,7 @@ const games = [
     url: '/games/fndxhm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fqj/icon.png',
+    thumb: '/games/fndxhm/icon.png',
     link: 'fndxhm',
     null: '',
     star: 3
@@ -2542,7 +2477,7 @@ const games = [
     url: '/games/fqj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/freekick/icon.png',
+    thumb: '/games/fqj/icon.png',
     link: 'fqj',
     null: '',
     star: 3
@@ -2555,7 +2490,7 @@ const games = [
     url: '/games/freekick/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ftz/ftz.jpg',
+    thumb: '/games/freekick/icon.png',
     link: 'freekick',
     null: '',
     star: 3
@@ -2568,7 +2503,7 @@ const games = [
     url: '/games/ftz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fxyxl/icon.png',
+    thumb: '/games/ftz/ftz.jpg',
     link: 'ftz',
     null: '',
     star: 3
@@ -2581,7 +2516,7 @@ const games = [
     url: '/games/fxyxl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/fytkzc/icon.png',
+    thumb: '/games/fxyxl/icon.png',
     link: 'fxyxl',
     null: '',
     star: 3
@@ -2594,7 +2529,7 @@ const games = [
     url: '/games/fytkzc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gd2048/icon.png',
+    thumb: '/games/fytkzc/icon.png',
     link: 'fytkzc',
     null: '',
     star: 3
@@ -2607,7 +2542,7 @@ const games = [
     url: '/games/gd2048/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gdty/icon.png',
+    thumb: '/games/gd2048/icon.png',
     link: 'gd2048',
     null: '',
     star: 3
@@ -2620,7 +2555,7 @@ const games = [
     url: '/games/gdty/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gdzmn/icon.png',
+    thumb: '/games/gdty/icon.png',
     link: 'gdty',
     null: '',
     star: 3
@@ -2633,7 +2568,7 @@ const games = [
     url: '/games/gdzmn/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/get36/icon.png',
+    thumb: '/games/gdzmn/icon.png',
     link: 'gdzmn',
     null: '',
     star: 3
@@ -2646,7 +2581,7 @@ const games = [
     url: '/games/get36/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/getthefish/icon.png',
+    thumb: '/games/get36/icon.png',
     link: 'get36',
     null: '',
     star: 3
@@ -2659,7 +2594,7 @@ const games = [
     url: '/games/getthefish/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/golfblast/icon.png',
+    thumb: '/games/getthefish/icon.png',
     link: 'getthefish',
     null: '',
     star: 3
@@ -2672,7 +2607,7 @@ const games = [
     url: '/games/golfblast/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gongfumao/arrow.png',
+    thumb: '/games/golfblast/icon.png',
     link: 'golfblast',
     null: '',
     star: 3
@@ -2685,7 +2620,7 @@ const games = [
     url: '/games/gongfumao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gqds/icon.png',
+    thumb: '/games/gongfumao/arrow.png',
     link: 'gongfumao',
     null: '',
     star: 3
@@ -2698,7 +2633,7 @@ const games = [
     url: '/games/gqds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gqffk/icon.png',
+    thumb: '/games/gqds/icon.png',
     link: 'gqds',
     null: '',
     star: 3
@@ -2711,21 +2646,8 @@ const games = [
     url: '/games/gqffk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gqtz/gqtz.png',
+    thumb: '/games/gqffk/icon.png',
     link: 'gqffk',
-    null: '',
-    star: 3
-  },
-  {
-    id: '210',
-    title: 'Gqtz',
-    description: 'Play Gqtz - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/gqtz/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/grfhy/icon.png',
-    link: 'gqtz',
     null: '',
     star: 3
   },
@@ -2737,7 +2659,7 @@ const games = [
     url: '/games/grfhy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gtzp/icon.png',
+    thumb: '/games/grfhy/icon.png',
     link: 'grfhy',
     null: '',
     star: 3
@@ -2750,7 +2672,7 @@ const games = [
     url: '/games/gtzp/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gudaye/logo.jpg',
+    thumb: '/games/gtzp/icon.png',
     link: 'gtzp',
     null: '',
     star: 3
@@ -2763,7 +2685,7 @@ const games = [
     url: '/games/gudaye/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gulaodekuangshi/icon.png',
+    thumb: '/games/gudaye/logo.jpg',
     link: 'gudaye',
     null: '',
     star: 3
@@ -2776,7 +2698,7 @@ const games = [
     url: '/games/gulaodekuangshi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/guodongrenwu/icon.png',
+    thumb: '/games/gulaodekuangshi/icon.png',
     link: 'gulaodekuangshi',
     null: '',
     star: 3
@@ -2789,7 +2711,7 @@ const games = [
     url: '/games/guodongrenwu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/gwlm/icon.png',
+    thumb: '/games/guodongrenwu/icon.png',
     link: 'guodongrenwu',
     null: '',
     star: 3
@@ -2802,7 +2724,7 @@ const games = [
     url: '/games/gwlm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/halloween/icon.png',
+    thumb: '/games/gwlm/icon.png',
     link: 'gwlm',
     null: '',
     star: 3
@@ -2815,7 +2737,7 @@ const games = [
     url: '/games/halloween/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hcrdtw/icon.png',
+    thumb: '/games/halloween/icon.png',
     link: 'halloween',
     null: '',
     star: 3
@@ -2828,7 +2750,7 @@ const games = [
     url: '/games/hcrdtw/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hczz/hczz.png',
+    thumb: '/games/hcrdtw/icon.png',
     link: 'hcrdtw',
     null: '',
     star: 3
@@ -2841,7 +2763,7 @@ const games = [
     url: '/games/hczz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hdcs/icon.png',
+    thumb: '/games/hczz/hczz.png',
     link: 'hczz',
     null: '',
     star: 3
@@ -2854,7 +2776,7 @@ const games = [
     url: '/games/hdcs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/heibai/logo.png',
+    thumb: '/games/hdcs/icon.png',
     link: 'hdcs',
     null: '',
     star: 3
@@ -2867,7 +2789,7 @@ const games = [
     url: '/games/heibai/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hero/icon.png',
+    thumb: '/games/heibai/logo.png',
     link: 'heibai',
     null: '',
     star: 3
@@ -2880,7 +2802,7 @@ const games = [
     url: '/games/hero/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/HeroRush/icon.png',
+    thumb: '/games/hero/icon.png',
     link: 'hero',
     null: '',
     star: 3
@@ -2893,7 +2815,7 @@ const games = [
     url: '/games/HeroRush/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hgy/icon.png',
+    thumb: '/games/HeroRush/icon.png',
     link: 'herorush',
     null: '',
     star: 3
@@ -2906,7 +2828,7 @@ const games = [
     url: '/games/hgy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hjkg/ba.png',
+    thumb: '/games/hgy/icon.png',
     link: 'hgy',
     null: '',
     star: 3
@@ -2919,7 +2841,7 @@ const games = [
     url: '/games/hjkg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hjln/icon.png',
+    thumb: '/games/hjkg/ba.png',
     link: 'hjkg',
     null: '',
     star: 3
@@ -2932,7 +2854,7 @@ const games = [
     url: '/games/hjln/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hl/logo.jpg',
+    thumb: '/games/hjln/icon.png',
     link: 'hjln',
     null: '',
     star: 3
@@ -2945,7 +2867,7 @@ const games = [
     url: '/games/hl/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hldy/icon.png',
+    thumb: '/games/hl/logo.JPG',
     link: 'hl',
     null: '',
     star: 3
@@ -2958,7 +2880,7 @@ const games = [
     url: '/games/hldy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hmk/icon.png',
+    thumb: '/games/hldy/icon.png',
     link: 'hldy',
     null: '',
     star: 3
@@ -2971,7 +2893,7 @@ const games = [
     url: '/games/hmk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hnm/icon.png',
+    thumb: '/games/hmk/icon.png',
     link: 'hmk',
     null: '',
     star: 3
@@ -2984,7 +2906,7 @@ const games = [
     url: '/games/hnm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/honghaishilv/logo.jpg',
+    thumb: '/games/hnm/icon.png',
     link: 'hnm',
     null: '',
     star: 3
@@ -2997,7 +2919,7 @@ const games = [
     url: '/games/horsegame/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/htsys/icon.png',
+    thumb: '/games/horsegame/icon.png',
     link: 'horsegame',
     null: '',
     star: 3
@@ -3010,7 +2932,7 @@ const games = [
     url: '/games/htsys/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/huaban/icon.png',
+    thumb: '/games/htsys/icon.png',
     link: 'htsys',
     null: '',
     star: 3
@@ -3023,7 +2945,7 @@ const games = [
     url: '/games/huaban/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/huba/icon.png',
+    thumb: '/games/huaban/icon.png',
     link: 'huaban',
     null: '',
     star: 3
@@ -3036,7 +2958,7 @@ const games = [
     url: '/games/huba/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/huoji/icon.png',
+    thumb: '/games/huba/icon.png',
     link: 'huba',
     null: '',
     star: 3
@@ -3049,7 +2971,7 @@ const games = [
     url: '/games/huoji/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/huoju/icon.png',
+    thumb: '/games/huoji/icon.png',
     link: 'huoji',
     null: '',
     star: 3
@@ -3062,7 +2984,7 @@ const games = [
     url: '/games/huoju/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hween/icon.png',
+    thumb: '/games/huoju/icon.png',
     link: 'huoju',
     null: '',
     star: 3
@@ -3075,7 +2997,7 @@ const games = [
     url: '/games/hween/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hxdtz/icon.png',
+    thumb: '/games/hween/icon.png',
     link: 'hween',
     null: '',
     star: 3
@@ -3088,7 +3010,7 @@ const games = [
     url: '/games/hxdtz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hxsdlr/icon.png',
+    thumb: '/games/hxdtz/icon.png',
     link: 'hxdtz',
     null: '',
     star: 3
@@ -3101,7 +3023,7 @@ const games = [
     url: '/games/hxsdlr/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/hypk/icon.png',
+    thumb: '/games/hxsdlr/icon.png',
     link: 'hxsdlr',
     null: '',
     star: 3
@@ -3114,7 +3036,7 @@ const games = [
     url: '/games/hypk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/hypk/icon.png',
     link: 'hypk',
     null: '',
     star: 3
@@ -3127,7 +3049,7 @@ const games = [
     url: '/games/ice_bucket/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/iq/logo.png',
+    thumb: '/games/ice_bucket/img/bg.png',
     link: 'ice-bucket',
     null: '',
     star: 3
@@ -3140,7 +3062,7 @@ const games = [
     url: '/games/iq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jb/logo.jpg',
+    thumb: '/games/iq/logo.png',
     link: 'iq',
     null: '',
     star: 3
@@ -3153,7 +3075,7 @@ const games = [
     url: '/games/jb/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jdh/icon.png',
+    thumb: '/games/jb/logo.JPG',
     link: 'jb',
     null: '',
     star: 3
@@ -3166,7 +3088,7 @@ const games = [
     url: '/games/jdh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jellyslice/icon.png',
+    thumb: '/games/jdh/icon.png',
     link: 'jdh',
     null: '',
     star: 3
@@ -3179,7 +3101,7 @@ const games = [
     url: '/games/jellyslice/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/jellyslice/icon.png',
     link: 'jellyslice',
     null: '',
     star: 3
@@ -3192,7 +3114,7 @@ const games = [
     url: '/games/jg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jhj/icon.png',
+    thumb: '/games/jg/static/icon.png',
     link: 'jg',
     null: '',
     star: 3
@@ -3205,7 +3127,7 @@ const games = [
     url: '/games/jhj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/jhj/icon.png',
     link: 'jhj',
     null: '',
     star: 3
@@ -3218,7 +3140,7 @@ const games = [
     url: '/games/jiaozilail/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jicilang/2000.png',
+    thumb: '/games/jiaozilail/icon.png',
     link: 'jiaozilail',
     null: '',
     star: 3
@@ -3231,7 +3153,7 @@ const games = [
     url: '/games/jicilang/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jidan/icon.png',
+    thumb: '/games/jicilang/2000.png',
     link: 'jicilang',
     null: '',
     star: 3
@@ -3244,21 +3166,8 @@ const games = [
     url: '/games/jidan/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jingzi/icon.png',
+    thumb: '/games/jidan/icon.png',
     link: 'jidan',
-    null: '',
-    star: 3
-  },
-  {
-    id: '251',
-    title: 'Jingzi',
-    description: 'Play Jingzi - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/jingzi/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/jinhuashi2048/icon.png',
-    link: 'jingzi',
     null: '',
     star: 3
   },
@@ -3270,7 +3179,7 @@ const games = [
     url: '/games/jinhuashi2048/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jjdfk/icon.png',
+    thumb: '/games/jinhuashi2048/icon.png',
     link: 'jinhuashi2048',
     null: '',
     star: 3
@@ -3283,7 +3192,7 @@ const games = [
     url: '/games/jjdfk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jjllk/icon.png',
+    thumb: '/games/jjdfk/icon.png',
     link: 'jjdfk',
     null: '',
     star: 3
@@ -3296,7 +3205,7 @@ const games = [
     url: '/games/jjllk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jkgqx/icon.png',
+    thumb: '/games/jjllk/icon.png',
     link: 'jjllk',
     null: '',
     star: 3
@@ -3309,7 +3218,7 @@ const games = [
     url: '/games/jkgqx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jksz/logo.png',
+    thumb: '/games/jkgqx/icon.png',
     link: 'jkgqx',
     null: '',
     star: 3
@@ -3322,7 +3231,7 @@ const games = [
     url: '/games/jksz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jntt/icon.png',
+    thumb: '/games/jksz/logo.png',
     link: 'jksz',
     null: '',
     star: 3
@@ -3335,7 +3244,7 @@ const games = [
     url: '/games/jntt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jolin/icon.png',
+    thumb: '/games/jntt/icon.png',
     link: 'jntt',
     null: '',
     star: 3
@@ -3348,7 +3257,7 @@ const games = [
     url: '/games/jolin/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jsj/icon.png',
+    thumb: '/games/jolin/icon.png',
     link: 'jolin',
     null: '',
     star: 3
@@ -3361,7 +3270,7 @@ const games = [
     url: '/games/jsj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jssjm/icon.png',
+    thumb: '/games/jsj/icon.png',
     link: 'jsj',
     null: '',
     star: 3
@@ -3374,7 +3283,7 @@ const games = [
     url: '/games/jssjm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jtlq/icon.png',
+    thumb: '/games/jssjm/icon.png',
     link: 'jssjm',
     null: '',
     star: 3
@@ -3387,7 +3296,7 @@ const games = [
     url: '/games/jtlq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jumpingfrog/icon.png',
+    thumb: '/games/jtlq/icon.png',
     link: 'jtlq',
     null: '',
     star: 3
@@ -3400,7 +3309,7 @@ const games = [
     url: '/games/jumpingfrog/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jumpjump/icon.png',
+    thumb: '/games/jumpingfrog/icon.png',
     link: 'jumpingfrog',
     null: '',
     star: 3
@@ -3413,7 +3322,7 @@ const games = [
     url: '/games/jumpjump/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jxcc/icon.png',
+    thumb: '/games/jumpjump/icon.png',
     link: 'jumpjump',
     null: '',
     star: 3
@@ -3426,7 +3335,7 @@ const games = [
     url: '/games/jxcc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jyds/icon.png',
+    thumb: '/games/jxcc/icon.png',
     link: 'jxcc',
     null: '',
     star: 3
@@ -3439,7 +3348,7 @@ const games = [
     url: '/games/jyds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jyfy/logo.jpg',
+    thumb: '/games/jyds/icon.png',
     link: 'jyds',
     null: '',
     star: 3
@@ -3452,7 +3361,7 @@ const games = [
     url: '/games/jyfy/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/jyfy2/icon.png',
+    thumb: '/games/jyfy/logo.jpg',
     link: 'jyfy',
     null: '',
     star: 3
@@ -3465,7 +3374,7 @@ const games = [
     url: '/games/jyfy2/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/kaixinlian/logo.png',
+    thumb: '/games/jyfy2/icon.png',
     link: 'jyfy2',
     null: '',
     star: 3
@@ -3478,7 +3387,7 @@ const games = [
     url: '/games/kaixinlian/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/kaixinlian/logo.jpg',
     link: 'kaixinlian',
     null: '',
     star: 3
@@ -3491,7 +3400,7 @@ const games = [
     url: '/games/kanshu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/kdos/icon.png',
+    thumb: '/games/kanshu/img/a.png',
     link: 'kanshu',
     null: '',
     star: 3
@@ -3504,7 +3413,7 @@ const games = [
     url: '/games/kdos/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/knnfdd/icon.png',
+    thumb: '/games/kdos/icon.png',
     link: 'kdos',
     null: '',
     star: 3
@@ -3517,7 +3426,7 @@ const games = [
     url: '/games/knnfdd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/knydl/icon.png',
+    thumb: '/games/knnfdd/icon.png',
     link: 'knnfdd',
     null: '',
     star: 3
@@ -3530,7 +3439,7 @@ const games = [
     url: '/games/knydl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ksiphone6/share.png',
+    thumb: '/games/knydl/icon.png',
     link: 'knydl',
     null: '',
     star: 3
@@ -3543,7 +3452,7 @@ const games = [
     url: '/games/ksiphone6/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ktfx/icon.png',
+    thumb: '/games/ksiphone6/share.png',
     link: 'ksiphone6',
     null: '',
     star: 3
@@ -3556,7 +3465,7 @@ const games = [
     url: '/games/ktfx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/kuaipao/1.png',
+    thumb: '/games/ktfx/icon.png',
     link: 'ktfx',
     null: '',
     star: 3
@@ -3569,7 +3478,7 @@ const games = [
     url: '/games/kuaipao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/laba/icon.png',
+    thumb: '/games/kuaipao/sheraicon.png',
     link: 'kuaipao',
     null: '',
     star: 3
@@ -3582,7 +3491,7 @@ const games = [
     url: '/games/laba/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/lbpt/icon.png',
+    thumb: '/games/laba/icon.png',
     link: 'laba',
     null: '',
     star: 3
@@ -3595,7 +3504,7 @@ const games = [
     url: '/games/lbpt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/lbyhbyc/icon.png',
+    thumb: '/games/lbpt/icon.png',
     link: 'lbpt',
     null: '',
     star: 3
@@ -3608,7 +3517,7 @@ const games = [
     url: '/games/lbyhbyc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ld/logo.jpg',
+    thumb: '/games/lbyhbyc/icon.png',
     link: 'lbyhbyc',
     null: '',
     star: 3
@@ -3621,7 +3530,7 @@ const games = [
     url: '/games/ld/ad.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/lgcs/icon.png',
+    thumb: '/games/ld/logo.JPG',
     link: 'ld',
     null: '',
     star: 3
@@ -3634,7 +3543,7 @@ const games = [
     url: '/games/lgcs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/liankan/icon.jpg',
+    thumb: '/games/lgcs/icon.png',
     link: 'lgcs',
     null: '',
     star: 3
@@ -3647,7 +3556,7 @@ const games = [
     url: '/games/liankan/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ljsp/icon.png',
+    thumb: '/games/liankan/icon.jpg',
     link: 'liankan',
     null: '',
     star: 3
@@ -3660,7 +3569,7 @@ const games = [
     url: '/games/ljsp/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/llll/share.png',
+    thumb: '/games/ljsp/icon.png',
     link: 'ljsp',
     null: '',
     star: 3
@@ -3673,7 +3582,7 @@ const games = [
     url: '/games/llll/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/lsxsh/icon.png',
+    thumb: '/games/llll/share.png',
     link: 'llll',
     null: '',
     star: 3
@@ -3686,7 +3595,7 @@ const games = [
     url: '/games/lsxsh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ltjz/icon.png',
+    thumb: '/games/lsxsh/icon.png',
     link: 'lsxsh',
     null: '',
     star: 3
@@ -3699,7 +3608,7 @@ const games = [
     url: '/games/ltjz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/luoke/icon.png',
+    thumb: '/games/ltjz/icon.png',
     link: 'ltjz',
     null: '',
     star: 3
@@ -3712,7 +3621,7 @@ const games = [
     url: '/games/luoke/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/luomazhiyue/icon.png',
+    thumb: '/games/luoke/icon.png',
     link: 'luoke',
     null: '',
     star: 3
@@ -3725,7 +3634,7 @@ const games = [
     url: '/games/luomazhiyue/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mahjonglink/icon.png',
+    thumb: '/games/luomazhiyue/icon.png',
     link: 'luomazhiyue',
     null: '',
     star: 3
@@ -3738,7 +3647,7 @@ const games = [
     url: '/games/mahjonglink/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/maomi/knydh.png',
+    thumb: '/games/mahjonglink/icon.png',
     link: 'mahjonglink',
     null: '',
     star: 3
@@ -3751,7 +3660,7 @@ const games = [
     url: '/games/maxarea/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/maya/icon.png',
+    thumb: '/games/maxarea/icon.png',
     link: 'maxarea',
     null: '',
     star: 3
@@ -3764,7 +3673,7 @@ const games = [
     url: '/games/maya/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/memeda/logo.png',
+    thumb: '/games/maya/icon.png',
     link: 'maya',
     null: '',
     star: 3
@@ -3777,7 +3686,7 @@ const games = [
     url: '/games/memeda/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mingxuanyixian/1.png',
+    thumb: '/games/memeda/logo.png',
     link: 'memeda',
     null: '',
     star: 3
@@ -3790,7 +3699,7 @@ const games = [
     url: '/games/mingxuanyixian/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/minixd/icon.png',
+    thumb: '/games/mingxuanyixian/1.png',
     link: 'mingxuanyixian',
     null: '',
     star: 3
@@ -3803,7 +3712,7 @@ const games = [
     url: '/games/minixd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mishi/10.png',
+    thumb: '/games/minixd/icon.png',
     link: 'minixd',
     null: '',
     star: 3
@@ -3816,7 +3725,7 @@ const games = [
     url: '/games/mishi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mlss/icon.png',
+    thumb: '/games/mishi/1.jpg',
     link: 'mishi',
     null: '',
     star: 3
@@ -3829,7 +3738,7 @@ const games = [
     url: '/games/mlss/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mml/icon.png',
+    thumb: '/games/mlss/icon.png',
     link: 'mlss',
     null: '',
     star: 3
@@ -3842,7 +3751,7 @@ const games = [
     url: '/games/mml/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mmsz/icon.png',
+    thumb: '/games/mml/icon.png',
     link: 'mml',
     null: '',
     star: 3
@@ -3855,7 +3764,7 @@ const games = [
     url: '/games/mmsz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mmttt/mmttt.png',
+    thumb: '/games/mmsz/icon.png',
     link: 'mmsz',
     null: '',
     star: 3
@@ -3868,7 +3777,7 @@ const games = [
     url: '/games/mmttt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mmyj/icon.png',
+    thumb: '/games/mmttt/mmttt.png',
     link: 'mmttt',
     null: '',
     star: 3
@@ -3881,7 +3790,7 @@ const games = [
     url: '/games/mmyj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mnbyg/icon.png',
+    thumb: '/games/mmyj/icon.png',
     link: 'mmyj',
     null: '',
     star: 3
@@ -3894,7 +3803,7 @@ const games = [
     url: '/games/mnbyg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mnygl/icon.png',
+    thumb: '/games/mnbyg/icon.png',
     link: 'mnbyg',
     null: '',
     star: 3
@@ -3907,7 +3816,7 @@ const games = [
     url: '/games/mnygl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/mnygl/icon.png',
     link: 'mnygl',
     null: '',
     star: 3
@@ -3920,7 +3829,7 @@ const games = [
     url: '/games/money/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/money/files/2000.png',
     link: 'money',
     null: '',
     star: 3
@@ -3933,7 +3842,7 @@ const games = [
     url: '/games/monkey/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/monstersunion/icon.png',
+    thumb: '/games/monkey/images/0begin.png',
     link: 'monkey',
     null: '',
     star: 3
@@ -3946,7 +3855,7 @@ const games = [
     url: '/games/monstersunion/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mrg1/icon.png',
+    thumb: '/games/monstersunion/icon.png',
     link: 'monstersunion',
     null: '',
     star: 3
@@ -3959,7 +3868,7 @@ const games = [
     url: '/games/mrg1/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mspt/icon.png',
+    thumb: '/games/mrg1/icon.png',
     link: 'mrg1',
     null: '',
     star: 3
@@ -3972,7 +3881,7 @@ const games = [
     url: '/games/mspt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/msts/icon.png',
+    thumb: '/games/mspt/icon.png',
     link: 'mspt',
     null: '',
     star: 3
@@ -3985,7 +3894,7 @@ const games = [
     url: '/games/msts/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mtl/icon.png',
+    thumb: '/games/msts/icon.png',
     link: 'msts',
     null: '',
     star: 3
@@ -3998,7 +3907,7 @@ const games = [
     url: '/games/mtl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/muqinjie/icon.png',
+    thumb: '/games/mtl/icon.png',
     link: 'mtl',
     null: '',
     star: 3
@@ -4011,7 +3920,7 @@ const games = [
     url: '/games/muqinjie/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mwzne/icon.png',
+    thumb: '/games/muqinjie/icon.png',
     link: 'muqinjie',
     null: '',
     star: 3
@@ -4024,7 +3933,7 @@ const games = [
     url: '/games/mwzne/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/mwzne/icon.png',
     link: 'mwzne',
     null: '',
     star: 3
@@ -4037,7 +3946,7 @@ const games = [
     url: '/games/mxcz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/mxtzr/icon.png',
+    thumb: '/games/mxcz/images/mlylogo.jpg',
     link: 'mxcz',
     null: '',
     star: 3
@@ -4050,7 +3959,7 @@ const games = [
     url: '/games/mxtzr/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/mxtzr/icon.png',
     link: 'mxtzr',
     null: '',
     star: 3
@@ -4063,7 +3972,7 @@ const games = [
     url: '/games/mzpk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/naoyangyang/naoyang.jpg',
+    thumb: '/games/mzpk/dog/assets/logo.png',
     link: 'mzpk',
     null: '',
     star: 3
@@ -4076,7 +3985,7 @@ const games = [
     url: '/games/naoyangyang/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/nddsc/icon.png',
+    thumb: '/games/naoyangyang/naoyang.jpg',
     link: 'naoyangyang',
     null: '',
     star: 3
@@ -4089,7 +3998,7 @@ const games = [
     url: '/games/nddsc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ndtnrgclm/share.png',
+    thumb: '/games/nddsc/icon.png',
     link: 'nddsc',
     null: '',
     star: 3
@@ -4102,7 +4011,7 @@ const games = [
     url: '/games/ndtnrgclm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ninjas/icon.png',
+    thumb: '/games/ndtnrgclm/share.png',
     link: 'ndtnrgclm',
     null: '',
     star: 3
@@ -4115,7 +4024,7 @@ const games = [
     url: '/games/ninjas/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/njdsb/icon.png',
+    thumb: '/games/ninjas/icon.png',
     link: 'ninjas',
     null: '',
     star: 3
@@ -4128,7 +4037,7 @@ const games = [
     url: '/games/nm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/nxpt/icon.png',
+    thumb: '/games/nm/icon.png',
     link: 'nm',
     null: '',
     star: 3
@@ -4141,7 +4050,7 @@ const games = [
     url: '/games/nxpt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/nxpt/icon.png',
     link: 'nxpt',
     null: '',
     star: 3
@@ -4154,21 +4063,8 @@ const games = [
     url: '/games/pigbaby/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/pigu/icon.jpg',
+    thumb: '/games/pigbaby/img/logo.png',
     link: 'pigbaby',
-    null: '',
-    star: 3
-  },
-  {
-    id: '321',
-    title: 'Pigu',
-    description: 'Play Pigu - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/pigu/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/pklxj/icon.png',
-    link: 'pigu',
     null: '',
     star: 3
   },
@@ -4180,7 +4076,7 @@ const games = [
     url: '/games/pklxj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/pkq/icon.png',
+    thumb: '/games/pklxj/icon.png',
     link: 'pklxj',
     null: '',
     star: 3
@@ -4193,7 +4089,7 @@ const games = [
     url: '/games/pkq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/pmdtw/icon.png',
+    thumb: '/games/pkq/icon.png',
     link: 'pkq',
     null: '',
     star: 3
@@ -4206,7 +4102,7 @@ const games = [
     url: '/games/pmdtw/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/pmp/icon.png',
+    thumb: '/games/pmdtw/icon.png',
     link: 'pmdtw',
     null: '',
     star: 3
@@ -4219,7 +4115,7 @@ const games = [
     url: '/games/pmp/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ppl/icon.png',
+    thumb: '/games/pmp/icon.png',
     link: 'pmp',
     null: '',
     star: 3
@@ -4232,21 +4128,8 @@ const games = [
     url: '/games/ppl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/pxfzm/logo.jpg',
+    thumb: '/games/ppl/icon.png',
     link: 'ppl',
-    null: '',
-    star: 3
-  },
-  {
-    id: '327',
-    title: 'Pxfzm',
-    description: 'Play Pxfzm - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/pxfzm/index.htm',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/qbllk/qpllk.jpg',
-    link: 'pxfzm',
     null: '',
     star: 3
   },
@@ -4258,7 +4141,7 @@ const games = [
     url: '/games/qcds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qcknh/icon.png',
+    thumb: '/games/qcds/icon.png',
     link: 'qcds',
     null: '',
     star: 3
@@ -4271,7 +4154,7 @@ const games = [
     url: '/games/qcknh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qedfc/icon.jpg',
+    thumb: '/games/qcknh/icon.png',
     link: 'qcknh',
     null: '',
     star: 3
@@ -4284,7 +4167,7 @@ const games = [
     url: '/games/qedfc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qie/share.png',
+    thumb: '/games/qedfc/icon.jpg',
     link: 'qedfc',
     null: '',
     star: 3
@@ -4297,7 +4180,7 @@ const games = [
     url: '/games/qie/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qiexigua/1.png',
+    thumb: '/games/qie/share.png',
     link: 'qie',
     null: '',
     star: 3
@@ -4310,7 +4193,7 @@ const games = [
     url: '/games/qiexigua/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/qiexigua/1.png',
     link: 'qiexigua',
     null: '',
     star: 3
@@ -4323,7 +4206,7 @@ const games = [
     url: '/games/qifu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qigmingjie/icon.png',
+    thumb: '/games/qifu/img/bg01.jpg',
     link: 'qifu',
     null: '',
     star: 3
@@ -4336,7 +4219,7 @@ const games = [
     url: '/games/qigmingjie/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qingwa/1.png',
+    thumb: '/games/qigmingjie/icon.png',
     link: 'qigmingjie',
     null: '',
     star: 3
@@ -4349,7 +4232,7 @@ const games = [
     url: '/games/qingwa/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/qingwa/1.png',
     link: 'qingwa',
     null: '',
     star: 3
@@ -4362,21 +4245,8 @@ const games = [
     url: '/games/qixi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/qixi/img/blood.png',
     link: 'qixi',
-    null: '',
-    star: 3
-  },
-  {
-    id: '337',
-    title: 'Qixi1',
-    description: 'Play Qixi1 - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/qixi1/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/qlw/icon.png',
-    link: 'qixi1',
     null: '',
     star: 3
   },
@@ -4388,7 +4258,7 @@ const games = [
     url: '/games/qlw/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qmbttz/qmbttz.png',
+    thumb: '/games/qlw/icon.png',
     link: 'qlw',
     null: '',
     star: 3
@@ -4401,7 +4271,7 @@ const games = [
     url: '/games/qmbttz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qmfjdz/icon.png',
+    thumb: '/games/qmbttz/640.jpg',
     link: 'qmbttz',
     null: '',
     star: 3
@@ -4414,7 +4284,7 @@ const games = [
     url: '/games/qmfjdz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qmxzfzm/share.png',
+    thumb: '/games/qmfjdz/icon.png',
     link: 'qmfjdz',
     null: '',
     star: 3
@@ -4427,7 +4297,7 @@ const games = [
     url: '/games/qmxzfzm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qmxzfzm2/share.png',
+    thumb: '/games/qmxzfzm/share.png',
     link: 'qmxzfzm',
     null: '',
     star: 3
@@ -4440,7 +4310,7 @@ const games = [
     url: '/games/qmxzfzm2/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qmykl/share.png',
+    thumb: '/games/qmxzfzm2/share.png',
     link: 'qmxzfzm2',
     null: '',
     star: 3
@@ -4453,7 +4323,7 @@ const games = [
     url: '/games/qmykl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qmzgc/icon.png',
+    thumb: '/games/qmykl/share.png',
     link: 'qmykl',
     null: '',
     star: 3
@@ -4466,7 +4336,7 @@ const games = [
     url: '/games/qmzgc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qpjzg/icon.png',
+    thumb: '/games/qmzgc/icon.png',
     link: 'qmzgc',
     null: '',
     star: 3
@@ -4479,7 +4349,7 @@ const games = [
     url: '/games/qpjzg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qqppp/share.png',
+    thumb: '/games/qpjzg/icon.png',
     link: 'qpjzg',
     null: '',
     star: 3
@@ -4492,7 +4362,7 @@ const games = [
     url: '/games/qqppp/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qqq/icon.png',
+    thumb: '/games/qqppp/share.png',
     link: 'qqppp',
     null: '',
     star: 3
@@ -4505,7 +4375,7 @@ const games = [
     url: '/games/qqq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qsj/icon.png',
+    thumb: '/games/qqq/icon.png',
     link: 'qqq',
     null: '',
     star: 3
@@ -4518,7 +4388,7 @@ const games = [
     url: '/games/qsj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qwcg/icon.png',
+    thumb: '/games/qsj/icon.png',
     link: 'qsj',
     null: '',
     star: 3
@@ -4531,7 +4401,7 @@ const games = [
     url: '/games/qwcg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qwt/icon.png',
+    thumb: '/games/qwcg/icon.png',
     link: 'qwcg',
     null: '',
     star: 3
@@ -4544,7 +4414,7 @@ const games = [
     url: '/games/qwt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qx/icon.png',
+    thumb: '/games/qwt/icon.png',
     link: 'qwt',
     null: '',
     star: 3
@@ -4557,7 +4427,7 @@ const games = [
     url: '/games/qx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qxdd/icon.png',
+    thumb: '/games/qx/icon.png',
     link: 'qx',
     null: '',
     star: 3
@@ -4570,7 +4440,7 @@ const games = [
     url: '/games/qxdd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/qxxh/icon.png',
+    thumb: '/games/qxdd/icon.png',
     link: 'qxdd',
     null: '',
     star: 3
@@ -4583,7 +4453,7 @@ const games = [
     url: '/games/qxxh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/rhino/icon.png',
+    thumb: '/games/qxxh/icon.png',
     link: 'qxxh',
     null: '',
     star: 3
@@ -4596,7 +4466,7 @@ const games = [
     url: '/games/rhino/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/rjd/icon.png',
+    thumb: '/games/rhino/icon.png',
     link: 'rhino',
     null: '',
     star: 3
@@ -4609,7 +4479,7 @@ const games = [
     url: '/games/rjd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/rwcz/icon.png',
+    thumb: '/games/rjd/icon.png',
     link: 'rjd',
     null: '',
     star: 3
@@ -4622,7 +4492,7 @@ const games = [
     url: '/games/rwcz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/santalicious/icon.png',
+    thumb: '/games/rwcz/icon.png',
     link: 'rwcz',
     null: '',
     star: 3
@@ -4635,7 +4505,7 @@ const games = [
     url: '/games/santalicious/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/saolei/icon.png',
+    thumb: '/games/santalicious/icon.png',
     link: 'santalicious',
     null: '',
     star: 3
@@ -4648,7 +4518,7 @@ const games = [
     url: '/games/saolei/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sbd/icon.png',
+    thumb: '/games/saolei/icon.png',
     link: 'saolei',
     null: '',
     star: 3
@@ -4661,7 +4531,7 @@ const games = [
     url: '/games/sbd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sdlr/icon.png',
+    thumb: '/games/sbd/icon.png',
     link: 'sbd',
     null: '',
     star: 3
@@ -4674,7 +4544,7 @@ const games = [
     url: '/games/sdlr/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sdlrdfz/icon.png',
+    thumb: '/games/sdlr/icon.png',
     link: 'sdlr',
     null: '',
     star: 3
@@ -4687,7 +4557,7 @@ const games = [
     url: '/games/sdlrdfz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sdlrgq/icon.png',
+    thumb: '/games/sdlrdfz/icon.png',
     link: 'sdlrdfz',
     null: '',
     star: 3
@@ -4700,7 +4570,7 @@ const games = [
     url: '/games/sdlrgq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sdmj/icon.png',
+    thumb: '/games/sdlrgq/icon-256.png',
     link: 'sdlrgq',
     null: '',
     star: 3
@@ -4713,7 +4583,7 @@ const games = [
     url: '/games/sdmj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sdpp/icon.png',
+    thumb: '/games/sdmj/icon.png',
     link: 'sdmj',
     null: '',
     star: 3
@@ -4726,7 +4596,7 @@ const games = [
     url: '/games/sdpp/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sds/icon.png',
+    thumb: '/games/sdpp/icon.png',
     link: 'sdpp',
     null: '',
     star: 3
@@ -4739,7 +4609,7 @@ const games = [
     url: '/games/sds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sdtg/icon.png',
+    thumb: '/games/sds/icon.png',
     link: 'sds',
     null: '',
     star: 3
@@ -4752,7 +4622,7 @@ const games = [
     url: '/games/sdtg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sdyjq/icon.png',
+    thumb: '/games/sdtg/icon.png',
     link: 'sdtg',
     null: '',
     star: 3
@@ -4765,7 +4635,7 @@ const games = [
     url: '/games/sdyjq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/se/icon.png',
+    thumb: '/games/sdyjq/icon.png',
     link: 'sdyjq',
     null: '',
     star: 3
@@ -4778,7 +4648,7 @@ const games = [
     url: '/games/se/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/se2/icon.png',
+    thumb: '/games/se/icon.png',
     link: 'se',
     null: '',
     star: 3
@@ -4791,7 +4661,7 @@ const games = [
     url: '/games/se2/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/selang/icon.png',
+    thumb: '/games/se2/icon.png',
     link: 'se2',
     null: '',
     star: 3
@@ -4804,21 +4674,8 @@ const games = [
     url: '/games/selang/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/semo/logo.jpg',
+    thumb: '/games/selang/icon.png',
     link: 'selang',
-    null: '',
-    star: 3
-  },
-  {
-    id: '371',
-    title: 'Semo',
-    description: 'Play Semo - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/semo/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/shengdanpengpengle/icon.png',
-    link: 'semo',
     null: '',
     star: 3
   },
@@ -4830,7 +4687,7 @@ const games = [
     url: '/games/shengdanpengpengle/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/shenjingmao/icon.png',
+    thumb: '/games/shengdanpengpengle/icon.png',
     link: 'shengdanpengpengle',
     null: '',
     star: 3
@@ -4843,7 +4700,7 @@ const games = [
     url: '/games/shenjingmao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/shenjingmao-zhuangbiban/logo.png',
+    thumb: '/games/shenjingmao/icon.png',
     link: 'shenjingmao',
     null: '',
     star: 3
@@ -4856,7 +4713,7 @@ const games = [
     url: '/games/shenjingmao-zhuangbiban/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/shenjingmao-zhuangbiban/cat_logo.png',
     link: 'shenjingmao-zhuangbiban',
     null: '',
     star: 3
@@ -4869,7 +4726,7 @@ const games = [
     url: '/games/shenjingmao2/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/shenjingmao2/static/images/icon.png',
     link: 'shenjingmao2',
     null: '',
     star: 3
@@ -4882,7 +4739,7 @@ const games = [
     url: '/games/sheqiu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/shier/icon.png',
+    thumb: '/games/sheqiu/css/logo.png',
     link: 'sheqiu',
     null: '',
     star: 3
@@ -4895,7 +4752,7 @@ const games = [
     url: '/games/shier/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/shier/icon.png',
     link: 'shier',
     null: '',
     star: 3
@@ -4908,21 +4765,8 @@ const games = [
     url: '/games/shit/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/shiyiquna/icon.png',
+    thumb: '/games/shit/vapp/3.jpg',
     link: 'shit',
-    null: '',
-    star: 3
-  },
-  {
-    id: '379',
-    title: 'Shiyiquna',
-    description: 'Play Shiyiquna - An exciting HTML5 game. Challenge yourself and have fun!',
-    instructions: 'Use mouse or touch controls to play. Follow the on-screen instructions.',
-    url: '/games/shiyiquna/index.html',
-    category: 'Arcade',
-    tags: 'HTML5, Game, Fun',
-    thumb: '/games/shouzhi/icon.png',
-    link: 'shiyiquna',
     null: '',
     star: 3
   },
@@ -4934,7 +4778,7 @@ const games = [
     url: '/games/shouzhi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sjqbz/icon.png',
+    thumb: '/games/shouzhi/icon.png',
     link: 'shouzhi',
     null: '',
     star: 3
@@ -4947,7 +4791,7 @@ const games = [
     url: '/games/sjqbz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sjy/photo.jpg',
+    thumb: '/games/sjqbz/icon.png',
     link: 'sjqbz',
     null: '',
     star: 3
@@ -4960,7 +4804,7 @@ const games = [
     url: '/games/sjy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/snowman/icon.png',
+    thumb: '/games/sjy/photo.jpg',
     link: 'sjy',
     null: '',
     star: 3
@@ -4973,7 +4817,7 @@ const games = [
     url: '/games/snowman/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/snrjjc60m/icon.png',
+    thumb: '/games/snowman/icon.png',
     link: 'snowman',
     null: '',
     star: 3
@@ -4986,7 +4830,7 @@ const games = [
     url: '/games/snrjjc60m/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/soccermove/icon.png',
+    thumb: '/games/snrjjc60m/icon.png',
     link: 'snrjjc60m',
     null: '',
     star: 3
@@ -4999,7 +4843,7 @@ const games = [
     url: '/games/soccermove/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sqs/share.png',
+    thumb: '/games/soccermove/icon.png',
     link: 'soccermove',
     null: '',
     star: 3
@@ -5012,7 +4856,7 @@ const games = [
     url: '/games/sqs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sqsdscj/share.png',
+    thumb: '/games/sqs/share.png',
     link: 'sqs',
     null: '',
     star: 3
@@ -5025,7 +4869,7 @@ const games = [
     url: '/games/sqsdscj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ssdxc/icon.png',
+    thumb: '/games/sqsdscj/share.png',
     link: 'sqsdscj',
     null: '',
     star: 3
@@ -5038,7 +4882,7 @@ const games = [
     url: '/games/ssdxc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sseqjb/icon.png',
+    thumb: '/games/ssdxc/icon.png',
     link: 'ssdxc',
     null: '',
     star: 3
@@ -5051,7 +4895,7 @@ const games = [
     url: '/games/sseqjb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ssq/icon.png',
+    thumb: '/games/sseqjb/icon.png',
     link: 'sseqjb',
     null: '',
     star: 3
@@ -5064,7 +4908,7 @@ const games = [
     url: '/games/ssq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ssrz/icon.png',
+    thumb: '/games/ssq/icon.png',
     link: 'ssq',
     null: '',
     star: 3
@@ -5077,7 +4921,7 @@ const games = [
     url: '/games/ssrz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/stacking/icon.png',
+    thumb: '/games/ssrz/icon.png',
     link: 'ssrz',
     null: '',
     star: 3
@@ -5090,7 +4934,7 @@ const games = [
     url: '/games/stacking/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sudoku/icon.png',
+    thumb: '/games/stacking/icon.png',
     link: 'stacking',
     null: '',
     star: 3
@@ -5103,7 +4947,7 @@ const games = [
     url: '/games/sudoku/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/sxygs/icon.png',
+    thumb: '/games/sudoku/icon.png',
     link: 'sudoku',
     null: '',
     star: 3
@@ -5116,7 +4960,7 @@ const games = [
     url: '/games/sxygs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/syjq/icon.png',
+    thumb: '/games/sxygs/icon.png',
     link: 'sxygs',
     null: '',
     star: 3
@@ -5129,7 +4973,7 @@ const games = [
     url: '/games/syjq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/symdsb/icon.png',
+    thumb: '/games/syjq/icon.png',
     link: 'syjq',
     null: '',
     star: 3
@@ -5142,7 +4986,7 @@ const games = [
     url: '/games/symdsb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/symh/share.png',
+    thumb: '/games/symdsb/icon.png',
     link: 'symdsb',
     null: '',
     star: 3
@@ -5155,7 +4999,7 @@ const games = [
     url: '/games/symh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/szcg/icon.png',
+    thumb: '/games/symh/share.png',
     link: 'symh',
     null: '',
     star: 3
@@ -5168,7 +5012,7 @@ const games = [
     url: '/games/szcg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tangguo/tgly1.jpg',
+    thumb: '/games/szcg/icon.png',
     link: 'szcg',
     null: '',
     star: 3
@@ -5181,7 +5025,7 @@ const games = [
     url: '/games/tangguo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tcdnt/icon.png',
+    thumb: '/games/tangguo/tgly1.jpg',
     link: 'tangguo',
     null: '',
     star: 3
@@ -5194,7 +5038,7 @@ const games = [
     url: '/games/tcdnt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tcrw/icon.png',
+    thumb: '/games/tcdnt/icon.png',
     link: 'tcdnt',
     null: '',
     star: 3
@@ -5207,7 +5051,7 @@ const games = [
     url: '/games/tcrw/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tdlxj/icon.png',
+    thumb: '/games/tcrw/icon.png',
     link: 'tcrw',
     null: '',
     star: 3
@@ -5220,7 +5064,7 @@ const games = [
     url: '/games/tdlxj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tdpsld/icon.png',
+    thumb: '/games/tdlxj/icon.png',
     link: 'tdlxj',
     null: '',
     star: 3
@@ -5233,7 +5077,7 @@ const games = [
     url: '/games/tdpsld/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tgds/icon.png',
+    thumb: '/games/tdpsld/icon.png',
     link: 'tdpsld',
     null: '',
     star: 3
@@ -5246,7 +5090,7 @@ const games = [
     url: '/games/tgds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tmhy/icon.png',
+    thumb: '/games/tgds/icon.png',
     link: 'tgds',
     null: '',
     star: 3
@@ -5259,7 +5103,7 @@ const games = [
     url: '/games/tmhy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ttdd/icon.png',
+    thumb: '/games/tmhy/icon.png',
     link: 'tmhy',
     null: '',
     star: 3
@@ -5272,7 +5116,7 @@ const games = [
     url: '/games/ttdd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ttfc/icon.png',
+    thumb: '/games/ttdd/icon.png',
     link: 'ttdd',
     null: '',
     star: 3
@@ -5285,7 +5129,7 @@ const games = [
     url: '/games/ttfc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ttg/icon.png',
+    thumb: '/games/ttfc/icon.png',
     link: 'ttfc',
     null: '',
     star: 3
@@ -5298,7 +5142,7 @@ const games = [
     url: '/games/ttg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ttt/icon.png',
+    thumb: '/games/ttg/icon.png',
     link: 'ttg',
     null: '',
     star: 3
@@ -5311,7 +5155,7 @@ const games = [
     url: '/games/ttt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ttxdszm/icon.png',
+    thumb: '/games/ttt/icon.png',
     link: 'ttt',
     null: '',
     star: 3
@@ -5324,7 +5168,7 @@ const games = [
     url: '/games/ttxdszm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ttybq/icon.png',
+    thumb: '/games/ttxdszm/icon.png',
     link: 'ttxdszm',
     null: '',
     star: 3
@@ -5337,7 +5181,7 @@ const games = [
     url: '/games/ttybq/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tuzi/logo.jpg',
+    thumb: '/games/ttybq/icon.png',
     link: 'ttybq',
     null: '',
     star: 3
@@ -5350,7 +5194,7 @@ const games = [
     url: '/games/tuzi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tydwn/icon.png',
+    thumb: '/games/tuzi/logo.jpg',
     link: 'tuzi',
     null: '',
     star: 3
@@ -5363,7 +5207,7 @@ const games = [
     url: '/games/tydwn/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tzbp/share.png',
+    thumb: '/games/tydwn/big_icon.jpg',
     link: 'tydwn',
     null: '',
     star: 3
@@ -5376,7 +5220,7 @@ const games = [
     url: '/games/tzbp/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/tzwys/icon.png',
+    thumb: '/games/tzbp/share.png',
     link: 'tzbp',
     null: '',
     star: 3
@@ -5389,7 +5233,7 @@ const games = [
     url: '/games/tzwys/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wbk/share.png',
+    thumb: '/games/tzwys/icon.png',
     link: 'tzwys',
     null: '',
     star: 3
@@ -5402,7 +5246,7 @@ const games = [
     url: '/games/wbk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/wbk/share.png',
     link: 'wbk',
     null: '',
     star: 3
@@ -5415,7 +5259,7 @@ const games = [
     url: '/games/weidao/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/where/icon.png',
+    thumb: '/games/weidao/weidao/0.gif',
     link: 'weidao',
     null: '',
     star: 3
@@ -5428,7 +5272,7 @@ const games = [
     url: '/games/where/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wjss/icon.png',
+    thumb: '/games/where/icon.png',
     link: 'where',
     null: '',
     star: 3
@@ -5441,7 +5285,7 @@ const games = [
     url: '/games/wjss/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wjsw/icon.png',
+    thumb: '/games/wjss/icon.png',
     link: 'wjss',
     null: '',
     star: 3
@@ -5454,7 +5298,7 @@ const games = [
     url: '/games/wjsw/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wmsj/icon.png',
+    thumb: '/games/wjsw/icon.png',
     link: 'wjsw',
     null: '',
     star: 3
@@ -5467,7 +5311,7 @@ const games = [
     url: '/games/wmsj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wuren/icon.png',
+    thumb: '/games/wmsj/icon.png',
     link: 'wmsj',
     null: '',
     star: 3
@@ -5480,7 +5324,7 @@ const games = [
     url: '/games/wuren/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wxdz/icon.png',
+    thumb: '/games/wuren/icon.png',
     link: 'wuren',
     null: '',
     star: 3
@@ -5493,7 +5337,7 @@ const games = [
     url: '/games/wxdz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wywmzy/icon.png',
+    thumb: '/games/wxdz/icon.png',
     link: 'wxdz',
     null: '',
     star: 3
@@ -5506,7 +5350,7 @@ const games = [
     url: '/games/wywmzy/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wzdz/icon.png',
+    thumb: '/games/wywmzy/icon.png',
     link: 'wywmzy',
     null: '',
     star: 3
@@ -5519,7 +5363,7 @@ const games = [
     url: '/games/wzdz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wzxgz/icon.png',
+    thumb: '/games/wzdz/icon.png',
     link: 'wzdz',
     null: '',
     star: 3
@@ -5532,7 +5376,7 @@ const games = [
     url: '/games/wzxgz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/wzz/icon.png',
+    thumb: '/games/wzxgz/icon.png',
     link: 'wzxgz',
     null: '',
     star: 3
@@ -5545,7 +5389,7 @@ const games = [
     url: '/games/wzz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xdtz/icon.png',
+    thumb: '/games/wzz/icon.png',
     link: 'wzz',
     null: '',
     star: 3
@@ -5558,7 +5402,7 @@ const games = [
     url: '/games/xdtz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xhhj/icon.png',
+    thumb: '/games/xdtz/icon.png',
     link: 'xdtz',
     null: '',
     star: 3
@@ -5571,7 +5415,7 @@ const games = [
     url: '/games/xhhj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xiaoniaofeifei/2000.png',
+    thumb: '/games/xhhj/big_icon.jpg',
     link: 'xhhj',
     null: '',
     star: 3
@@ -5584,7 +5428,7 @@ const games = [
     url: '/games/xiaoniaofeifei/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xiaopingguo/2000.png',
+    thumb: '/games/xiaoniaofeifei/2000.png',
     link: 'xiaoniaofeifei',
     null: '',
     star: 3
@@ -5597,7 +5441,7 @@ const games = [
     url: '/games/xiaosan/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xiaoshuai/logo.jpg',
+    thumb: '/games/xiaosan/80.png',
     link: 'xiaosan',
     null: '',
     star: 3
@@ -5610,7 +5454,7 @@ const games = [
     url: '/games/xiaoshuai/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/xiaoshuai/logo.jpg',
     link: 'xiaoshuai',
     null: '',
     star: 3
@@ -5623,7 +5467,7 @@ const games = [
     url: '/games/xindonglian/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xiongchumo/2000.png',
+    thumb: '/games/xindonglian/image/Logo1.png',
     link: 'xindonglian',
     null: '',
     star: 3
@@ -5636,7 +5480,7 @@ const games = [
     url: '/games/xiongchumo/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xjmt/icon.png',
+    thumb: '/games/xiongchumo/2000.png',
     link: 'xiongchumo',
     null: '',
     star: 3
@@ -5649,7 +5493,7 @@ const games = [
     url: '/games/xjmt/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xjxts/icon.png',
+    thumb: '/games/xjmt/icon.png',
     link: 'xjmt',
     null: '',
     star: 3
@@ -5662,7 +5506,7 @@ const games = [
     url: '/games/xjxts/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xksds/share.png',
+    thumb: '/games/xjxts/icon.png',
     link: 'xjxts',
     null: '',
     star: 3
@@ -5675,7 +5519,7 @@ const games = [
     url: '/games/xksds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xmxx/icon.png',
+    thumb: '/games/xksds/share.png',
     link: 'xksds',
     null: '',
     star: 3
@@ -5688,7 +5532,7 @@ const games = [
     url: '/games/xmxx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xmyc/icon.png',
+    thumb: '/games/xmxx/icon.png',
     link: 'xmxx',
     null: '',
     star: 3
@@ -5701,7 +5545,7 @@ const games = [
     url: '/games/xmyc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xmyfk/icon.png',
+    thumb: '/games/xmyc/icon.png',
     link: 'xmyc',
     null: '',
     star: 3
@@ -5714,7 +5558,7 @@ const games = [
     url: '/games/xmyfk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xsdmj/icon.png',
+    thumb: '/games/xmyfk/icon.png',
     link: 'xmyfk',
     null: '',
     star: 3
@@ -5727,7 +5571,7 @@ const games = [
     url: '/games/xsdmj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xsdtg/icon.png',
+    thumb: '/games/xsdmj/icon.png',
     link: 'xsdmj',
     null: '',
     star: 3
@@ -5740,7 +5584,7 @@ const games = [
     url: '/games/xsdtg/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xxcbdwf/icon.png',
+    thumb: '/games/xsdtg/icon.png',
     link: 'xsdtg',
     null: '',
     star: 3
@@ -5753,7 +5597,7 @@ const games = [
     url: '/games/xxcbdwf/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xxk1000/icon.png',
+    thumb: '/games/xxcbdwf/icon.png',
     link: 'xxcbdwf',
     null: '',
     star: 3
@@ -5766,7 +5610,7 @@ const games = [
     url: '/games/xxk1000/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xxoo/icon.png',
+    thumb: '/games/xxk1000/icon.png',
     link: 'xxk1000',
     null: '',
     star: 3
@@ -5779,7 +5623,7 @@ const games = [
     url: '/games/xyb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xyfs/icon.png',
+    thumb: '/games/xyb/icon.png',
     link: 'xyb',
     null: '',
     star: 3
@@ -5792,7 +5636,7 @@ const games = [
     url: '/games/xyfs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xyhk/icon.png',
+    thumb: '/games/xyfs/icon.png',
     link: 'xyfs',
     null: '',
     star: 3
@@ -5805,7 +5649,7 @@ const games = [
     url: '/games/xyhk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xz120/share.png',
+    thumb: '/games/xyhk/icon.png',
     link: 'xyhk',
     null: '',
     star: 3
@@ -5818,7 +5662,7 @@ const games = [
     url: '/games/xz120/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xzhsdmx/icon.png',
+    thumb: '/games/xz120/share.png',
     link: 'xz120',
     null: '',
     star: 3
@@ -5831,7 +5675,7 @@ const games = [
     url: '/games/xzhsdmx/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/xzzm/icon.png',
+    thumb: '/games/xzhsdmx/icon.png',
     link: 'xzhsdmx',
     null: '',
     star: 3
@@ -5844,7 +5688,7 @@ const games = [
     url: '/games/xzzm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yang/share.png',
+    thumb: '/games/xzzm/icon.png',
     link: 'xzzm',
     null: '',
     star: 3
@@ -5857,7 +5701,7 @@ const games = [
     url: '/games/yang/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yao/logo.jpg',
+    thumb: '/games/yang/share.png',
     link: 'yang',
     null: '',
     star: 3
@@ -5870,7 +5714,7 @@ const games = [
     url: '/games/yao/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ybdl/icon.png',
+    thumb: '/games/yao/logo.jpg',
     link: 'yao',
     null: '',
     star: 3
@@ -5883,7 +5727,7 @@ const games = [
     url: '/games/ybdl/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ybds/icon.png',
+    thumb: '/games/ybdl/icon.png',
     link: 'ybdl',
     null: '',
     star: 3
@@ -5896,7 +5740,7 @@ const games = [
     url: '/games/ybds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ybdz/icon.png',
+    thumb: '/games/ybds/icon.png',
     link: 'ybds',
     null: '',
     star: 3
@@ -5909,7 +5753,7 @@ const games = [
     url: '/games/ybdz/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yblc/icon.png',
+    thumb: '/games/ybdz/icon.png',
     link: 'ybdz',
     null: '',
     star: 3
@@ -5922,7 +5766,7 @@ const games = [
     url: '/games/yblc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yd/icon.png',
+    thumb: '/games/yblc/icon.png',
     link: 'yblc',
     null: '',
     star: 3
@@ -5935,7 +5779,7 @@ const games = [
     url: '/games/yd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/yd/icon.png',
     link: 'yd',
     null: '',
     star: 3
@@ -5948,7 +5792,7 @@ const games = [
     url: '/games/ygj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ygys/icon.png',
+    thumb: '/games/ygj/resources/congruent_outline.png',
     link: 'ygj',
     null: '',
     star: 3
@@ -5961,7 +5805,7 @@ const games = [
     url: '/games/ygys/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yh/logo.jpg',
+    thumb: '/games/ygys/icon.png',
     link: 'ygys',
     null: '',
     star: 3
@@ -5974,7 +5818,7 @@ const games = [
     url: '/games/yh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yibihua/460.jpg',
+    thumb: '/games/yh/logo.JPG',
     link: 'yh',
     null: '',
     star: 3
@@ -5987,7 +5831,7 @@ const games = [
     url: '/games/yjsk/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/ymhddzc/share.png',
+    thumb: '/games/yjsk/icon.png',
     link: 'yjsk',
     null: '',
     star: 3
@@ -6000,7 +5844,7 @@ const games = [
     url: '/games/ymhddzc/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yqrxd/icon.png',
+    thumb: '/games/ymhddzc/share.png',
     link: 'ymhddzc',
     null: '',
     star: 3
@@ -6013,7 +5857,7 @@ const games = [
     url: '/games/yqrxd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yqrxsdb/icon.png',
+    thumb: '/games/yqrxd/icon.png',
     link: 'yqrxd',
     null: '',
     star: 3
@@ -6026,7 +5870,7 @@ const games = [
     url: '/games/yqrxsdb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yrjhb/icon.png',
+    thumb: '/games/yqrxsdb/icon.png',
     link: 'yqrxsdb',
     null: '',
     star: 3
@@ -6039,7 +5883,7 @@ const games = [
     url: '/games/yrjhb/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/yrjhb/icon.png',
     link: 'yrjhb',
     null: '',
     star: 3
@@ -6052,7 +5896,7 @@ const games = [
     url: '/games/yuebing/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yxpz/icon.png',
+    thumb: '/games/yuebing/images/c1.jpg',
     link: 'yuebing',
     null: '',
     star: 3
@@ -6065,7 +5909,7 @@ const games = [
     url: '/games/yxpz/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yyds/icon.png',
+    thumb: '/games/yxpz/icon.png',
     link: 'yxpz',
     null: '',
     star: 3
@@ -6078,7 +5922,7 @@ const games = [
     url: '/games/yyds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yyks/icon.png',
+    thumb: '/games/yyds/icon.png',
     link: 'yyds',
     null: '',
     star: 3
@@ -6091,7 +5935,7 @@ const games = [
     url: '/games/yyks/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/yzcs/logo.png',
+    thumb: '/games/yyks/icon.png',
     link: 'yyks',
     null: '',
     star: 3
@@ -6104,7 +5948,7 @@ const games = [
     url: '/games/yzcs/index.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/yzcs/logo.png',
     link: 'yzcs',
     null: '',
     star: 3
@@ -6117,7 +5961,7 @@ const games = [
     url: '/games/zazhi/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zdh/icon.png',
+    thumb: '/games/zazhi/success/images/icon_chose.png',
     link: 'zazhi',
     null: '',
     star: 3
@@ -6130,7 +5974,7 @@ const games = [
     url: '/games/zdh/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zfj/share.png',
+    thumb: '/games/zdh/icon.png',
     link: 'zdh',
     null: '',
     star: 3
@@ -6143,7 +5987,7 @@ const games = [
     url: '/games/zfj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zhaonimei/share.png',
+    thumb: '/games/zfj/share.png',
     link: 'zfj',
     null: '',
     star: 3
@@ -6156,7 +6000,7 @@ const games = [
     url: '/games/zhaonimei/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zhipai/icon.png',
+    thumb: '/games/zhaonimei/share.png',
     link: 'zhaonimei',
     null: '',
     star: 3
@@ -6169,7 +6013,7 @@ const games = [
     url: '/games/zhipai/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zhizhuxia/icon.png',
+    thumb: '/games/zhipai/icon.png',
     link: 'zhipai',
     null: '',
     star: 3
@@ -6182,7 +6026,7 @@ const games = [
     url: '/games/zhizhuxia/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zhua/logo.jpg',
+    thumb: '/games/zhizhuxia/icon.png',
     link: 'zhizhuxia',
     null: '',
     star: 3
@@ -6195,7 +6039,7 @@ const games = [
     url: '/games/zhua/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zhuogui/logo.png',
+    thumb: '/games/zhua/logo.jpg',
     link: 'zhua',
     null: '',
     star: 3
@@ -6208,7 +6052,7 @@ const games = [
     url: '/games/zhuogui/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zipaifuqin/icon.png',
+    thumb: '/games/zhuogui/logo.png',
     link: 'zhuogui',
     null: '',
     star: 3
@@ -6221,7 +6065,7 @@ const games = [
     url: '/games/zipaifuqin/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/zipaifuqin/icon.png',
     link: 'zipaifuqin',
     null: '',
     star: 3
@@ -6247,7 +6091,7 @@ const games = [
     url: '/games/znm123/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zongzi/icon.png',
+    thumb: '/games/znm123/icon.png',
     link: 'znm123',
     null: '',
     star: 3
@@ -6260,7 +6104,7 @@ const games = [
     url: '/games/zongzi/cgi.waiting.css.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zpfff/icon.png',
+    thumb: '/games/zongzi/icon.png',
     link: 'zongzi',
     null: '',
     star: 3
@@ -6273,7 +6117,7 @@ const games = [
     url: '/games/zpfff/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zqdn/share.png',
+    thumb: '/games/zpfff/icon.png',
     link: 'zpfff',
     null: '',
     star: 3
@@ -6286,7 +6130,7 @@ const games = [
     url: '/games/zqdn/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zqds/icon.png',
+    thumb: '/games/zqdn/share.png',
     link: 'zqdn',
     null: '',
     star: 3
@@ -6299,7 +6143,7 @@ const games = [
     url: '/games/zqds/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zqdsm/icon.png',
+    thumb: '/games/zqds/icon.png',
     link: 'zqds',
     null: '',
     star: 3
@@ -6312,7 +6156,7 @@ const games = [
     url: '/games/zqdsm/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zqhd/icon.png',
+    thumb: '/games/zqdsm/icon.png',
     link: 'zqdsm',
     null: '',
     star: 3
@@ -6325,7 +6169,7 @@ const games = [
     url: '/games/zqhd/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zqzsjs/icon.png',
+    thumb: '/games/zqhd/icon.png',
     link: 'zqhd',
     null: '',
     star: 3
@@ -6338,7 +6182,7 @@ const games = [
     url: '/games/zqzsjs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zsj/icon.png',
+    thumb: '/games/zqzsjs/icon.png',
     link: 'zqzsjs',
     null: '',
     star: 3
@@ -6351,7 +6195,7 @@ const games = [
     url: '/games/zsj/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zuiqiangyanli/1.png',
+    thumb: '/games/zsj/icon.png',
     link: 'zsj',
     null: '',
     star: 3
@@ -6364,7 +6208,7 @@ const games = [
     url: '/games/zuiqiangyanli/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zuqiu/arrowleft.png',
+    thumb: '/games/zuiqiangyanli/1.png',
     link: 'zuiqiangyanli',
     null: '',
     star: 3
@@ -6377,7 +6221,7 @@ const games = [
     url: '/games/zuqiu/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zwdzjs/icon.png',
+    thumb: '/games/zuqiu/soccermoveicon.png',
     link: 'zuqiu',
     null: '',
     star: 3
@@ -6390,7 +6234,7 @@ const games = [
     url: '/games/zwdzjs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zwf/icon.png',
+    thumb: '/games/zwdzjs/icon.png',
     link: 'zwdzjs',
     null: '',
     star: 3
@@ -6403,7 +6247,7 @@ const games = [
     url: '/games/zwf/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zz/logo.jpg',
+    thumb: '/games/zwf/icon.png',
     link: 'zwf',
     null: '',
     star: 3
@@ -6416,7 +6260,7 @@ const games = [
     url: '/games/zz/ad.htm',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: '/games/zzs/share.png',
+    thumb: '/games/zz/logo.JPG',
     link: 'zz',
     null: '',
     star: 3
@@ -6429,7 +6273,7 @@ const games = [
     url: '/games/zzs/index.html',
     category: 'Arcade',
     tags: 'HTML5, Game, Fun',
-    thumb: 'https://img.gamemonetize.com/default/512x512.jpg',
+    thumb: '/games/zzs/share.png',
     link: 'zzs',
     null: '',
     star: 3

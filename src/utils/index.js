@@ -90,3 +90,42 @@ export function formatNumber(num) {
   }
   return num.toString();
 }
+
+/**
+ * 检测字符串是否包含中文
+ * @param {string} text
+ * @returns {boolean}
+ */
+export function hasChinese(text) {
+  return /[\u4e00-\u9fff]/.test(text || '');
+}
+
+/**
+ * 根据 url 或 link 生成英文游戏名（用于前端展示）
+ * 规则：
+ * - 优先从 url 中解析 /games/<folder>/，否则使用 link
+ * - 将下划线、短横线替换为空格，再做首字母大写
+ */
+export function getDisplayTitle(item) {
+  const original = item.title || '';
+  if (!hasChinese(original)) return original;
+
+  let folder = '';
+  if (item.url) {
+    const m = item.url.match(/\/games\/([^/]+)\//);
+    if (m && m[1]) folder = m[1];
+  }
+  if (!folder && item.link) {
+    folder = String(item.link);
+  }
+  if (!folder) return original;
+
+  const normalized = folder.trim().replace(/[_\-]+/g, ' ');
+  if (!normalized) return original;
+
+  // Title Case
+  return normalized
+    .split(/\s+/)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+}
