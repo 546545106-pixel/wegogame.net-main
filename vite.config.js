@@ -45,15 +45,8 @@ export default defineConfig({
         assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
       }
     },
-    // 压缩配置
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // 生产环境移除console
-        drop_debugger: true,
-        pure_funcs: ['console.log', 'console.info', 'console.debug'] // 移除特定console方法
-      }
-    },
+    // 压缩配置（使用 esbuild，Vite 默认，无需额外依赖）
+    minify: 'esbuild',
     // 块大小警告限制
     chunkSizeWarningLimit: 1000,
     // 启用CSS代码分割
@@ -63,9 +56,8 @@ export default defineConfig({
     // 启用gzip压缩报告
     reportCompressedSize: true,
     // 目标浏览器
-    target: 'es2015',
-    // 提高构建性能
-    cssMinify: 'lightningcss'
+    target: 'es2015'
+    // CSS 压缩使用默认配置（无需额外依赖）
   },
   // 开发服务器配置
   server: {
