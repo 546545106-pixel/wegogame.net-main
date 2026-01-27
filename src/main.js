@@ -9,6 +9,7 @@ import router from '@/router'
 
 import LinkWidget from '@/components/LinkWidget.vue'
 import App from '@/App.vue'
+import '@/utils/adManager.js'
 
 // 导入性能监控（开发环境）
 if (import.meta.env.DEV) {

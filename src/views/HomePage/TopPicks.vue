@@ -9,9 +9,10 @@
                 >
                     <div class="ui-optimized-game-card" @click="toDetail(item.id)" @touchstart="handleTouchStart">
                         <div class="card-image">
-                            <img 
-                                v-lazy="item.thumb || 'https://img.gamemonetize.com/default/512x512.jpg'" 
+                            <img
+                                :src="item.thumb || 'https://img.gamemonetize.com/default/512x512.jpg'"
                                 :alt="item.title"
+                                loading="lazy"
                                 @error="handleImageError($event)"
                             />
                         </div>

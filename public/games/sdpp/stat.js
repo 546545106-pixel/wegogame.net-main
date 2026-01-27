@@ -163,8 +163,9 @@ function qike_h5_v1_progress() {
 	qike_h5_v1_time = qike_h5_v1_time + 500
 };
 var qike_h5_v1_logo = "../ad/logo.png";
+// 使用站点自有广告接口替换原有 AdSense 代码
 var qike_h5_v1_ad = {
-	"content": "<script async src=\"\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script><!-- yx8.zsy --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3253453814032357\" data-ad-slot=\"4119231824\" data-ad-format=\"auto\"><\/ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>"
+	"content": "<script src=\"/game-ad-api.js\"><\/script><script>window.GameAdAPI && GameAdAPI.requestGameAd('sdpp_interstitial');<\/script>"
 };
 var qike_h5_v1_totaltime = 5000;
 var qike_h5_v1_time = 0;
