@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-  <title>变态方块Game，纯粹找虐</title>
+  <title>变态方块游戏，纯粹找虐</title>
   <link rel="stylesheet" href="tetris.css"/>
 </head>
 <body>
@@ -38,16 +38,16 @@
         <p>你的童年会被虐惨</p>
       </div>
       <div class="curtain-buttons">
-        <button type="button" data-role="start">Start受虐</button>
+        <button type="button" data-role="start">开始受虐</button>
       </div>
     </div>
     <div class="curtain-end" style="display: none;">
       <div class="curtain-header"></div>
       <div class="curtain-buttons">
         <div class="wrap">
-          <button class="retry" type="button" data-role="start">Retry</button>
+          <button class="retry" type="button" data-role="start">重试</button>
           <a class="score" href="#">换奖品</a>
-          <button class="share" type="button" data-role="share">右上角Share</button>
+          <button class="share" type="button" data-role="share">右上角分享</button>
         </div>
       </div>
     </div>
@@ -55,5 +55,9 @@
   </div>
 </div>
 <script src="tetris.min.js"></script>
+<script src="/game-ad-api.js"></script>
+<script>
+  window.GameAdAPI && GameAdAPI.requestGameAd('game_cube');
+</script>
 </body>
 </html>

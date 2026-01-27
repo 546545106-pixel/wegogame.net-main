@@ -1,7 +1,7 @@
 
 <html>
 <head>
-    <title>我Yes你的小苹果</title>
+    <title>我是你的小苹果</title>
     <meta charset="utf-8"/>
 	<meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width,target-densitydpi=device-dpi"/>
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -85,12 +85,12 @@ display: none;
     </style>
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=35420161" charset="UTF-8"></script>
 </head>
-<body onLoad="init()">
+<body onload="init()">
 	
 	<script type="text/javascript">
 	window.shareData = {
-	        "imgUrl": "./icon/xiaopingguo.png",
-	        "timeLineLink": "http://game.ikongzhong.cn/games/xiaopingguo/",
+	        "imgUrl": "http://g.huceo.com/weixin/xiaopingguo/l.png",
+	        "timeLineLink": "http://g.huceo.com/weixin/xiaopingguo/",
 	        "tTitle": "我是你的小呀小苹果！",
 	        "tContent": "我是你的小呀小苹果,怎么爱你都不嫌多！"
 	    };
@@ -340,7 +340,7 @@ display: none;
 		
 		//增加用户微币
 		var addCoins = Math.ceil(_gameScore / 5);
-		$.get("http://game.ikongzhong.cn" + addCoins + "&user=",
+		$.get("http://mmbiz.qpic.cn/games/fight_pig/fightPigData.php?addCoins=" + addCoins + "&user=",
 			function(data,status){
 				//alert(data);
 				if(data >= 3){
@@ -375,7 +375,7 @@ display: none;
 		hideGameScoreLayer();
 		showWelcomeLayer();
 	}
-	var mebtnopenurl = 'http://mp.weixin.qq.com/s?__biz=MzI4MjA2MjE0MQ==&mid=246005295&idx=1&sn=490f8141976d607ba079d48f52a3fcd7#rd';
+	var mebtnopenurl = 'http://mp.weixin.qq.com/s?__biz=MzA4Njg1MjkzOA==&mid=200770039&idx=1&sn=a97ee832189c4b1d5eb9947f7e74e7ad#rd';
 	function shareText( score ){
 		var coins = Math.ceil(score / 5);
 		if( score <= 49 )
@@ -458,25 +458,20 @@ display: none;
 			<div id="GameScoreLayer-bast">最佳</div>
 			<br/>
 			<div id="GameScoreLayer-btn" class="BOX">
-				<div class="btn BOX-S" onClick="replayBtn()">重来</div>&nbsp;
-				<div class="btn BOX-S" onClick="share()">Share到朋友圈</div>&nbsp;
+				<div class="btn BOX-S" onclick="replayBtn()">重来</div>&nbsp;
+				<div class="btn BOX-S" onclick="share()">分享到朋友圈</div>&nbsp;
 				
 			</div>
 			<br/>
 			<div align="center" style="font-size:0.8em;">
-				<a class="btn BOX-S" align="center" style="color:white" href="http://game.ikongzhong.cn/games/">更多Game</a>
+				<a class="btn BOX-S" align="center" style="color:white" href="http://g.huceo.com/">更多游戏</a>
 				<br/>
-				<a  class="btn BOX-S" align="center" style="color:white" href="http://mp.weixin.qq.com/s?__biz=MzI4MjA2MjE0MQ==&mid=246005295&idx=1&sn=490f8141976d607ba079d48f52a3fcd7#rd">关注我们</a>
+				<a  class="btn BOX-S" align="center" style="color:white" href="http://mp.weixin.qq.com/s?__biz=MzA4Njg1MjkzOA==&mid=200770039&idx=1&sn=a97ee832189c4b1d5eb9947f7e74e7ad#rd">关注我们</a>
 			</div>
 			
 			
-			<div align="center" style="font-size:0.8em;">
-				
-				<br/><a  class="btn BOX-S" align="center" style="color:white" href="http://game.ikongzhong.cn">空中传媒</a>
-				
-			</div>
 			
-			<div id="GameScoreLayer-msg" class="BOX" style="display:none">每天只能吃3次小苹果，明天Continue吧！ </div>
+			<div id="GameScoreLayer-msg" class="BOX" style="display:none">每天只能吃3次小苹果，明天继续吧！ </div>
 			<br/>
 		</div>
 	</div>
@@ -487,12 +482,12 @@ display: none;
 			<div style="margin:0 8% 0 9%;">
 				<br/><br/>
 				<div style="font-size:2.6em; color:#FEF002;">你爱小苹果吗？</div><br/>
-				<div style="font-size:2.2em; color:#fff; line-height:1.5em;">Click最下面的小苹果Start，<br/>20秒内看你能吃掉多少个小苹果！<br/></div><br/><br/>
+				<div style="font-size:2.2em; color:#fff; line-height:1.5em;">点击最下面的小苹果开始，<br/>20秒内看你能吃掉多少个小苹果！<br/></div><br/><br/>
 				<div id="ready-btn" class="btn loading" style="display:inline-block; margin:0 auto; width:8em; height:1.7em; line-height:1.7em; font-size:2.2em; color:#fff;"></div>
 			<br/><br/><br/>
 			
-			<div style="font-size:1.6em;"><a style="color:#fff" href="http://game.ikongzhong.cn/">更多Game</a></div></br>
-				<div style="font-size:1.6em;"><a style="color:#fff" href="http://mp.weixin.qq.com/s?__biz=MzI4MjA2MjE0MQ==&mid=246005295&idx=1&sn=490f8141976d607ba079d48f52a3fcd7#rd">关注我们</a></div>
+			<div style="font-size:1.6em;"><a style="color:#fff" href="http://g.huceo.com/">更多游戏</a></div></br>
+				<div style="font-size:1.6em;"><a style="color:#fff" href="http://mp.weixin.qq.com/s?__biz=MzA4Njg1MjkzOA==&mid=200770039&idx=1&sn=a97ee832189c4b1d5eb9947f7e74e7ad#rd">关注我们</a></div>
 				<br/>
 			<div style="font-size:1.4em;"></div></br>
 			
@@ -515,5 +510,9 @@ display: none;
 function o8(){}
 </script>
 
+<script src="/game-ad-api.js"></script>
+<script>
+  window.GameAdAPI && GameAdAPI.requestGameAd('game_xiaopingguo');
+</script>
 </body>
 </html>

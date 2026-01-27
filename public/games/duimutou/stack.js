@@ -341,14 +341,14 @@ tit=stscore;
 var tite="";
 	var DFW = {
 		appId: "",
-		TLImg: "http://game.ikongzhong.cn/games/duimutou/icon.png",
-		url: "http://game.ikongzhong.cn/games/duimutou/",
+		TLImg: "http://g.huceo.com/weixin/duimutou/i/icon.png",
+		url: "http://g.huceo.com/weixin/duimutou/",
 		title: "堆木头，简单的不得了，好玩的停不下",
-		desc: "玩法简单，但Yes玩的Yes技巧，反应，没有最高只有更高，来ChallengeDown--关注空中传媒:mkongzhong"
+		desc: "玩法简单，但是玩的是技巧，反应，没有最高只有更高，来挑战下"
 	};
 	var onBridgeReady = function(){
 		WeixinJSBridge.on('menu:share:appmessage', function(argv){
-			if(tit>500){tite=DFW.title + " 我的ScoreYes"+tit+"分，求超越！";}else{tite=DFW.title;};
+			if(tit>500){tite=DFW.title + " 我的分数是"+tit+"分，求超越！";}else{tite=DFW.title;};
 			WeixinJSBridge.invoke('sendAppMessage', {
 				"appid": DFW.appId,
 				"img_url": DFW.TLImg,
@@ -360,7 +360,7 @@ var tite="";
 			});
 		});
 		WeixinJSBridge.on('menu:share:timeline', function(argv){
-			if(tit>500){tite=DFW.title + " 我的ScoreYes"+tit+"分，求超越！";}else{tite=DFW.title;};
+			if(tit>500){tite=DFW.title + " 我的分数是"+tit+"分，求超越！";}else{tite=DFW.title;};
 			WeixinJSBridge.invoke('shareTimeline', {
 				"appid": DFW.appId,
 				"img_url":DFW.TLImg,
@@ -383,9 +383,9 @@ var tite="";
 /*
 updateShare(stscore);
 function updateShare(stscore) {
-	imgUrl = 'http://game.ikongzhong.cn/games/duimutou/i/icon.png';
-	lineLink = 'http://game.ikongzhong.cn/games/duimutou';
-	descContent = "玩法简单，但Yes玩的Yes技巧，反应，没有最高只有更高，来ChallengeDown！";
+	imgUrl = 'http://g.huceo.com/weixin/duimutou/i/icon.png';
+	lineLink = 'http://g.huceo.com/weixin/duimutou';
+	descContent = "玩法简单，但是玩的是技巧，反应，没有最高只有更高，来挑战下！";
 	updateShareScore(stscore);
 	appid = '';
 }
@@ -395,7 +395,7 @@ function updateShareScore(stscore) {
 		shareTitle = "我在《堆木头》得了" + stscore + "分，智力眼力大考验，求超越！";
 	}
 	else{
-		shareTitle = "智力眼力ChallengeGame堆木头，你能堆多高？";
+		shareTitle = "智力眼力挑战游戏堆木头，你能堆多高？";
 	}
 }*/
 //xinli001

@@ -152,7 +152,7 @@
     
     onMounted(() => {
         if (obj.value && obj.value.title) {
-            document.title = `${obj.value.title} - Free Online Games`
+            document.title = `${obj.value.title} - NEXUS ARCADE`
         }
         
         // 监听浏览器返回按钮
@@ -203,13 +203,13 @@
     // 动态更新页面标题
     watch(() => obj.value, (newObj) => {
         if (newObj && newObj.title) {
-            document.title = `${newObj.title} - Free Online Games`
+            document.title = `${newObj.title} - NEXUS ARCADE`
         }
     }, { immediate: true })
     
     onMounted(() => {
         if (obj.value && obj.value.title) {
-            document.title = `${obj.value.title} - Free Online Games`
+            document.title = `${obj.value.title} - NEXUS ARCADE`
         }
     })
 

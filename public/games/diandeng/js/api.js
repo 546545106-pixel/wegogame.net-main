@@ -65,7 +65,7 @@ Auth9G.prototype.connect = function(success, fail) {
 // 验证身份
 Auth9G.prototype.check = function() {
 	// TEMP
-	document.title = "9GGame";
+	document.title = "9G游戏";
 	document.body.style.display = "none";
 	// 禁用 API
 	// this.doReady();
@@ -215,7 +215,7 @@ Auth9G.prototype.submit = function(score, scoreName, callback) {
 				}
 			}
 			else {
-				alert("提交成绩Defeat");
+				alert("提交成绩失败");
 			}
 			callback && callback.apply(null);
 		},

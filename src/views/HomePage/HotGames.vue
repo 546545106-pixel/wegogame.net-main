@@ -12,7 +12,7 @@
                     height="300px"
                 >
                     <el-carousel-item
-                        v-for="item in GamesList.filter((ele, index) => 9 <= index && index < 13)"
+                        v-for="item in carouselGames"
                         :key="item.id"
                         :style="{ backgroundImage: `url(${item.thumb || 'https://img.gamemonetize.com/default/512x512.jpg'})` }"
                     >
@@ -25,7 +25,7 @@
             </div>
             <div class="hot-games-grid">
                 <div
-                    v-for="item in GamesList.filter((ele, index) => 13 <= index && index < 25)"
+                    v-for="item in hotListGames"
                     :key="item.id"
                 >
                     <div class="ui-optimized-game-card" @click="toDetail(item.id)" @touchstart="handleTouchStart">
@@ -54,7 +54,8 @@
 </template>
 
 <script setup>
-    import { ElCarousel, ElCarouselItem, ElRow, ElCol } from 'element-plus';
+    import { computed } from 'vue';
+    import { ElCarousel, ElCarouselItem } from 'element-plus';
     import { useRouter } from "vue-router";
     import localGamesData from '@/data/games.js';
     import { getDifficultyClass, getDifficultyText, getPlayCount } from '@/utils';
@@ -63,6 +64,19 @@
     const router = useRouter();
     
     const GamesList = localGamesData;
+
+    // 轮播区：优先取前几款游戏，避免索引范围导致空列表
+    const carouselGames = computed(() => {
+      if (!Array.isArray(GamesList) || GamesList.length === 0) return [];
+      // 兼容老数据结构：原来是第 10-13 个，这里直接取前 6 个做热门轮播
+      return GamesList.slice(9, 13).length > 0 ? GamesList.slice(9, 13) : GamesList.slice(0, Math.min(6, GamesList.length));
+    });
+
+    // 下方热门列表：紧接着轮播之后的若干游戏
+    const hotListGames = computed(() => {
+      if (!Array.isArray(GamesList) || GamesList.length === 0) return [];
+      return GamesList.slice(13, 25).length > 0 ? GamesList.slice(13, 25) : GamesList.slice(0, Math.min(12, GamesList.length));
+    });
     
     const toDetail = (id) => {
       router.push({

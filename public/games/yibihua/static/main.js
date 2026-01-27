@@ -40,7 +40,7 @@
 		a.kg = [[0, "Cadet"], [10, "Lieutenant"], [25, "Captain"], [50, "Major"], [100, "Colonel"], [150, "Brigadier"], [200, "General"], [250, "Field Marshall"]],
 		a.kf = [[0, 0, "Crawler"], [0, .5, "Walker"], [1, .4, "Walker"], [1, .8, "Runner"], [2, .5, "Sprinter"], [2, 1, "Racer"]],
 		a.kd = [[0, "简介", "首先选择一个点，然后走线。 "], [2, "驱逐", "会有一条线一直追逐你！"], [6, "路线", "记住，每一条线必须仍然被使用一次。"]],
-		a.KH = [[3, "10 个Level", "There are loads more levels to be released soon. \n \nHelp me improve the game by giving me some feedback and sharing it with your friends."]],
+		a.KH = [[3, "10 个等级", "There are loads more levels to be released soon. \n \nHelp me improve the game by giving me some feedback and sharing it with your friends."]],
 		a.dc = {},
 		a.dc.dQ = "No Thanks",
 		a.dc.dv = "Rate/Review",
@@ -7303,12 +7303,12 @@
 		},
 		pq: function(a) {
 			var b = new Array;
-			b[b[pZ]] = new _Y4I("Restart",
+			b[b[pZ]] = new _Y4I("重新开始",
 			function() {
 				this.g.aJ.clear(),
 				this.g.sL(this.g.levels[this.g.UJ])
 			}),
-			this.zv(a, this.S.kN, "Game Over", "Continue努力", b)
+			this.zv(a, this.S.kN, "游戏结束", "继续努力", b)
 		},
 		KP: function(a) {
 			var b,
@@ -7316,7 +7316,7 @@
 			d,
 			e,
 			f = new Array;
-			f[f[pZ]] = new _Y4I("Continue",
+			f[f[pZ]] = new _Y4I("继续",
 			function() {
 				this.g.aJ.clear(),
 				this.g.u7()
@@ -7336,7 +7336,7 @@
 			function() {
 				this.g.KL(this.g.S.dl, "w")
 			}),
-			e[e[pZ]] = new _Y4I("Continue",
+			e[e[pZ]] = new _Y4I("继续",
 			function() {
 				this.g.aJ.clear(),
 				this.g.u7()
@@ -7344,7 +7344,7 @@
 			b = this,
 			c = "Pathuku Version: " + b.g.version + " \nLevel Pack: " + b.g.UV + " \nContact:\n feedback@pathuku.com",
 			d = new zU(a, c, 200, 14),
-			this.zv(a, b.S.kW, "About", d, e)
+			this.zv(a, b.S.kW, "关于", d, e)
 		},
 		d2: function(a, b) {
 			var c,
@@ -7375,7 +7375,7 @@
 				this.g.aJ.clear(),
 				this.g.sL(this.g.levels[this.g.UJ])
 			}),
-			e[e[pZ]] = new _Y4I("Continue", f),
+			e[e[pZ]] = new _Y4I("继续", f),
 			d = new zU(a, b[2], 200, 14),
 			this.zv(a, this.S.kF, b[1], d, e)
 		},
@@ -7386,7 +7386,7 @@
 				s: a,
 				U4: b
 			};
-			d[d[pZ]] = new _Y4I("Continue",
+			d[d[pZ]] = new _Y4I("继续",
 			function(a) {
 				this.g.d_(),
 				this.g.Y4.pu(a.s, a.U4)
@@ -7427,7 +7427,7 @@
 				var a = this;
 				a.g.dR()
 			};
-			d[d[pZ]] = new _Y4I("Next Level", e),
+			d[d[pZ]] = new _Y4I("下一关", e),
 			d[d[pZ]] = new _Y4I("Share Completed Level",
 			function(a) {
 				this.g.aJ.clear(),
@@ -7439,7 +7439,7 @@
 				this.g.sL(this.g.levels[this.g.UJ]),
 				this.g.aJ.clear()
 			}),
-			b.KY > b.Zz ? this.zv(a, this.S.kH, "用时:" + b.Zz, "", d) : this.zv(a, this.S.kH, "完成", "Click右上角的Share按钮！", d),
+			b.KY > b.Zz ? this.zv(a, this.S.kH, "用时:" + b.Zz, "", d) : this.zv(a, this.S.kH, "完成", "点击右上角的分享按钮！", d),
 			a.save(),
 			a.font = "10pt Arial",
 			a[ZK] = "white",
@@ -7448,7 +7448,7 @@
 			a.shadowColor = "white",
 			a.shadowBlur = 6,
 			c = (this[w_] - this.S.kH.y) / 2 + 50 + this.da,
-			b.newRecord ? a[ZH]("新纪录Time:" + b.Zz, this[W_] / 2, c) : a[ZH]("Time:" + b.Zz, this[W_] / 2, c),
+			b.newRecord ? a[ZH]("新纪录时间:" + b.Zz, this[W_] / 2, c) : a[ZH]("Time:" + b.Zz, this[W_] / 2, c),
 			a.shadowBlur = 8,
 			this.O.uj(a, (this[W_] - this.S.kH.x) / 2 + 10, (this[w_] - this.S.kH.y) / 2 + 80 + this.da, this.S.kH.x - 20, 40, 15, b.qds),
 			a[ZS]()

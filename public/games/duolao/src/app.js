@@ -29,7 +29,7 @@ var HelloWorldLayer = cc.Layer.extend({
         });
         this.addChild(hint);
 
-        var timeTxt = cc.createSprite('@还有3秒，抓紧Time记忆', {
+        var timeTxt = cc.createSprite('@还有3秒，抓紧时间记忆', {
             anchor: [0.5, 1.0],
             xy: [360, 1100],
             color: '#f00',
@@ -73,7 +73,7 @@ var HelloWorldLayer = cc.Layer.extend({
 
         this.newRound();
 
-        var text = '记忆力超群有木有？谁来Challenge谁知道！';
+        var text = '记忆力超群有木有？谁来挑战谁知道！';
 
         WeixinApi.ready(function(Api) {
             // 隐藏
@@ -85,8 +85,8 @@ var HelloWorldLayer = cc.Layer.extend({
             // 微信分享的数据
             var wxData = {
                 "appId": "", // 服务号可以填写appId
-                "imgUrl" : 'http://game.ikongzhong.cn/games/duolao/460.jpg',
-                "link" : 'http://game.ikongzhong.cn/games/duolao/',
+                "imgUrl" : 'http://game.id87.com/game/duolao/460.jpg',
+                "link" : 'http://game.id87.com/game/duolao/',
                 "desc" : text,
                 "title" : '来比记忆力'
             };
@@ -111,7 +111,7 @@ var HelloWorldLayer = cc.Layer.extend({
                 // 分享成功
                 confirm : function(resp) {
                     // 分享成功了，我们是不是可以做一些分享统计呢？
-                    window.location.href='http://game.ikongzhong.cn';
+                    window.location.href='http://game.id87.com';
                     // alert("分享成功");
                 },
                 // 整个分享过程结束
@@ -119,7 +119,7 @@ var HelloWorldLayer = cc.Layer.extend({
                     // 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
                     // alert("分享结束");
                     self.getParent().reload();
-                    if(window.location) window.location.href = "http://game.ikongzhong.cn";
+                    if(window.location) window.location.href = "http://game.id87.com";
                 }
             };
 
@@ -183,10 +183,10 @@ var HelloWorldLayer = cc.Layer.extend({
         var timer = setInterval(function(){
             delay--;
             if(delay > 0){
-                self.timeTxt.setString('还有'+delay+'秒，抓紧Time记忆');
+                self.timeTxt.setString('还有'+delay+'秒，抓紧时间记忆');
             }else{
                 clearInterval(timer);
-                self.timeTxt.setString('Start!');
+                self.timeTxt.setString('开始!');
                 self._numbers = numbers.sort(function(a,b){
                     return b-a;
                 });
@@ -237,7 +237,7 @@ var HelloWorldLayer = cc.Layer.extend({
                 text = '兔兔对你无语，脑残片要按时吃，别过量，这样才能萌萌哒！';
             }
             else if(self.round < 2){
-                text = 'ORZ。。你就算有年轻的身体，也Yes一颗苍老的心，大脑年龄为90岁！';
+                text = 'ORZ。。你就算有年轻的身体，也是一颗苍老的心，大脑年龄为90岁！';
             }
             else if(self.round < 3){
                 text = '兔兔觉得你的大脑已经不年轻了，大概有70岁吧！';
@@ -249,16 +249,16 @@ var HelloWorldLayer = cc.Layer.extend({
                 text = '你觉得自己年轻吗？要不和别人比比？';
             }
             else if(self.round < 6){
-                text = '妈妈说只有年轻人才能记住这些，还有谁要Challenge一下？';
+                text = '妈妈说只有年轻人才能记住这些，还有谁要挑战一下？';
             }
             else if(self.round < 7){
-                text = '记忆力超群有木有？谁来Challenge谁知道！';
+                text = '记忆力超群有木有？谁来挑战谁知道！';
             }
             else if(self.round < 8){
-                text = '好吧，兔兔觉得你一定Yes作弊了！';
+                text = '好吧，兔兔觉得你一定是作弊了！';
             }
             else{
-                text = '你就Yes神~偶崇拜你~Share出去让别人羡慕吧！';
+                text = '你就是神~偶崇拜你~分享出去让别人羡慕吧！';
             }
 
             var result = cc.createSprite('@'+text, {
@@ -284,4 +284,3 @@ var HelloWorldScene = cc.Scene.extend({
         this.addChild(layer);
     }
 });
-

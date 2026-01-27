@@ -6,8 +6,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="apple-touch-icon-precomposed" href="icon.png"/>
 <link rel="apple-touch-startup-image" href="i/loader.png">
-<meta name="description" content="堆木头Game，简单好玩的小Game，尽可能的精确对齐木头，堆木头达到最高，当你感觉木头和下面的对齐时，按下按钮放木头" />
-<title>堆木头 反应Speed测试小Game--空中传媒</title>
+<meta name="description" content="堆木头游戏，简单好玩的小游戏，尽可能的精确对齐木头，堆木头达到最高，当你感觉木头和下面的对齐时，按下按钮放木头" />
+<title>堆木头 反应速度测试小游戏</title>
 <style type="text/css">
  body { font-family: helvetica, arial; background-color: #000000; color: #a3b3c3; border:0; padding:0; font-size:90%; overflow: hidden;
 width: 320px;
@@ -55,42 +55,42 @@ margin: auto;}
 
 
 <div style="width:320px; height: 500px;">
-<!--<div style="width:100%; height:50px;text-align:center;overflow:hidden;margin:0 auto;margin-bottom: 10px;">
-  <a href="http://xjwdm.com/">
+<div style="width:100%; height:50px;text-align:center;overflow:hidden;margin:0 auto;margin-bottom: 10px;">
+  <a href="http://m.wenzhangku.com/">
 <img src="ad.jpg" style="width:100%;height:50px;"></a>
-</div>-->
+</div>
 <div style="position: absolute;margin-top: 400px; width: 320px; heigth: 48px; background: #ffffff"></div>
 
 <div id="alertbox"><div id="alertbox_flekk"></div><div id="alertbox_content"></div></div>
  <a id="button_xwuz" onclick="return menuswitch(document.getElementById('button_about'));" ontouchstart="return menuswitch(document.getElementById('button_about'));"></a>
 
 <div id="imenu">
- <a id="button_game" href="#game" class="active" onclick="return menuswitch(this);" ontouchstart="return menuswitch(this);"><span style="display:none">Restart</span></a>
- <a id="button_highscore" href="#highscore" onclick="return menuswitch(this);" ontouchstart="return menuswitch(this);"><span style="display:none">GameLeaderboard</span></a>
- <a id="button_about" href="http://game.ikongzhong.cn/"  ontouchstart="return menuswitch(this);"><span style="display:none">更多Game</span></a>
+ <a id="button_game" href="#game" class="active" onclick="return menuswitch(this);" ontouchstart="return menuswitch(this);"><span style="display:none">重新开始</span></a>
+ <a id="button_highscore" href="#highscore" onclick="return menuswitch(this);" ontouchstart="return menuswitch(this);"><span style="display:none">游戏排行榜</span></a>
+ <a id="button_about" href="http://g.huceo.com/weixin/"  ontouchstart="return menuswitch(this);"><span style="display:none">更多游戏</span></a>
 </div>
 
 <div class="ibox" id="container"><div style="width:10000px;" id="container_scroller">
  <div id="ibox_game" class="iboxcontent ibc1" style="position: relative;">
   <div style="width: 237px; height:15px; overflow:hidden;margin-left: 13px;padding-top:10px; font-size:90%; position:absolute; z-index:20;">
-  <div style="float:left"><div style="float:left" id="score_title">Score:&nbsp;</div><div id="score" style="float:left;  width:2em;">0</div></div>
+  <div style="float:left"><div style="float:left" id="score_title">得分:&nbsp;</div><div id="score" style="float:left;  width:2em;">0</div></div>
   <div style="float:right"><div style="float:left">连击:&nbsp;</div><div id="combo" style="float:left; width:1.5em;">0</div></div>
-  <div style="text-align:center">Level: <span id="level">1</span></div>
+  <div style="text-align:center">等级: <span id="level">1</span></div>
   </div>
   <div style="width:320px;height:316px; overflow:hidden; position: relative;" id="st_outerarea">
   </div>
  </div>
  <div id="ibox_highscore" class="iboxcontent ibc2">
-  <h3>您目前的High ScoreYes...</h3>
+  <h3>您目前的最高分是...</h3>
   <div id="yourbest"></div>
-  <p>一般人努力点可以达到<span class="fontostext">2500</span> 分, 高手可以达到<span class="fontostext">3500</span> 分. 你可以Share给好友Challenge下</p>
+  <p>一般人努力点可以达到<span class="fontostext">2500</span> 分, 高手可以达到<span class="fontostext">3500</span> 分. 你可以分享给好友挑战下</p>
   <p>你已经玩了 <span id="gamesplayed" class="fontostext">0</span> 次 <span class="fontostext">堆木头</span>.</p>
-  <p>Click右上角ShareScore到朋友圈</p>
+  <p>点击右上角分享分数到朋友圈</p>
   
-<!--<div class="baidu_share">
- Baidu Button BEGIN 
+<div class="baidu_share">
+<!-- Baidu Button BEGIN -->
 <div id="share_label" style="border-bottom: none">
-   <p><span>Share到 : </span></p>
+   <p><span>分享到 : </span></p>
 </div>
 <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare" style="margin-left:20px;">
     <a class="bds_tsina"></a>
@@ -105,9 +105,9 @@ margin: auto;}
 <script type="text/javascript">
 document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
 </script>
- Baidu Button END 
+<!-- Baidu Button END -->
 <br style="clear: both">
-</div>-->
+</div>
 
  </div>
 </div></div>
@@ -124,8 +124,8 @@ function play68_init() {
 }
 
 function updateShare(bestScore) {
-	imgUrl = './icon.png';
-	lineLink = './index.html';
+	imgUrl = 'http://g.huceo.com/weixin/feidegenggao/icon.png';
+	lineLink = 'http://g.huceo.com/weixin/feidegenggao/';
 	descContent = "创意跳高游戏，快来一起跳！";
 	updateShareScore(bestScore);
 	appid = '';
@@ -143,7 +143,9 @@ function updateShareScore(bestScore) {
 play68_init();
 </script>
 
-</div>
-
+</div><script src="/game-ad-api.js"></script>
+<script>
+  window.GameAdAPI && GameAdAPI.requestGameAd('game_duimutou');
+</script>
 </body>
 </html>

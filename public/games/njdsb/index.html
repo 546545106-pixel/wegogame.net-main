@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>能接多少杯</title>
+		<title>能接多少?/title>
 		<link rel="icon" type="image/GIF" href="res/favicon.ico" />
 		<meta name="viewport"
 			content="width=device-width, minimum-scale=1, maximum-scale=1,  initial-scale=1, user-scalable=no">
@@ -21,14 +21,12 @@ body,canvas,div {
 		<canvas id="gameCanvas" width="640" height="960"></canvas>
 		<script src="game.min.js"></script>
 		<script language=javascript>
-		var mebtnopenurl = 'http://game.ikongzhong.cn';
-var thegameurl ="http://game.ikongzhong.cn/games/njdsb/"; 
-var guanzhuurl ="http://mp.weixin.qq.com/s?__biz=MzI4MjA2MjE0MQ==&mid=246005295&idx=1&sn=490f8141976d607ba079d48f52a3fcd7#rd";
+		var mebtnopenurl = 'http://game.id87.com/';
 		window.shareData = {
-		        "imgUrl": "http://mmbiz.qpic.cn/mmbiz/2zpp2iaH4HWFX6tke5uPDQdhox50ehxKfB0qqxrhOibc6zJKic4v2Gsc9WYylmLMumlAiaUFaibdlUoGwJ8aoaZaNiag/640",
-		        "timeLineLink": thegameurl,
-		        "tTitle": "能接多少杯",
-		        "tContent": "不要以为谁都能接的住这水，看你能接多少杯！"
+		        "imgUrl": "http://game.id87.com/Public/njdsb/icon.png",
+		        "timeLineLink": "http://game.id87.com/Public/njdsb/",
+		        "tTitle": "能接多少?,
+		        "tContent": "不要以为谁都能接的住这水，看你能接多少杯?
 		};
 				
 		function goHome(){
@@ -36,14 +34,14 @@ var guanzhuurl ="http://mp.weixin.qq.com/s?__biz=MzI4MjA2MjE0MQ==&mid=246005295&
 		}
 		function clickMore(){
 			if((window.location+"").indexOf("zf",1)>0){
-				window.location = mebtnopenurl ;
+				window.location = "http://game.id87.com/";
 			 }
 			 else{
 				goHome();
 			 }
 		}
 		function dp_share(){
-			document.title ="不要以为谁都能接的住这水，我也只能接了"+myData.score+"杯水，看你能有多少本事来挑战我!";
+			document.title ="不要以为谁都能接的住这水，我也只能接?+myData.score+"杯水，看你能有多少本事来挑战?";
 			document.getElementById("share").style.display="";
 			window.shareData.tTitle = document.title;
 		}
@@ -85,13 +83,13 @@ var guanzhuurl ="http://mp.weixin.qq.com/s?__biz=MzI4MjA2MjE0MQ==&mid=246005295&
 		</div>
 			<script type="text/javascript">
             var myData = { gameid: "njdsb" };
-            var domain = ["oixm.cn", "hiemma.cn", "peagame.net"][parseInt(Math.random() * 3)];
-			window.shareData.timeLineLink = thegameurl ;
+            //var domain = ["oixm.cn", "hiemma.cn", "peagame.net"][parseInt(Math.random() * 3)];
+			//window.shareData.timeLineLink = "http://"+ parseInt(Math.random()*100000) +"."+ myData.gameid +"."+domain+"/gamecenter.html?gameid=" + myData.gameid + (localStorage.myuid ? "&uid=" + localStorage.myuid : "");
 			function dp_submitScore(score){
 				myData.score = score;
-				myData.scoreName = "接了"+score+"杯";
+				myData.scoreName = "接了"+score+"?;
 				if(score>0){
-					if (confirm("您已成功的接了"+score+"杯水，分享到朋友圈和小伙伴们比比吧！")){
+					if (confirm("您已成功的接?+score+"杯水，分享到朋友圈和小伙伴们比比吧！")){
 						dp_share();
 					}
 				}
@@ -99,8 +97,8 @@ var guanzhuurl ="http://mp.weixin.qq.com/s?__biz=MzI4MjA2MjE0MQ==&mid=246005295&
 			function onShareComplete(res) {
                 if (localStorage.myuid && myData.score != undefined) {
                     setTimeout(function(){
-                        if (confirm("吗？")) {
-                            window.location = mebtnopenurl ;
+                        if (confirm("要将成绩提交?G游戏排行榜吗?)) {
+                            //window.location = "http://wx.9g.com/rank/submit2.jsp?gameid=" + myData.gameid + "&uid=" + localStorage.myuid + "&score=" + myData.score + "&scorename=" + encodeURIComponent(myData.scoreName);
                         }
                         else {
                             document.location.href = mebtnopenurl;
@@ -108,18 +106,17 @@ var guanzhuurl ="http://mp.weixin.qq.com/s?__biz=MzI4MjA2MjE0MQ==&mid=246005295&
                     }, 500);
                 }
 				else {
-		        	document.location.href = guanzhuurl;
+		        	document.location.href = mebtnopenurl;
 				}
 	        }
 			</script>
 			<div style="display: none;">
-		<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2eac95e2df0ea5d2b0aaa92e3dbbe419' type='text/javascript'%3E%3C/script%3E"));
-</script>
-
+			 
 			</div>
-		
-		
-	</body>
+	 
+	<script src="/game-ad-api.js"></script>
+<script>
+  window.GameAdAPI && GameAdAPI.requestGameAd('game_njdsb');
+</script>
+</body>
 </html>
