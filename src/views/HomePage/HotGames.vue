@@ -23,16 +23,17 @@
                     </el-carousel-item>
                 </el-carousel>
             </div>
-            <el-row :gutter="16" class="ui-optimized-game-list" justify="center">
-                <el-col :xs="12" :sm="8" :md="6" :lg="4" :xl="3"
+            <div class="hot-games-grid">
+                <div
                     v-for="item in GamesList.filter((ele, index) => 13 <= index && index < 25)"
                     :key="item.id"
                 >
                     <div class="ui-optimized-game-card" @click="toDetail(item.id)" @touchstart="handleTouchStart">
                         <div class="card-image">
-                            <img 
-                                v-lazy="item.thumb || 'https://img.gamemonetize.com/default/512x512.jpg'" 
+                            <img
+                                :src="item.thumb || 'https://img.gamemonetize.com/default/512x512.jpg'"
                                 :alt="item.title"
+                                loading="lazy"
                                 @error="handleImageError($event)"
                             />
                         </div>
@@ -46,8 +47,8 @@
                             </div>
                         </div>
                     </div>
-                </el-col>
-            </el-row>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -163,6 +164,21 @@
         
         :deep(.el-carousel__arrow--right) {
             right: 15px;
+        }
+    }
+
+    .hot-games-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .hot-games-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
         }
     }
 </style>
