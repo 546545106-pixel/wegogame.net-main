@@ -1,6 +1,6 @@
 <template>
     <div class="header ui-optimized-header">
-        <div class="logo" @click="toHome">wooo</div>
+        <div class="logo" @click="toHome">BreakPlay</div>
         <ul class="nav-menu" :class="{ active: menuOpen }">
             <li :class="{ active: currentRoute === '/homepage' }" @click="navigate('/homepage')">首页</li>
             <li :class="{ active: currentRoute === '/category' }" @click="navigate('/category')">分类</li>

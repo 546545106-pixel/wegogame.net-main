@@ -172,7 +172,7 @@
     
     onMounted(() => {
         if (obj.value && obj.value.title) {
-            document.title = `${obj.value.title} - NEXUS ARCADE`
+            document.title = `${obj.value.title} - BreakPlay`
         }
         
         // 监听浏览器返回按钮
@@ -231,13 +231,13 @@
     // 动态更新页面标题
     watch(() => obj.value, (newObj) => {
         if (newObj && newObj.title) {
-            document.title = `${newObj.title} - NEXUS ARCADE`
+            document.title = `${newObj.title} - BreakPlay`
         }
     }, { immediate: true })
     
     onMounted(() => {
         if (obj.value && obj.value.title) {
-            document.title = `${obj.value.title} - NEXUS ARCADE`
+            document.title = `${obj.value.title} - BreakPlay`
         }
     })
 

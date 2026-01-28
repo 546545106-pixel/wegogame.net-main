@@ -18,7 +18,7 @@ const router = createRouter({
           name: "homepage",
           component: () => import(/* webpackChunkName: "homepage" */ "@/views/HomePage/index.vue"),
           meta: {
-            title: "NEXUS ARCADE - Free H5 Online Mini Games Platform",
+            title: "BreakPlay - Free Online H5 Mini Games",
             description: "Play free online games including puzzle, action, adventure, strategy and more. Enjoy unlimited gaming fun on our platform!",
             keywords: "free online games, puzzle games, action games, adventure games, strategy games, browser games"
           },
@@ -28,7 +28,7 @@ const router = createRouter({
           name: "detailpage",
           component: () => import(/* webpackChunkName: "detailpage" */ "@/views/DetailPage/index.vue"),
           meta: {
-            title: "Game Details - NEXUS ARCADE",
+            title: "Game Details - BreakPlay",
             description: "Play this exciting game now!",
             keywords: "online game, free game, browser game"
           },
@@ -39,7 +39,7 @@ const router = createRouter({
       path: '/about',
       component: AboutView,
       meta: {
-        title: "About Us - NEXUS ARCADE",
+        title: "About Us - BreakPlay",
         description: "Learn more about our free online games platform."
       },
     },
@@ -47,7 +47,7 @@ const router = createRouter({
       path: '/privacy',
       component: PrivacyView,
       meta: {
-        title: "Privacy Policy - NEXUS ARCADE",
+        title: "Privacy Policy - BreakPlay",
         description: "Read our privacy policy to understand how we protect your data."
       },
     },
@@ -68,7 +68,7 @@ router.beforeEach((to, from, next) => {
   if (to.meta.title) {
     document.title = to.meta.title
   } else {
-    document.title = 'NEXUS ARCADE - Free H5 Online Mini Games Platform'
+    document.title = 'BreakPlay - Free Online H5 Mini Games'
   }
   
   // 更新SEO meta标签
@@ -100,11 +100,11 @@ function updateMetaTags(meta) {
   metaKeywords.setAttribute('content', meta.keywords || 'free online games, puzzle games, action games, adventure games, strategy games, browser games')
   
   // 更新Open Graph
-  updateOGTag('og:title', meta.title || 'NEXUS ARCADE - Free H5 Online Mini Games Platform')
+  updateOGTag('og:title', meta.title || 'BreakPlay - Free Online H5 Mini Games')
   updateOGTag('og:description', meta.description || 'Play free online games including puzzle, action, adventure, strategy and more.')
   
   // 更新Twitter Card
-  updateTwitterTag('twitter:title', meta.title || 'NEXUS ARCADE - Free H5 Online Mini Games Platform')
+  updateTwitterTag('twitter:title', meta.title || 'BreakPlay - Free Online H5 Mini Games')
   updateTwitterTag('twitter:description', meta.description || 'Play free online games including puzzle, action, adventure, strategy and more.')
 }
 

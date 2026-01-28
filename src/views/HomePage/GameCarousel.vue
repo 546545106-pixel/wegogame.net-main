@@ -47,33 +47,33 @@
     
     const GamesList = localGamesData;
 
-    // 快乐、健康、合规的轮播横幅数据（使用 public/首页大轮播 下的 1.png-4.png）
+    // 快乐、健康、合规的轮播横幅数据（使用 public/首页大轮播 下的 5.png-8.png）
     const heroBanners = computed(() => {
         const baseBanners = [
             {
                 id: 'fun-arcade',
-                image: '/首页大轮播/1.png',
+                image: '/首页大轮播/5.png',
                 title: 'Play Fun & Relaxing Games',
                 subtitle: 'Enjoy hundreds of casual mini games. Safe, family-friendly and full of joy.',
                 buttonText: 'START A RANDOM GAME'
             },
             {
                 id: 'brain-training',
-                image: '/首页大轮播/2.png',
+                image: '/首页大轮播/6.png',
                 title: 'Train Your Brain, Have Fun',
                 subtitle: 'Puzzle, logic and reaction challenges that keep your mind sharp.',
                 buttonText: 'TRY A NEW CHALLENGE'
             },
             {
                 id: 'happy-time',
-                image: '/首页大轮播/3.png',
+                image: '/首页大轮播/7.png',
                 title: 'Happy Game Time, Anytime',
                 subtitle: 'No downloads, no pressure — just pure gaming happiness.',
                 buttonText: 'PLAY NOW'
             },
             {
                 id: 'colorful-world',
-                image: '/首页大轮播/4.png',
+                image: '/首页大轮播/8.png',
                 title: 'Colorful Arcade World',
                 subtitle: 'Bright colors, simple controls and endless joyful moments.',
                 buttonText: 'DISCOVER GAMES'
