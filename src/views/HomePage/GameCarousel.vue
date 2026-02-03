@@ -7,7 +7,7 @@
                 arrow="always"
                 :interval="5000"
                 :autoplay="true"
-                height="350px"
+                height="480px"
                 @change="handleCarouselChange"
             >
                 <!-- 使用精选的快乐/健康/合规展示图，而不是直接用游戏封面 -->
@@ -119,7 +119,7 @@
         
         .el-carousel {
             width: 100%;
-            height: 350px;
+            height: 480px;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -270,7 +270,7 @@
             }
             
             .el-carousel {
-                height: 250px;
+                height: 320px;
             }
             
             .carousel-overlay {
