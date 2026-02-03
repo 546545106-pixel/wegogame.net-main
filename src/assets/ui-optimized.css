@@ -40,6 +40,11 @@ body {
   color: var(--text-primary);
   font-family: Arial, sans-serif !important;
   min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+/* 可点击元素移除移动端 300ms 延迟，提升触控响应 */
+button, a, .ui-optimized-game-card, .ui-optimized-button, .ui-optimized-category-tab {
+  touch-action: manipulation;
 }
 
 /* ==================== 页面容器 ==================== */
@@ -408,12 +413,12 @@ body {
 }
 
 .ui-optimized-game-card:hover {
-  transform: scale(1.02);
+  transform: translateZ(0) scale(1.02);
   box-shadow: var(--card-shadow-hover);
 }
 
 .ui-optimized-game-card:active {
-  transform: scale(0.98);
+  transform: translateZ(0) scale(0.98);
   transition: transform 0.1s ease-in-out;
 }
 
@@ -433,11 +438,12 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.25s ease-out;
+  transform: translateZ(0); /* GPU 加速 */
 }
 
 .ui-optimized-game-card:hover .card-image img {
-  transform: scale(1.05);
+  transform: translateZ(0) scale(1.05);
 }
 
 .ui-optimized-game-card .card-content {

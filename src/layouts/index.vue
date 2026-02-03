@@ -116,7 +116,7 @@
     /* 页面过渡动画 */
     .fade-enter-active,
     .fade-leave-active {
-        transition: opacity 0.3s ease;
+        transition: opacity 0.2s ease-out;
     }
     
     .fade-enter-from,

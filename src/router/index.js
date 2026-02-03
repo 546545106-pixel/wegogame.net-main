@@ -51,6 +51,15 @@ const router = createRouter({
         description: "Read our privacy policy to understand how we protect your data."
       },
     },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('@/views/NotFoundView.vue'),
+      meta: {
+        title: "404 - Page Not Found | BreakPlay",
+        description: "The page you're looking for doesn't exist. Browse our free online games."
+      },
+    },
   ],
   // 路由滚动行为
   scrollBehavior(to, from, savedPosition) {

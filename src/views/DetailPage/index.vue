@@ -51,25 +51,25 @@
     <GameLoader :visible="isLoading" />
     
     <Teleport to="body">
-        <div class="fixed left-0 top-0 z-20 flex h-full w-full flex-col bg-white" v-if="show && obj">
-            <div class="flex-1">
-                <iframe 
-                    class="h-full w-full" 
-                    :src="obj.url" 
+        <Transition name="game-overlay">
+            <div class="game-fullscreen fixed left-0 top-0 z-20 flex h-full w-full flex-col bg-white" v-if="show && obj">
+                <div class="game-iframe-wrapper flex-1">
+                    <iframe 
+                        class="game-iframe h-full w-full" 
+                        :src="gameIframeSrc"
                     frameborder="0"
                     allowfullscreen
-                    allow="autoplay; fullscreen; gamepad; microphone; camera; geolocation; payment"
-                    sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation allow-modals allow-presentation allow-downloads"
-                    @load="handleIframeLoad"
-                    @error="handleIframeError"
-                ></iframe>
-            </div>
-            <div class="h-[50px]"></div>
-
-            <div
-                class="absolute left-0 top-10 flex items-center rounded-r-xl bg-white py-3 pr-4 shadow-2xl cursor-pointer z-30"
-                @click="closeGame"
-            >
+                        allow="autoplay; fullscreen; gamepad; microphone; camera; geolocation; payment"
+                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation allow-modals allow-presentation allow-downloads"
+                        @load="handleIframeLoad"
+                        @error="handleIframeError"
+                    ></iframe>
+                </div>
+                <div class="h-[50px]"></div>
+                <div
+                    class="game-close-btn absolute left-0 top-10 flex items-center rounded-r-xl bg-white py-3 pr-4 shadow-2xl cursor-pointer z-30"
+                    @click="closeGame"
+                >
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -86,14 +86,15 @@
                     :alt="obj.title"
                     @error="handleImageError($event)"
                 />
+                </div>
             </div>
-        </div>
+        </Transition>
     </Teleport>
 </template>
 
 <script setup>
 
-    import { ref, onMounted, onUnmounted, watch } from 'vue';
+    import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
     import { ElRate } from 'element-plus';
     import SimilarGames from './SimilarGames.vue';
     import GameLoader from '@/components/GameLoader.vue';
@@ -109,6 +110,7 @@
     let show = ref(false);
     let isLoading = ref(false);
     let obj = ref(localGamesData.find((item) => item.id == route.query.id) || null);
+    const gameIframeSrc = computed(() => (show.value && obj.value ? obj.value.url : ''));
     
     // 记录来源页面，用于返回时导航
     const fromRoute = ref(null);
@@ -132,13 +134,6 @@
             console.error('Game URL is missing:', obj.value);
             return;
         }
-        
-        console.log('Loading game:', {
-            id: obj.value.id,
-            title: obj.value.title,
-            url: obj.value.url,
-            fullUrl: window.location.origin + obj.value.url
-        });
         
         isLoading.value = true;
         show.value = true;
@@ -171,11 +166,7 @@
     }
     
     onMounted(() => {
-        if (obj.value && obj.value.title) {
-            document.title = `${obj.value.title} - BreakPlay`
-        }
-        
-        // 监听浏览器返回按钮
+        if (obj.value) updateGameMeta(obj.value)
         window.addEventListener('popstate', handlePopState);
     })
     
@@ -189,11 +180,10 @@
     }
 
     const handleIframeLoad = () => {
-        console.log('Iframe loaded successfully');
-        // iframe加载完成后隐藏加载动画
+        // 游戏加载完成后快速隐藏加载动画，提升流畅感
         setTimeout(() => {
             isLoading.value = false;
-        }, 500);
+        }, 200);
     }
 
     const handleIframeError = (event) => {
@@ -211,8 +201,72 @@
 
     const handleChildEvent = (id) => {
         obj.value = localGamesData.find((item) => item.id == id)
-        // 更新URL但不添加新的历史记录
         router.replace({ path: '/detailpage', query: { id } })
+    }
+
+    // 动态更新 SEO meta 和 Game Schema
+    function updateGameMeta(g) {
+        if (!g) return
+        const title = `${g.title} - BreakPlay`
+        const desc = (g.description || `Play ${g.title} - Free online HTML5 game. No download required.`).slice(0, 160)
+        const thumb = g.thumb ? (g.thumb.startsWith('http') ? g.thumb : window.location.origin + g.thumb) : ''
+        const canonical = `${window.location.origin}/detailpage?id=${g.id}`
+
+        document.title = title
+        const setMeta = (name, content) => {
+            let el = document.querySelector(`meta[name="${name}"]`) || document.querySelector(`meta[property="${name}"]`)
+            if (!el) {
+                el = document.createElement('meta')
+                el.setAttribute(name.startsWith('og:') ? 'property' : 'name', name)
+                document.head.appendChild(el)
+            }
+            el.setAttribute('content', content)
+        }
+        setMeta('description', desc)
+        setMeta('og:title', title)
+        setMeta('og:description', desc)
+        setMeta('og:image', thumb)
+        setMeta('og:url', canonical)
+        setMeta('twitter:title', title)
+        setMeta('twitter:description', desc)
+
+        // Canonical
+        let link = document.querySelector('link[rel="canonical"]')
+        if (!link) {
+            link = document.createElement('link')
+            link.rel = 'canonical'
+            document.head.appendChild(link)
+        }
+        link.href = canonical
+
+        // Game Schema
+        const schema = {
+            '@context': 'https://schema.org',
+            '@type': 'VideoGame',
+            name: g.title,
+            description: desc,
+            gamePlatform: 'Web browser',
+            playMode: 'SinglePlayer',
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+            image: thumb,
+        }
+        let schemaEl = document.getElementById('game-schema-ld')
+        if (schemaEl) schemaEl.remove()
+        schemaEl = document.createElement('script')
+        schemaEl.id = 'game-schema-ld'
+        schemaEl.type = 'application/ld+json'
+        schemaEl.textContent = JSON.stringify(schema)
+        document.head.appendChild(schemaEl)
+
+        // 预加载游戏资源，点击 Play 时加载更流畅
+        if (g.url && g.url.startsWith('/')) {
+            let prefetch = document.querySelector('link[rel="prefetch"][href*="games/"]')
+            if (prefetch) prefetch.remove()
+            prefetch = document.createElement('link')
+            prefetch.rel = 'prefetch'
+            prefetch.href = window.location.origin + g.url
+            document.head.appendChild(prefetch)
+        }
     }
 
     // 返回上一页
@@ -228,24 +282,48 @@
         router.push('/homepage');
     }
     
-    // 动态更新页面标题
     watch(() => obj.value, (newObj) => {
-        if (newObj && newObj.title) {
-            document.title = `${newObj.title} - BreakPlay`
-        }
+        if (newObj) updateGameMeta(newObj)
     }, { immediate: true })
-    
-    onMounted(() => {
-        if (obj.value && obj.value.title) {
-            document.title = `${obj.value.title} - BreakPlay`
-        }
-    })
 
 </script>
 
 <style lang="scss">
     .el-rate__item {
         margin-right: -5px;
+    }
+    /* 游戏全屏遮罩过渡动画 */
+    .game-overlay-enter-active,
+    .game-overlay-leave-active {
+        transition: opacity 0.2s ease-out;
+    }
+    .game-overlay-enter-from,
+    .game-overlay-leave-to {
+        opacity: 0;
+    }
+    .game-overlay-enter-to,
+    .game-overlay-leave-from {
+        opacity: 1;
+    }
+    .game-iframe-wrapper {
+        will-change: opacity;
+    }
+    .game-iframe {
+        opacity: 0;
+        animation: gameIframeFadeIn 0.25s ease-out 0.05s forwards;
+    }
+    @keyframes gameIframeFadeIn {
+        to { opacity: 1; }
+    }
+    .game-close-btn {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .game-close-btn:hover {
+        transform: translateX(4px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .game-close-btn:active {
+        transform: translateX(2px) scale(0.98);
     }
 </style>
 

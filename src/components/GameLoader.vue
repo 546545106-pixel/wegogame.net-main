@@ -1,8 +1,10 @@
 <template>
-  <div v-if="visible" class="ui-optimized-loading">
-    <div class="ui-optimized-loading-spinner"></div>
-    <div class="ui-optimized-loading-text">Loading Game...</div>
-  </div>
+  <Transition name="loader-fade">
+    <div v-if="visible" class="ui-optimized-loading">
+      <div class="ui-optimized-loading-spinner"></div>
+      <div class="ui-optimized-loading-text">Loading Game...</div>
+    </div>
+  </Transition>
 </template>
 
 <script setup>
@@ -17,5 +19,12 @@ const props = defineProps({
 </script>
 
 <style scoped>
-/* 样式已在 ui-optimized.css 中定义 */
+.loader-fade-enter-active,
+.loader-fade-leave-active {
+  transition: opacity 0.15s ease;
+}
+.loader-fade-enter-from,
+.loader-fade-leave-to {
+  opacity: 0;
+}
 </style>

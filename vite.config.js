@@ -13,6 +13,8 @@ export default defineConfig({
   },
   build: {
     assetsDir: 'static',
+    // 现代浏览器目标，减小体积
+    target: 'es2020',
     // 代码分割优化
     rollupOptions: {
       output: {
@@ -53,11 +55,7 @@ export default defineConfig({
     cssCodeSplit: true,
     // 生成source map（生产环境可关闭以减小体积）
     sourcemap: false,
-    // 启用gzip压缩报告
     reportCompressedSize: true,
-    // 目标浏览器
-    target: 'es2015'
-    // CSS 压缩使用默认配置（无需额外依赖）
   },
   // 开发服务器配置
   server: {
