@@ -11,7 +11,7 @@
           arrow="always"
           :interval="4000"
           :autoplay="true"
-          height="480px"
+          height="560px"
         >
           <el-carousel-item
             v-for="banner in relaxBanners"
@@ -183,13 +183,13 @@ const handleRelaxBannerError = (event) => {
 
     .el-carousel {
       width: 100%;
-      height: 480px;
+      height: 560px;
       overflow: hidden;
       border-radius: 12px;
     }
 
     .el-carousel__item {
-      height: 480px;
+      height: 560px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -237,7 +237,7 @@ const handleRelaxBannerError = (event) => {
   @media (max-width: 768px) {
     .try-now :deep(.el-carousel),
     .try-now :deep(.el-carousel__item) {
-      height: 320px !important;
+      height: 380px !important;
     }
     .try-now-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));

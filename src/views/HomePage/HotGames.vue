@@ -9,7 +9,7 @@
                     arrow="always"
                     :interval="4000"
                     :autoplay="true"
-                    height="480px"
+                    height="560px"
                 >
                     <el-carousel-item
                         v-for="banner in hotBanners"
@@ -152,13 +152,13 @@
         
         .el-carousel {
             width: 100%;
-            height: 480px;
+            height: 560px;
             overflow: hidden;
             border-radius: 12px;
         }
 
         .el-carousel__item {
-            height: 480px;
+            height: 560px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -200,7 +200,7 @@
     .hot-banner {
         position: relative;
         width: 100%;
-        height: 480px;
+        height: 560px;
         overflow: hidden;
 
         .hot-banner-image {
@@ -222,7 +222,7 @@
     @media (max-width: 768px) {
         .hot-games :deep(.el-carousel),
         .hot-games :deep(.el-carousel__item) {
-            height: 320px !important;
+            height: 380px !important;
         }
         .hot-games-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
