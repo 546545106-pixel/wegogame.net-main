@@ -1,7 +1,7 @@
 <template>
     <div class="hot-games ui-optimized-content">
         <div class="ui-optimized-container">
-            <div class="title ui-optimized-section-title">Hot Games</div>
+            <div class="title ui-optimized-section-title">热门游戏</div>
             <div class="carousel-wrapper">
                 <el-carousel 
                     trigger="click" 
@@ -63,6 +63,13 @@
     
     const router = useRouter();
     
+    const props = defineProps({
+      activeCategory: {
+        type: String,
+        default: 'all'
+      }
+    });
+    
     const GamesList = localGamesData;
 
     // Hot Games 顶部轮播横幅（使用 public/排行榜 下的 1.png-4.png）
@@ -71,26 +78,26 @@
         {
           id: 'rank-1',
           image: '/排行榜/1.png',
-          title: 'Top Ranked Arcade Hits',
-          buttonText: 'PLAY HOT GAME'
+          title: '热门街机游戏',
+          buttonText: '开始游戏'
         },
         {
           id: 'rank-2',
           image: '/排行榜/2.png',
-          title: 'Trending Now',
-          buttonText: 'TRY POPULAR GAME'
+          title: '趋势游戏',
+          buttonText: '尝试热门游戏'
         },
         {
           id: 'rank-3',
           image: '/排行榜/3.png',
-          title: 'High Score Challenge',
-          buttonText: 'CHALLENGE YOURSELF'
+          title: '高分挑战',
+          buttonText: '挑战自我'
         },
         {
           id: 'rank-4',
           image: '/排行榜/4.png',
-          title: 'Daily Hot Picks',
-          buttonText: 'START PLAYING'
+          title: '每日精选',
+          buttonText: '开始游戏'
         }
       ];
     });
@@ -98,7 +105,11 @@
     // 下方热门列表：紧接着轮播之后的若干游戏
     const hotListGames = computed(() => {
       if (!Array.isArray(GamesList) || GamesList.length === 0) return [];
-      return GamesList.slice(13, 25).length > 0 ? GamesList.slice(13, 25) : GamesList.slice(0, Math.min(12, GamesList.length));
+      let games = GamesList.slice(13, 25).length > 0 ? GamesList.slice(13, 25) : GamesList.slice(0, Math.min(12, GamesList.length));
+      if (props.activeCategory !== 'all') {
+        games = games.filter(game => game.category === props.activeCategory);
+      }
+      return games;
     });
     
     const toDetail = (id) => {
@@ -111,7 +122,11 @@
     // 顶部轮播的按钮：随机进入一个热门游戏详情
     const playRandomHotGame = () => {
       if (!Array.isArray(GamesList) || GamesList.length === 0) return;
-      const picked = getRandomElements(GamesList, 1)[0];
+      let games = GamesList;
+      if (props.activeCategory !== 'all') {
+        games = games.filter(game => game.category === props.activeCategory);
+      }
+      const picked = getRandomElements(games, 1)[0];
       if (!picked) return;
       toDetail(picked.id);
     };

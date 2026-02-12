@@ -10,42 +10,62 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
       <HeaderWidget />
     </div>
     <!-- 顶部广告位 -->
-    <article class="prose container mx-auto bg-white px-[10vw] py-12 about-content">
-      <h1>关于我们</h1>
+    <article class="prose container mx-auto bg-white px-[10vw] py-12 contact-content">
+      <h1>联系我们</h1>
       <p>
-        这是一个乐趣永不停歇的地方，每一次体验都能带来你从未感受过的全新刺激。我们的目标是只提供最优质的免费在线游戏。你不需要付费，甚至不需要下载任何东西。我们是一个在线游戏平台，致力于以零成本为你带来最好的在线游戏。无论你在寻找什么样的在线游戏，我们都有多种选择来适应每种游戏风格——当我们说"多种"时，我们指的是"成百上千"的游戏！这就是我们所做的一切，而且我们可以说，我们非常擅长这一点。我们了解游戏玩家的想法，因为我们自己就是游戏玩家。这个地方是专门为你打造的。
+        感谢您访问我们的游戏网站！如果您有任何问题、建议或合作意向，欢迎通过以下方式联系我们：
       </p>
-      <h2>我们的使命</h2>
-      <p>
-        我们的使命是为所有年龄段的玩家提供安全、有趣、高质量的在线游戏体验。我们相信游戏是一种艺术形式，能够带来快乐、挑战和社交互动。我们致力于创建一个积极的游戏社区，让每个玩家都能找到适合自己的游戏。
-      </p>
-      <h2>我们的优势</h2>
+      <h2>联系方式</h2>
       <ul>
-        <li>免费游戏：所有游戏均可免费游玩，无需付费</li>
-        <li>高质量：精选优质HTML5游戏，确保良好的游戏体验</li>
-        <li>无需下载：直接在浏览器中游玩，无需安装任何软件</li>
-        <li>多样化：涵盖射击、益智、冒险、休闲等多种游戏类型</li>
-        <li>安全可靠：所有游戏均经过安全检查，确保玩家安全</li>
+        <li>电子邮件：contact@wegogame.net</li>
+        <li>微信：WeGoGameOfficial</li>
+        <li>QQ：1234567890</li>
       </ul>
+      <h2>常见问题</h2>
+      <p>
+        <strong>Q: 如何在网站上发布游戏？</strong><br/>
+        A: 目前我们只接受精选游戏的合作，如果您有优质的HTML5游戏想要推荐，请通过电子邮件联系我们。
+      </p>
+      <p>
+        <strong>Q: 如何投放广告？</strong><br/>
+        A: 我们提供多种广告位合作方式，请通过电子邮件联系我们获取详细的广告投放方案。
+      </p>
+      <p>
+        <strong>Q: 游戏加载缓慢怎么办？</strong><br/>
+        A: 建议您检查网络连接，或尝试清除浏览器缓存。如果问题持续存在，请联系我们。
+      </p>
+      <h2>合作意向</h2>
+      <p>
+        我们欢迎各类合作意向，包括但不限于：
+      </p>
+      <ul>
+        <li>游戏开发者合作</li>
+        <li>广告投放合作</li>
+        <li>媒体合作</li>
+        <li>品牌推广</li>
+      </ul>
+      <p>
+        请通过上述联系方式与我们取得联系，我们将在1-3个工作日内回复您。
+      </p>
     </article>
     <!-- 底部广告位 -->
-    <div class="gptslot ad-slot about-bottom-ad" data-adunitid="7" style="min-width: 300px; min-height: 250px; margin: 30px auto;">
-      <div class="ad-placeholder">Advertisement Slot #7<br/><small>请替换 your-ad-slot-id-7 为您的实际广告位ID</small></div>
-      <AdSenseAd ad-slot="your-ad-slot-id-7" :width="300" :height="250" />
+    <div class="gptslot ad-slot contact-bottom-ad" data-adunitid="9" style="min-width: 300px; min-height: 250px; margin: 30px auto;">
+      <div class="ad-placeholder">Advertisement Slot #9<br/><small>请替换 your-ad-slot-id-9 为您的实际广告位ID</small></div>
+      <AdSenseAd ad-slot="your-ad-slot-id-9" :width="300" :height="250" />
     </div>
   </div>
   <FooterWidget />
 </template>
 
 <style scoped>
-/* About页面内容居中样式 */
-.about-content {
+/* Contact页面内容居中样式 */
+.contact-content {
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
 }
 
-.about-content h1 {
+.contact-content h1 {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
@@ -53,16 +73,7 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
   color: #333;
 }
 
-.about-content p {
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #555;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.about-content h2 {
+.contact-content h2 {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -71,7 +82,16 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
   color: #444;
 }
 
-.about-content ul {
+.contact-content p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.contact-content ul {
   text-align: left;
   font-size: 16px;
   line-height: 1.8;
@@ -81,50 +101,46 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
   padding-left: 20px;
 }
 
-.about-content li {
+.contact-content li {
   margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-  .about-content {
+  .contact-content {
     padding: 20px 15px;
   }
   
-  .about-content h1 {
+  .contact-content h1 {
     font-size: 28px;
     margin-bottom: 20px;
   }
   
-  .about-content h2 {
+  .contact-content h2 {
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 12px;
   }
   
-  .about-content p {
+  .contact-content p {
     font-size: 15px;
     line-height: 1.6;
   }
   
-  .about-content ul {
+  .contact-content ul {
     font-size: 15px;
     line-height: 1.6;
     padding-left: 15px;
   }
-  
-  .about-content li {
-    margin-bottom: 8px;
-  }
 }
 
-/* About页面广告位样式 */
-.about-bottom-ad {
+/* Contact页面广告位样式 */
+.contact-bottom-ad {
   max-width: 728px;
   margin: 30px auto;
 }
 
 @media (max-width: 768px) {
-  .about-bottom-ad {
+  .contact-bottom-ad {
     max-width: 100%;
     margin: 20px 15px;
   }

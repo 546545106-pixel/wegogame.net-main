@@ -1,7 +1,7 @@
 <template>
   <div class="new-games ui-optimized-content">
     <div class="ui-optimized-container">
-      <div class="title ui-optimized-section-title">NEW GAMES</div>
+      <div class="title ui-optimized-section-title">新游戏</div>
       <div class="new-games-grid">
         <div v-for="item in displayedGames" :key="item.id">
           <div
@@ -49,10 +49,21 @@ import { triggerHapticFeedback } from '@/utils/haptic'
 
 const router = useRouter()
 
+const props = defineProps({
+  activeCategory: {
+    type: String,
+    default: 'all'
+  }
+})
+
 // 使用computed优化列表过滤，避免每次渲染都重新计算
 // 增加显示数量，填满页面
 const displayedGames = computed(() => {
-  return localGamesData.slice(0, 24)
+  let games = localGamesData.slice(0, 24)
+  if (props.activeCategory !== 'all') {
+    games = games.filter(game => game.category === props.activeCategory)
+  }
+  return games
 })
 
 const toDetail = (id) => {

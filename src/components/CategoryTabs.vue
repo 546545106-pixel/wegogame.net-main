@@ -23,11 +23,16 @@ const props = defineProps({
   tabs: {
     type: Array,
     default: () => [
-      { label: 'All', value: 'all' },
-      { label: 'Logic Puzzles', value: 'puzzle' },
-      { label: 'Action', value: 'action' },
-      { label: 'Strategy', value: 'strategy' },
-      { label: 'Racing', value: 'racing' }
+      { label: '全部', value: 'all' },
+      { label: '射击', value: '射击' },
+      { label: '益智', value: '益智' },
+      { label: '冒险', value: '冒险' },
+      { label: '休闲', value: '休闲' },
+      { label: '动作', value: '动作' },
+      { label: '策略', value: '策略' },
+      { label: '竞速', value: '竞速' },
+      { label: '教育', value: '教育' },
+      { label: '模拟', value: '模拟' }
     ]
   },
   defaultTab: {

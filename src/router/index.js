@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const Layout = () => import('@/layouts/index.vue')
 const AboutView = () => import('@/views/AboutView/AboutView.vue')
 const PrivacyView = () => import('@/views/PrivacyView/PrivacyView.vue')
+const ContactView = () => import('@/views/ContactView/ContactView.vue')
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -49,6 +50,38 @@ const router = createRouter({
       meta: {
         title: "Privacy Policy - BreakPlay",
         description: "Read our privacy policy to understand how we protect your data."
+      },
+    },
+    {
+      path: '/contact',
+      component: ContactView,
+      meta: {
+        title: "联系我们 - WeGoGame",
+        description: "如有任何问题或建议，欢迎联系我们的团队。"
+      },
+    },
+    {
+      path: '/search',
+      component: () => import('@/views/SearchResultsView/SearchResultsView.vue'),
+      meta: {
+        title: "搜索结果 - WeGoGame",
+        description: "根据您的搜索关键词查找相关游戏。"
+      },
+    },
+    {
+      path: '/blog',
+      component: () => import('@/views/BlogView/BlogView.vue'),
+      meta: {
+        title: "游戏博客 - WeGoGame",
+        description: "最新游戏资讯、攻略技巧和游戏评测。"
+      },
+    },
+    {
+      path: '/blog/detail',
+      component: () => import('@/views/BlogView/BlogDetailView.vue'),
+      meta: {
+        title: "文章详情 - WeGoGame",
+        description: "游戏相关文章的详细内容。"
       },
     },
     {

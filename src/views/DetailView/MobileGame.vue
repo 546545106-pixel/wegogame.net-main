@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import GameComments from '@/components/GameComments.vue'
 
 const props = defineProps({
   game: { type: Object, required: true }
@@ -51,7 +52,47 @@ const handleImageError = (event) => {
       <div class="flex-1">
         <iframe class="h-full w-full" :src="props.game.url" frameborder="0"></iframe>
       </div>
-      <div class="h-[50px]"></div>
+      <div class="p-4 border-t">
+        <div class="flex items-center mb-3">
+          <img 
+            class="mr-3 h-12 w-12 rounded-lg" 
+            :src="props.game.thumb || 'https://img.gamemonetize.com/default/512x512.jpg'" 
+            :alt="props.game.title"
+            @error="handleImageError($event)"
+          />
+          <div>
+            <h2 class="text-xl font-bold">{{ props.game.title }}</h2>
+            <div class="flex items-center mt-1">
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded mr-2">{{ props.game.category }}</span>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded mr-2">{{ props.game.subcategory }}</span>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">{{ props.game.difficulty }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <h3 class="font-semibold mb-1">游戏描述</h3>
+          <p class="text-sm text-gray-600">{{ props.game.description }}</p>
+        </div>
+        <div class="mb-3">
+          <h3 class="font-semibold mb-1">操作说明</h3>
+          <p class="text-sm text-gray-600">{{ props.game.instructions }}</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">标签</h3>
+          <div class="flex flex-wrap gap-2">
+            <span 
+              v-for="(tag, index) in props.game.tags.split(',')" 
+              :key="index" 
+              class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded"
+            >
+              {{ tag }}
+            </span>
+          </div>
+        </div>
+        
+        <!-- 游戏评论 -->
+        <GameComments :game-id="props.game.id" :game-title="props.game.title" />
+      </div>
 
       <div
         class="absolute left-0 top-10 flex items-center rounded-r-xl bg-white py-3 pr-4 shadow-2xl"
@@ -70,7 +111,7 @@ const handleImageError = (event) => {
         <img 
           class="ml-2 h-6 w-6 rounded" 
           :src="props.game.thumb || 'https://img.gamemonetize.com/default/512x512.jpg'" 
-          alt=""
+          :alt=""
           @error="handleImageError($event)"
         />
       </div>

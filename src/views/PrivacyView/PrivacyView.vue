@@ -10,90 +10,111 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
       <HeaderWidget />
     </div>
     <!-- 顶部广告位 -->
-    <div class="gptslot ad-slot privacy-top-ad" data-adunitid="5" style="min-width: 300px; min-height: 250px; margin: 20px auto;">
-      <div class="ad-placeholder">Advertisement Slot #5<br/><small>请替换 your-ad-slot-id-5 为您的实际广告位ID</small></div>
-      <AdSenseAd ad-slot="your-ad-slot-id-5" :width="300" :height="250" />
-    </div>
-    <article class="prose container mx-auto bg-white px-[10vw] py-12">
-      <h1>Privacy</h1>
-      <h2>Information Collection And Use</h2>
+    <article class="prose container mx-auto bg-white px-[10vw] py-12 privacy-content">
+      <h1>隐私政策</h1>
+      <h2>信息收集与使用</h2>
       <p>
-        Does not collect, analyze, distribute any personal information. IP address and logging Your
-        IP address is used only by google analytics to gather demographic information and to track
-        your general visiting patterns (how many pages you view while at one website, statistics
-        regarding most played games, etc).
+        我们不会收集、分析或分发任何个人信息。您的IP地址仅用于Google Analytics收集人口统计信息和跟踪您的一般访问模式（您在一个网站上查看的页面数量、最常玩游戏的统计数据等）。
       </p>
       <p>
-        Third-Party Advertising We allow third-party companies to serve ads and/or collect certain
-        anonymous information when you visit our website.
+        第三方广告：我们允许第三方公司在您访问我们的网站时提供广告和/或收集某些匿名信息。
       </p>
       <p>
-        These companies may use non-personally identifiable information (e.g., click stream
-        information, browser type, time and date, subject of advertisements clicked or scrolled
-        over) during your visits to this and other Web sites in order to provide advertisements
-        about goods and services likely to be of greater interest to you.
+        这些公司可能会在您访问本网站和其他网站期间使用非个人身份信息（例如，点击流信息、浏览器类型、时间和日期、点击或滚动的广告主题），以提供有关您可能更感兴趣的商品和服务的广告。
       </p>
-      <h2>Log Data</h2>
+      <h2>日志数据</h2>
       <p>
-        Like many site operators, we collect information that your browser sends whenever you visit
-        our Site (“Log Data”). This Log Data may include information such as your computer’s
-        Internet Protocol (“IP”) address, browser type, browser version, the pages of our Site that
-        you visit, the time and date of your visit, the time spent on those pages, and other
-        statistics.
+        与许多网站运营商一样，我们会收集您的浏览器在访问我们网站时发送的信息（"日志数据"）。这些日志数据可能包括您计算机的互联网协议（"IP"）地址、浏览器类型、浏览器版本、您访问的我们网站的页面、访问的时间和日期、在这些页面上花费的时间以及其他统计信息。
       </p>
       <h2>Cookies</h2>
       <p>
-        Cookies are files with a small amount of data, which may include an anonymous unique
-        identifier. Cookies are sent to your browser from a website and stored on your computer’s
-        hard drive. Like many sites, we use “cookies” to collect and store information – including
-        data which is essential to the proper function of many games. You can instruct your browser
-        to refuse all cookies or to indicate when a cookie is being sent. However, if you do not
-        accept cookies, you may not be able to use some portions of our Site/games. Ultimately it is
-        your choice whether to access this Site and whether you wish to allow cookies to be stored.
+        Cookies是包含少量数据的文件，可能包括匿名唯一标识符。Cookies从网站发送到您的浏览器并存储在计算机的硬盘上。与许多网站一样，我们使用"cookies"来收集和存储信息——包括许多游戏正常运行所必需的数据。您可以指示您的浏览器拒绝所有cookies或在发送cookie时通知您。但是，如果您不接受cookies，您可能无法使用我们网站/游戏的某些部分。最终，是否访问本网站以及是否允许存储cookies取决于您的选择。
       </p>
-      <h2>Security</h2>
+      <h2>安全性</h2>
       <p>
-        The security of your Personal Information is important to us, but remember that no method of
-        transmission over the Internet, or method of electronic storage, is 100% secure. While we
-        strive to use commercially acceptable means to protect your Personal Information, we cannot
-        guarantee its absolute security.
+        您个人信息的安全对我们很重要，但请记住，通过互联网传输或电子存储的任何方法都不是100%安全的。虽然我们努力使用商业上可接受的手段来保护您的个人信息，但我们不能保证其绝对安全性。
       </p>
-      <h2>Third-Party Advertising</h2>
+      <h2>第三方广告</h2>
       <p>
-        We use several third-party advertising companies to serve ads when you visit the Site. These
-        companies may use cookies to store information about your visits to this and other websites
-        (your browsing activity) in order to provide advertisements on this Site and other sites
-        about goods and services that may be of interest to you.
+        我们使用多家第三方广告公司在您访问网站时提供广告。这些公司可能会使用cookies存储有关您访问本网站和其他网站的信息（您的浏览活动），以便在本网站和其他网站上提供有关您可能感兴趣的商品和服务的广告。
       </p>
       <p>
-        You may refuse the use of cookies by selecting the appropriate settings on your browser.
-        Google Adsense delivered by Google, Inc., may make use of one or more DoubleClick DART
-        Cookies. DART cookies store and collect data on your computer about your browsing activity.
-        Google may use this data to show advertisements on this Site based on your browsing
-        activity. You can choose to opt-out of Google’s use of cookies by visiting the Google ad and
-        content privacy policy.
+        您可以通过选择浏览器上的适当设置来拒绝使用cookies。Google Inc.提供的Google Adsense可能会使用一个或多个DoubleClick DART Cookies。DART cookies在您的计算机上存储和收集有关您浏览活动的数据。Google可能会使用这些数据在本网站上根据您的浏览活动显示广告。您可以通过访问Google广告和内容隐私政策来选择退出Google使用cookies。
       </p>
     </article>
-    <!-- 内容中间广告位 -->
-    <div class="gptslot ad-slot privacy-middle-ad" data-adunitid="6" style="min-width: 300px; min-height: 250px; margin: 30px auto;">
-      <div class="ad-placeholder">Advertisement Slot #6<br/><small>请替换 your-ad-slot-id-6 为您的实际广告位ID</small></div>
-      <AdSenseAd ad-slot="your-ad-slot-id-6" :width="300" :height="250" />
+    <!-- 底部广告位 -->
+    <div class="gptslot ad-slot privacy-bottom-ad" data-adunitid="5" style="min-width: 300px; min-height: 250px; margin: 30px auto;">
+      <div class="ad-placeholder">Advertisement Slot #5<br/><small>请替换 your-ad-slot-id-5 为您的实际广告位ID</small></div>
+      <AdSenseAd ad-slot="your-ad-slot-id-5" :width="300" :height="250" />
     </div>
   </div>
   <FooterWidget />
 </template>
 
 <style scoped>
-/* 隐私页面广告位样式 */
-.privacy-top-ad,
-.privacy-middle-ad {
-  max-width: 728px;
-  margin: 20px auto;
+/* 隐私页面内容样式 */
+.privacy-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.privacy-content h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.privacy-content h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.privacy-content p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 @media (max-width: 768px) {
-  .privacy-top-ad,
-  .privacy-middle-ad {
+  .privacy-content {
+    padding: 20px 15px;
+  }
+  
+  .privacy-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .privacy-content h2 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+  }
+  
+  .privacy-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+/* 隐私页面广告位样式 */
+.privacy-bottom-ad {
+  max-width: 728px;
+  margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+  .privacy-bottom-ad {
     max-width: 100%;
     margin: 20px 15px;
   }

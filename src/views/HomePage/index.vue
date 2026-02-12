@@ -1,24 +1,21 @@
 <template>
     <div class="homepage-container ui-optimized-container">
-        <div class="gptslot ad-slot" data-adunitid="0" style="min-width: 300px; min-height: 250px; margin:10px auto">
+        <GameCarousel></GameCarousel>
+        <CategoryTabs @change="handleCategoryChange" />
+        <TopPicks :activeCategory="activeCategory" />
+        <div class="gptslot ad-slot homepage-main-ad" data-adunitid="0" style="min-width: 300px; min-height: 250px; margin:20px auto">
             <div class="ad-placeholder">Advertisement Slot #0<br/><small>请替换 your-ad-slot-id-0 为您的实际广告位ID</small></div>
             <AdSenseAd ad-slot="your-ad-slot-id-0" :width="300" :height="250" />
         </div>
-        <GameCarousel></GameCarousel>
-        <TopPicks></TopPicks>
-        <NewGames></NewGames>
-        <HotGames></HotGames>
-        <div class="gptslot ad-slot" data-adunitid="1" style="min-width: 300px; min-height: 250px; margin:10px auto">
-            <div class="ad-placeholder">Advertisement Slot #1<br/><small>请替换 your-ad-slot-id-1 为您的实际广告位ID</small></div>
-            <AdSenseAd ad-slot="your-ad-slot-id-1" :width="300" :height="250" />
-        </div>
+        <NewGames :activeCategory="activeCategory" />
+        <HotGames :activeCategory="activeCategory" />
         <TryNow></TryNow>
         <Tips></Tips>
     </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import NewGames from './NewGames.vue';
 import HotGames from './HotGames.vue';
 import TopPicks from './TopPicks.vue';
@@ -26,6 +23,13 @@ import TryNow from './TryNow.vue';
 import Tips from './Tips.vue';
 import GameCarousel from './GameCarousel.vue';
 import AdSenseAd from '@/components/AdSenseAd.vue';
+import CategoryTabs from '@/components/CategoryTabs.vue';
+
+const activeCategory = ref('all');
+
+const handleCategoryChange = (category) => {
+    activeCategory.value = category;
+};
 
 onMounted(() => {
     // 页面加载完成后的初始化操作
@@ -48,6 +52,23 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
     min-height: 250px;
+}
+
+/* 首页主广告位样式 */
+.homepage-main-ad {
+    max-width: 728px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .homepage-main-ad {
+        max-width: 100%;
+        margin: 20px 15px;
+        padding: 5px;
+    }
 }
 
 .ad-placeholder {

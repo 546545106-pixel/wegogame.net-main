@@ -1,10 +1,10 @@
 <template>
   <div class="top-picks ui-optimized-content">
     <div class="ui-optimized-container">
-      <div class="title ui-optimized-section-title">Top Picks</div>
+      <div class="title ui-optimized-section-title">精选游戏</div>
       <div class="top-picks-grid">
         <div
-          v-for="item in GamesList.filter((ele, index) => 25 <= index && index < 49)"
+          v-for="item in filteredGames"
           :key="item.id"
         >
           <div
@@ -45,13 +45,27 @@
 
 <script setup>
 import { useRouter } from 'vue-router'
+import { computed } from 'vue'
 import localGamesData from '@/data/games.js'
 import { getDifficultyClass, getDifficultyText, getPlayCount, getDisplayTitle } from '@/utils'
 import { triggerHapticFeedback } from '@/utils/haptic'
 
 const router = useRouter()
 
-const GamesList = localGamesData
+const props = defineProps({
+  activeCategory: {
+    type: String,
+    default: 'all'
+  }
+})
+
+const filteredGames = computed(() => {
+  let games = localGamesData.filter((ele, index) => 25 <= index && index < 49)
+  if (props.activeCategory !== 'all') {
+    games = games.filter(game => game.category === props.activeCategory)
+  }
+  return games
+})
 
 const toDetail = (id) => {
   router.push({

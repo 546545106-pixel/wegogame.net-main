@@ -12,7 +12,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="container mx-auto grid min-w-[768px] auto-rows-[94px] justify-center gap-4 p-4"
+    class="container mx-auto grid min-w-[768px] justify-center gap-4 p-4"
     style="grid-template-columns: repeat(auto-fill, 94px); grid-auto-rows: 94px;"
   >
     <HeaderWidget />
