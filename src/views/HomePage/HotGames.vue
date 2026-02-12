@@ -1,7 +1,7 @@
 <template>
     <div class="hot-games ui-optimized-content">
         <div class="ui-optimized-container">
-            <div class="title ui-optimized-section-title">热门游戏</div>
+            <div class="title ui-optimized-section-title">Hot Games</div>
             <div class="carousel-wrapper">
                 <el-carousel 
                     trigger="click" 
@@ -19,6 +19,8 @@
                           class="hot-banner-image"
                           :src="banner.image"
                           :alt="banner.title"
+                          loading="lazy"
+                          @error="handleBannerError($event)"
                         />
                     </el-carousel-item>
                 </el-carousel>
@@ -78,26 +80,26 @@
         {
           id: 'rank-1',
           image: '/排行榜/1.png',
-          title: '热门街机游戏',
-          buttonText: '开始游戏'
+          title: 'Hot Arcade Games',
+          buttonText: 'Play Now'
         },
         {
           id: 'rank-2',
           image: '/排行榜/2.png',
-          title: '趋势游戏',
-          buttonText: '尝试热门游戏'
+          title: 'Trending Games',
+          buttonText: 'Try Popular Games'
         },
         {
           id: 'rank-3',
           image: '/排行榜/3.png',
-          title: '高分挑战',
-          buttonText: '挑战自我'
+          title: 'High Score Challenge',
+          buttonText: 'Challenge Yourself'
         },
         {
           id: 'rank-4',
           image: '/排行榜/4.png',
-          title: '每日精选',
-          buttonText: '开始游戏'
+          title: 'Daily Picks',
+          buttonText: 'Start Playing'
         }
       ];
     });

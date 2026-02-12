@@ -1,7 +1,7 @@
 <template>
   <div class="top-picks ui-optimized-content">
     <div class="ui-optimized-container">
-      <div class="title ui-optimized-section-title">精选游戏</div>
+      <div class="title ui-optimized-section-title">Top Picks</div>
       <div class="top-picks-grid">
         <div
           v-for="item in filteredGames"

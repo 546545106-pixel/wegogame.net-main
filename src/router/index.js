@@ -56,32 +56,32 @@ const router = createRouter({
       path: '/contact',
       component: ContactView,
       meta: {
-        title: "联系我们 - WeGoGame",
-        description: "如有任何问题或建议，欢迎联系我们的团队。"
+        title: "Contact Us - BreakPlay",
+        description: "If you have any questions or suggestions, please contact our team."
       },
     },
     {
       path: '/search',
       component: () => import('@/views/SearchResultsView/SearchResultsView.vue'),
       meta: {
-        title: "搜索结果 - WeGoGame",
-        description: "根据您的搜索关键词查找相关游戏。"
+        title: "Search Results - BreakPlay",
+        description: "Find games based on your search keywords."
       },
     },
     {
       path: '/blog',
       component: () => import('@/views/BlogView/BlogView.vue'),
       meta: {
-        title: "游戏博客 - WeGoGame",
-        description: "最新游戏资讯、攻略技巧和游戏评测。"
+        title: "Game Blog - BreakPlay",
+        description: "Latest game news, tips, and reviews."
       },
     },
     {
       path: '/blog/detail',
       component: () => import('@/views/BlogView/BlogDetailView.vue'),
       meta: {
-        title: "文章详情 - WeGoGame",
-        description: "游戏相关文章的详细内容。"
+        title: "Article Detail - BreakPlay",
+        description: "Detailed content of game-related articles."
       },
     },
     {

@@ -1,9 +1,9 @@
 <template>
     <div class="footer ui-optimized-footer">
         <div class="content">
-            <LinkWidget href="/about">关于我们</LinkWidget> ·
-            <LinkWidget href="/privacy">隐私政策</LinkWidget> ·
-            <LinkWidget href="/contact">联系我们</LinkWidget>
+            <LinkWidget href="/about">About Us</LinkWidget> ·
+            <LinkWidget href="/privacy">Privacy Policy</LinkWidget> ·
+            <LinkWidget href="/contact">Contact Us</LinkWidget>
         </div>
     </div>
 </template>

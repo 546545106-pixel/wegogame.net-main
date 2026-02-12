@@ -1,7 +1,7 @@
 <template>
   <div class="new-games ui-optimized-content">
     <div class="ui-optimized-container">
-      <div class="title ui-optimized-section-title">新游戏</div>
+      <div class="title ui-optimized-section-title">New Games</div>
       <div class="new-games-grid">
         <div v-for="item in displayedGames" :key="item.id">
           <div

@@ -2,17 +2,17 @@
     <div class="header ui-optimized-header">
         <div class="logo" @click="toHome">BreakPlay</div>
         <ul class="nav-menu" :class="{ active: menuOpen }">
-            <li :class="{ active: currentRoute === '/homepage' }" @click="navigate('/homepage')">首页</li>
-            <li :class="{ active: currentRoute === '/category' }" @click="navigate('/category')">分类</li>
-            <li :class="{ active: currentRoute === '/ranking' }" @click="navigate('/ranking')">排行榜</li>
-            <li :class="{ active: currentRoute === '/blog' }" @click="navigate('/blog')">博客</li>
-            <li :class="{ active: currentRoute === '/my' }" @click="navigate('/my')">我的</li>
+            <li :class="{ active: currentRoute === '/homepage' }" @click="navigate('/homepage')">Home</li>
+            <li :class="{ active: currentRoute === '/category' }" @click="navigate('/category')">Categories</li>
+            <li :class="{ active: currentRoute === '/ranking' }" @click="navigate('/ranking')">Ranking</li>
+            <li :class="{ active: currentRoute === '/blog' }" @click="navigate('/blog')">Blog</li>
+            <li :class="{ active: currentRoute === '/my' }" @click="navigate('/my')">My</li>
         </ul>
         <div class="search-container">
         <input 
             type="text" 
             class="search-box" 
-            placeholder="搜索游戏..." 
+            placeholder="Search games..." 
             v-model="searchKeyword"
             @keyup.enter="handleSearch"
         />
