@@ -135,7 +135,8 @@ import AdSenseAd from '@/components/AdSenseAd.vue';
         position: relative;
         min-height: 100vh;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     
     /* 主内容区域 */
@@ -143,6 +144,7 @@ import AdSenseAd from '@/components/AdSenseAd.vue';
         flex: 1;
         width: 100%;
         max-width: var(--container-max-width);
+        padding-top: 20px;
     }
     
     /* 侧边栏广告位样式 - 使用全局样式，因为需要定位到视口 */
