@@ -1,5 +1,8 @@
 <template>
     <div class="layout-wrapper">
+        <!-- 顶部导航栏 -->
+        <Header />
+        
         <!-- 左侧滚动广告位 -->
         <aside class="sidebar-ad sidebar-ad-left" v-if="showSidebarAds">
             <div class="gptslot ad-slot sidebar-ad-slot" data-adunitid="9">
@@ -30,9 +33,10 @@
 
 <script setup>
     import { computed, onMounted, onUnmounted } from 'vue';
-    import Footer from '@/components/Footer.vue';
-    import BackToTop from '@/components/BackToTop.vue';
-    import AdSenseAd from '@/components/AdSenseAd.vue';
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
+import BackToTop from '@/components/BackToTop.vue';
+import AdSenseAd from '@/components/AdSenseAd.vue';
     
     import { useRoute } from "vue-router";
     

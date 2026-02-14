@@ -68,9 +68,48 @@
 </script>
 
 <style lang="scss" scoped>
-    /* 使用全局优化样式，这里只保留必要的覆盖样式 */
     .header {
-        /* 样式已在 ui-optimized.css 中定义 */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #4A90E2;
+        cursor: pointer;
+    }
+    
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+    
+    .nav-menu li {
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    }
+    
+    .nav-menu li:hover {
+        background-color: rgba(74, 144, 226, 0.1);
+        color: #4A90E2;
+    }
+    
+    .nav-menu li.active {
+        background-color: #4A90E2;
+        color: #fff;
     }
     
     .search-container {
@@ -120,7 +159,47 @@
         color: #333;
     }
     
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
+    
+    .hamburger span {
+        width: 24px;
+        height: 2px;
+        background-color: #333;
+        transition: all 0.3s ease;
+    }
+    
     @media (max-width: 768px) {
+        .nav-menu {
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: translateY(-150%);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-menu.active {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .hamburger {
+            display: flex;
+        }
+        
         .search-container {
             max-width: 100%;
             margin: 10px 0;
