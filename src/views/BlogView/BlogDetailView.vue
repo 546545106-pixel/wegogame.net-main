@@ -6,7 +6,7 @@
           <path d="M19 12H5"></path>
           <path d="M12 19l-7-7 7-7"></path>
         </svg>
-        返回博客
+        Back to Blog
       </button>
       
       <div v-if="currentArticle" class="article-content">
@@ -15,7 +15,7 @@
           <div class="article-meta">
             <span class="article-date ui-optimized-auxiliary-text">{{ formatDate(currentArticle.date) }}</span>
             <span class="article-category ui-optimized-auxiliary-text">{{ currentArticle.category }}</span>
-            <span class="article-views ui-optimized-auxiliary-text">{{ currentArticle.views }} 阅读</span>
+            <span class="article-views ui-optimized-auxiliary-text">{{ currentArticle.views }} Views</span>
           </div>
         </div>
         
@@ -42,26 +42,26 @@
         </div>
         
         <div class="article-share">
-          <h4>分享文章</h4>
+          <h4>Share Article</h4>
           <div class="share-buttons">
             <button class="share-button" @click="shareArticle('wechat')">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
-              微信
+              WeChat
             </button>
             <button class="share-button" @click="shareArticle('weibo')">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
               </svg>
-              微博
+              Weibo
             </button>
             <button class="share-button" @click="shareArticle('copy')">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
               </svg>
-              复制链接
+              Copy Link
             </button>
           </div>
         </div>
@@ -77,13 +77,13 @@
             <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
         </div>
-        <h3>文章未找到</h3>
-        <p>抱歉，您访问的文章不存在或已被删除</p>
-        <button class="back-button" @click="goBack">返回博客</button>
+        <h3>Article Not Found</h3>
+        <p>Sorry, the article you're looking for doesn't exist or has been deleted</p>
+        <button class="back-button" @click="goBack">Back to Blog</button>
       </div>
       
       <div class="related-articles" v-if="currentArticle && relatedArticles.length > 0">
-        <h3 class="related-title">相关文章</h3>
+        <h3 class="related-title">Related Articles</h3>
         <div class="related-grid">
           <div 
             v-for="article in relatedArticles" 
@@ -167,16 +167,16 @@ const shareArticle = (platform) => {
   if (platform === 'copy') {
     navigator.clipboard.writeText(url)
       .then(() => {
-        alert('链接已复制到剪贴板')
+        alert('Link copied to clipboard')
       })
       .catch(err => {
-        console.error('复制失败:', err)
+        console.error('Copy failed:', err)
       })
   } else if (platform === 'wechat') {
-    // 微信分享需要特殊处理，这里只是提示
-    alert('请在微信中打开此页面进行分享')
+    // WeChat sharing requires special handling, this is just a prompt
+    alert('Please open this page in WeChat to share')
   } else if (platform === 'weibo') {
-    const text = `${currentArticle.value.title} - 来自WeGoGame游戏博客`
+    const text = `${currentArticle.value.title} - From BreakPlay Game Blog`
     const weiboUrl = `http://service.weibo.com/share/share.php?url=${encodeURIComponent(url)}&title=${encodeURIComponent(text)}`
     window.open(weiboUrl, '_blank')
   }
@@ -204,7 +204,7 @@ onMounted(() => {
       relatedArticles.value = getRelatedArticles(article)
       
       // 更新页面标题
-      document.title = `${article.title} - WeGoGame游戏博客`
+      document.title = `${article.title} - BreakPlay Game Blog`
     }
   }
 })

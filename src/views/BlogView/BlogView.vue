@@ -2,9 +2,9 @@
   <div class="blog ui-optimized-content">
     <div class="ui-optimized-container">
       <div class="blog-header">
-        <h1 class="ui-optimized-page-title">游戏博客</h1>
+        <h1 class="ui-optimized-page-title">Game Blog</h1>
         <p class="blog-description ui-optimized-auxiliary-text">
-          最新游戏资讯、攻略技巧和游戏评测
+          Latest game news, tips, and reviews
         </p>
       </div>
       
@@ -41,7 +41,7 @@
             <p class="blog-card-excerpt">{{ article.excerpt }}</p>
             <div class="blog-card-meta">
               <span class="blog-card-date">{{ formatDate(article.date) }}</span>
-              <span class="blog-card-views">{{ article.views }} 阅读</span>
+              <span class="blog-card-views">{{ article.views }} Views</span>
             </div>
           </div>
         </div>
@@ -57,8 +57,8 @@
             <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
         </div>
-        <h3>暂无文章</h3>
-        <p>敬请期待更多精彩内容</p>
+        <h3>No Articles</h3>
+        <p>Stay tuned for more exciting content</p>
       </div>
     </div>
   </div>
@@ -71,11 +71,11 @@ import { triggerHapticFeedback } from '@/utils/haptic'
 import blogArticles from '@/data/blog.js'
 
 const router = useRouter()
-const activeCategory = ref('全部')
+const activeCategory = ref('All')
 
 // 提取所有分类
 const categories = computed(() => {
-  const cats = ['全部']
+  const cats = ['All']
   const uniqueCats = new Set(blogArticles.map(article => article.category))
   uniqueCats.forEach(cat => cats.push(cat))
   return cats
@@ -83,7 +83,7 @@ const categories = computed(() => {
 
 // 根据分类过滤文章
 const filteredArticles = computed(() => {
-  if (activeCategory.value === '全部') {
+  if (activeCategory.value === 'All') {
     return blogArticles
   }
   return blogArticles.filter(article => article.category === activeCategory.value)
