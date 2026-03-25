@@ -1,5 +1,5 @@
 <template>
-  <div class="adsense-ad-slot" :class="adSlotClass">
+  <div v-if="slotReady" class="adsense-ad-slot" :class="adSlotClass">
     <ins
       class="adsbygoogle"
       :style="adStyle"
@@ -13,73 +13,71 @@
 
 <script setup>
 import { computed, onMounted, nextTick } from 'vue'
+import { ADSENSE_PUBLISHER_ID, isValidAdSlot } from '@/config/adSlots'
 
 const props = defineProps({
   adSlot: {
     type: String,
     required: true,
-    default: ''
+    default: '',
   },
   adClient: {
     type: String,
-    default: 'ca-pub-5319587106206709'
+    default: ADSENSE_PUBLISHER_ID,
   },
   width: {
     type: [String, Number],
-    default: 'auto'
+    default: 'auto',
   },
   height: {
     type: [String, Number],
-    default: 'auto'
+    default: 'auto',
   },
   adSlotClass: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
+
+const slotReady = computed(() => isValidAdSlot(props.adSlot))
 
 const adStyle = computed(() => {
   const style = {
     display: 'block',
-    textAlign: 'center'
+    textAlign: 'center',
   }
-  
+
   if (props.width !== 'auto') {
     style.width = typeof props.width === 'number' ? `${props.width}px` : props.width
   }
-  
+
   if (props.height !== 'auto') {
     style.height = typeof props.height === 'number' ? `${props.height}px` : props.height
   }
-  
+
   return style
 })
 
 onMounted(() => {
-  // 确保AdSense脚本已加载后再初始化广告
+  if (!slotReady.value) return
+
   nextTick(() => {
     const initAdSense = () => {
       try {
         if (window.adsbygoogle && Array.isArray(window.adsbygoogle)) {
           window.adsbygoogle.push({})
-          console.log(`AdSense ad initialized for slot: ${props.adSlot}`)
         } else {
-          // 如果AdSense脚本还未加载，等待一段时间后重试
           setTimeout(() => {
             if (window.adsbygoogle && Array.isArray(window.adsbygoogle)) {
               window.adsbygoogle.push({})
-              console.log(`AdSense ad initialized for slot: ${props.adSlot} (delayed)`)
-            } else {
-              console.warn(`AdSense script not loaded for slot: ${props.adSlot}`)
             }
           }, 1000)
         }
-      } catch (error) {
-        console.warn('AdSense initialization error:', error)
+      } catch {
+        /* ignore */
       }
     }
-    
-    // 延迟初始化，确保DOM已渲染
+
     setTimeout(initAdSense, 100)
   })
 })

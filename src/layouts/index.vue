@@ -3,19 +3,19 @@
         <!-- 顶部导航栏 -->
         <Header />
         
-        <!-- 左侧滚动广告位 -->
-        <aside class="sidebar-ad sidebar-ad-left" v-if="showSidebarAds">
-            <div class="gptslot ad-slot sidebar-ad-slot" data-adunitid="9">
-                <div class="ad-placeholder">左侧广告位 #9<br/><small>请替换 your-ad-slot-id-9 为您的实际广告位ID</small></div>
-                <AdSenseAd ad-slot="your-ad-slot-id-9" :width="160" :height="600" />
+        <!-- 左侧滚动广告位（VITE_ADSENSE_SLOT_SIDEBAR_LEFT） -->
+        <aside class="sidebar-ad sidebar-ad-left" v-if="showSidebarAds && isValidAdSlot(AD_SLOTS.sidebarLeft)">
+            <div class="site-ad-slot ad-slot sidebar-ad-slot" data-adunitid="9">
+                <div class="ad-placeholder">Advertisement</div>
+                <AdSenseAd :ad-slot="AD_SLOTS.sidebarLeft" :width="160" :height="600" />
             </div>
         </aside>
-        
-        <!-- 右侧滚动广告位 -->
-        <aside class="sidebar-ad sidebar-ad-right" v-if="showSidebarAds">
-            <div class="gptslot ad-slot sidebar-ad-slot" data-adunitid="10">
-                <div class="ad-placeholder">右侧广告位 #10<br/><small>请替换 your-ad-slot-id-10 为您的实际广告位ID</small></div>
-                <AdSenseAd ad-slot="your-ad-slot-id-10" :width="160" :height="600" />
+
+        <!-- 右侧滚动广告位（VITE_ADSENSE_SLOT_SIDEBAR_RIGHT） -->
+        <aside class="sidebar-ad sidebar-ad-right" v-if="showSidebarAds && isValidAdSlot(AD_SLOTS.sidebarRight)">
+            <div class="site-ad-slot ad-slot sidebar-ad-slot" data-adunitid="10">
+                <div class="ad-placeholder">Advertisement</div>
+                <AdSenseAd :ad-slot="AD_SLOTS.sidebarRight" :width="160" :height="600" />
             </div>
         </aside>
         
@@ -37,14 +37,16 @@ import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import BackToTop from '@/components/BackToTop.vue';
 import AdSenseAd from '@/components/AdSenseAd.vue';
-    
+    import { AD_SLOTS, isValidAdSlot } from '@/config/adSlots';
+
     import { useRoute } from "vue-router";
     
     const route = useRoute();
     
-    // 只在足够宽的屏幕上显示侧边栏广告，并且不在详情页显示（避免干扰游戏）
+    // 宽屏侧边栏：不在详情页显示；且至少配置一侧有效广告单元，避免空白占位框
     const showSidebarAds = computed(() => {
-        return route.path !== '/detailpage';
+        const hasSlot = isValidAdSlot(AD_SLOTS.sidebarLeft) || isValidAdSlot(AD_SLOTS.sidebarRight)
+        return route.path !== '/detailpage' && hasSlot
     });
     
     // 优化广告位位置，确保在页面顶部和底部时也能正确显示

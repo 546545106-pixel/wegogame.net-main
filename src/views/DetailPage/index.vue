@@ -8,10 +8,15 @@
                 <span>Back</span>
             </button>
         </div>
-        <!-- 顶部广告位 - 游戏信息上方 -->
-        <div class="gptslot ad-slot top-ad" data-adunitid="4" style="min-width: 300px; min-height: 250px; margin: 10px auto 20px;">
-            <div class="ad-placeholder">Advertisement Slot #4<br/><small>请替换 your-ad-slot-id-4 为您的实际广告位ID</small></div>
-            <AdSenseAd ad-slot="your-ad-slot-id-4" :width="300" :height="250" />
+        <!-- 顶部广告位 - 游戏信息上方（需在 .env 配置 VITE_ADSENSE_SLOT_DETAIL_TOP） -->
+        <div
+            v-if="isValidAdSlot(AD_SLOTS.detailTop)"
+            class="site-ad-slot ad-slot top-ad"
+            data-adunitid="4"
+            style="min-width: 300px; min-height: 250px; margin: 10px auto 20px"
+        >
+            <div class="ad-placeholder">Advertisement</div>
+            <AdSenseAd :ad-slot="AD_SLOTS.detailTop" :width="300" :height="250" />
         </div>
         <div class="detail">
             <div class="content">
@@ -32,10 +37,15 @@
             <div class="desc">{{ obj.description }}</div>
             <button class="play ui-optimized-button" @click="toPlay" @touchstart="handleButtonTouchStart">Play Now</button>
         </div>
-        <!-- Play Now按钮下方的广告位 -->
-        <div class="gptslot ad-slot" data-adunitid="2" style="min-width: 300px; min-height: 250px; margin: 20px auto">
-            <div class="ad-placeholder">Advertisement Slot #2<br/><small>请替换 your-ad-slot-id-2 为您的实际广告位ID</small></div>
-            <AdSenseAd ad-slot="your-ad-slot-id-2" :width="300" :height="250" />
+        <!-- Play Now 下方 -->
+        <div
+            v-if="isValidAdSlot(AD_SLOTS.detailMid)"
+            class="site-ad-slot ad-slot"
+            data-adunitid="2"
+            style="min-width: 300px; min-height: 250px; margin: 20px auto"
+        >
+            <div class="ad-placeholder">Advertisement</div>
+            <AdSenseAd :ad-slot="AD_SLOTS.detailMid" :width="300" :height="250" />
         </div>
         <SimilarGames @childEvent="handleChildEvent"></SimilarGames>
     </div>
@@ -43,9 +53,14 @@
         <div class="loading-text">Loading game details...</div>
     </div>
     
-    <div class="gptslot ad-slot" data-adunitid="3" style="min-width: 300px; min-height: 250px; margin:10px auto">
-        <div class="ad-placeholder">Advertisement Slot #3<br/><small>请替换 your-ad-slot-id-3 为您的实际广告位ID</small></div>
-        <AdSenseAd ad-slot="your-ad-slot-id-3" :width="300" :height="250" />
+    <div
+        v-if="isValidAdSlot(AD_SLOTS.detailBottom)"
+        class="site-ad-slot ad-slot"
+        data-adunitid="3"
+        style="min-width: 300px; min-height: 250px; margin: 10px auto"
+    >
+        <div class="ad-placeholder">Advertisement</div>
+        <AdSenseAd :ad-slot="AD_SLOTS.detailBottom" :width="300" :height="250" />
     </div>
     
     <GameLoader :visible="isLoading" />
@@ -99,6 +114,7 @@
     import SimilarGames from './SimilarGames.vue';
     import GameLoader from '@/components/GameLoader.vue';
     import AdSenseAd from '@/components/AdSenseAd.vue';
+    import { AD_SLOTS, isValidAdSlot } from '@/config/adSlots';
     import localGamesData from '@/data/games.js';
     import { triggerHapticFeedback } from '@/utils/haptic';
     

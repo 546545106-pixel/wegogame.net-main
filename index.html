@@ -34,13 +34,9 @@
     <meta name="theme-color" content="#4A90E2" />
     <meta name="msapplication-TileColor" content="#4A90E2" />
     
-    <!-- DNS Prefetch & Preconnect - 性能优化 -->
-    <link rel="dns-prefetch" href="//exmarketplace.com">
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
-    <link rel="dns-prefetch" href="//securepubads.g.doubleclick.net">
-    <link rel="preconnect" href="//cdn.exmarketplace.com" crossorigin>
-    <link rel="preconnect" href="//securepubads.g.doubleclick.net" crossorigin>
-    <link rel="preconnect" href="//pagead2.googlesyndication.com" crossorigin>
+    <!-- AdSense 域名预连接（减少首屏广告握手延迟） -->
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
     
     <!-- Preload main entry (Vite injects correct path in build) -->
     
@@ -75,13 +71,12 @@
     }
     </script>
     
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319587106206709"
-     crossorigin="anonymous"></script>
-    
-    <!-- Other Ad Scripts (保留原有广告服务) -->
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script async src="https://cdn.exmarketplace.com/bidder/gameforgearena/gameforgearena.dfp.min.js"></script>
+    <!-- Google AdSense（需在页面中存在，供抓取与广告初始化；发布商 ID 与 public/ads.txt 一致） -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319587106206709"
+      crossorigin="anonymous"
+    ></script>
 
     <title>BreakPlay - Free Online H5 Mini Games</title>
     
@@ -93,19 +88,15 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-    <!-- 性能监控脚本 -->
     <script>
       window.addEventListener('load', function() {
-        if (window.__PERFORMANCE_START__) {
-          const loadTime = performance.now() - window.__PERFORMANCE_START__;
-          console.log('Page Load Time:', loadTime.toFixed(2), 'ms');
-          // 可以发送到分析服务
-          if (window.gtag) {
-            gtag('event', 'page_load_time', {
-              'value': Math.round(loadTime),
-              'event_category': 'Performance'
-            });
-          }
+        if (!window.__PERFORMANCE_START__) return;
+        var loadTime = performance.now() - window.__PERFORMANCE_START__;
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'page_load_time', {
+            value: Math.round(loadTime),
+            event_category: 'Performance'
+          });
         }
       });
     </script>

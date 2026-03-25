@@ -2,6 +2,7 @@
 import HeaderWidget from '@/components/HeaderWidget.vue'
 import FooterWidget from '@/components/FooterWidget.vue'
 import AdSenseAd from '@/components/AdSenseAd.vue'
+import { AD_SLOTS, isValidAdSlot } from '@/config/adSlots'
 </script>
 
 <template>
@@ -28,10 +29,15 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
         <li>安全可靠：所有游戏均经过安全检查，确保玩家安全</li>
       </ul>
     </article>
-    <!-- 底部广告位 -->
-    <div class="gptslot ad-slot about-bottom-ad" data-adunitid="7" style="min-width: 300px; min-height: 250px; margin: 30px auto;">
-      <div class="ad-placeholder">Advertisement Slot #7<br/><small>请替换 your-ad-slot-id-7 为您的实际广告位ID</small></div>
-      <AdSenseAd ad-slot="your-ad-slot-id-7" :width="300" :height="250" />
+    <!-- 底部广告位（VITE_ADSENSE_SLOT_ABOUT_BOTTOM） -->
+    <div
+      v-if="isValidAdSlot(AD_SLOTS.aboutBottom)"
+      class="site-ad-slot ad-slot about-bottom-ad"
+      data-adunitid="7"
+      style="min-width: 300px; min-height: 250px; margin: 30px auto"
+    >
+      <div class="ad-placeholder">Advertisement</div>
+      <AdSenseAd :ad-slot="AD_SLOTS.aboutBottom" :width="300" :height="250" />
     </div>
   </div>
   <FooterWidget />

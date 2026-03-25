@@ -2,6 +2,7 @@
 import HeaderWidget from '@/components/HeaderWidget.vue'
 import FooterWidget from '@/components/FooterWidget.vue'
 import AdSenseAd from '@/components/AdSenseAd.vue'
+import { AD_SLOTS, isValidAdSlot } from '@/config/adSlots'
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
       <h1>隐私政策</h1>
       <h2>信息收集与使用</h2>
       <p>
-        我们不会收集、分析或分发任何个人信息。您的IP地址仅用于Google Analytics收集人口统计信息和跟踪您的一般访问模式（您在一个网站上查看的页面数量、最常玩游戏的统计数据等）。
+        我们不会在未经说明的情况下主动收集可单独识别您身份的个人信息。服务器或托管方可能因网络通信产生常规访问日志（如 IP、访问时间、请求路径），用于保障服务安全与排查故障。
       </p>
       <p>
         第三方广告：我们允许第三方公司在您访问我们的网站时提供广告和/或收集某些匿名信息。
@@ -36,16 +37,24 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
       </p>
       <h2>第三方广告</h2>
       <p>
-        我们使用多家第三方广告公司在您访问网站时提供广告。这些公司可能会使用cookies存储有关您访问本网站和其他网站的信息（您的浏览活动），以便在本网站和其他网站上提供有关您可能感兴趣的商品和服务的广告。
+        本站通过 Google AdSense 在部分页面展示广告，广告收入归属本站在 AdSense 登记的同一发布商帐号。Google 可能使用 Cookie 等技术，依据其政策投放或衡量广告。您可查阅：
+        <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">Google 广告与 Cookie 说明</a>、
+        <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google 隐私权政策</a>；
+        并可通过 <a href="https://www.google.com/settings/ads" rel="noopener noreferrer" target="_blank">Google 广告设置</a> 管理个性化广告偏好。
       </p>
       <p>
-        您可以通过选择浏览器上的适当设置来拒绝使用cookies。Google Inc.提供的Google Adsense可能会使用一个或多个DoubleClick DART Cookies。DART cookies在您的计算机上存储和收集有关您浏览活动的数据。Google可能会使用这些数据在本网站上根据您的浏览活动显示广告。您可以通过访问Google广告和内容隐私政策来选择退出Google使用cookies。
+        您也可在浏览器中管理或删除 Cookie；若禁用必要 Cookie，部分页面或游戏功能可能受限。
       </p>
     </article>
-    <!-- 底部广告位 -->
-    <div class="gptslot ad-slot privacy-bottom-ad" data-adunitid="5" style="min-width: 300px; min-height: 250px; margin: 30px auto;">
-      <div class="ad-placeholder">Advertisement Slot #5<br/><small>请替换 your-ad-slot-id-5 为您的实际广告位ID</small></div>
-      <AdSenseAd ad-slot="your-ad-slot-id-5" :width="300" :height="250" />
+    <!-- 底部广告位（VITE_ADSENSE_SLOT_PRIVACY_BOTTOM） -->
+    <div
+      v-if="isValidAdSlot(AD_SLOTS.privacyBottom)"
+      class="site-ad-slot ad-slot privacy-bottom-ad"
+      data-adunitid="5"
+      style="min-width: 300px; min-height: 250px; margin: 30px auto"
+    >
+      <div class="ad-placeholder">Advertisement</div>
+      <AdSenseAd :ad-slot="AD_SLOTS.privacyBottom" :width="300" :height="250" />
     </div>
   </div>
   <FooterWidget />

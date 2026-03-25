@@ -1,0 +1,5 @@
+# 静态托管（如 Cloudflare Pages）会应用这些响应头。WAF/Bot 防护请在 Cloudflare 控制台单独开启。
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN

@@ -11,6 +11,8 @@ import LinkWidget from '@/components/LinkWidget.vue'
 import App from '@/App.vue'
 import '@/utils/adManager.js'
 
+// AdSense 脚本在 index.html 中加载，避免重复注入
+
 // 导入性能监控（开发环境）
 if (import.meta.env.DEV) {
   import('@/utils/performance.js').then(({ performanceMonitor, trackError }) => {
@@ -22,7 +24,7 @@ if (import.meta.env.DEV) {
         colno: event.colno
       })
     })
-    
+
     // Promise rejection处理
     window.addEventListener('unhandledrejection', (event) => {
       trackError(event.reason, {
@@ -41,11 +43,10 @@ app.use(VueLazyload, {
   loading: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE0IiBmaWxsPSIjOTk5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+TG9hZGluZy4uLjwvdGV4dD48L3N2Zz4=', // 加载中的占位图
   attempt: 3,
   listenEvents: ['scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend', 'touchmove'],
-  // 优化配置
-  throttleWait: 200, // 节流等待时间
-  observer: true, // 使用IntersectionObserver
+  throttleWait: 120,
+  observer: true,
   observerOptions: {
-    rootMargin: '50px', // 提前50px开始加载
+    rootMargin: '80px',
     threshold: 0.01
   }
 })
@@ -53,12 +54,11 @@ app.use(VueLazyload, {
 // 全局错误处理
 app.config.errorHandler = (err, instance, info) => {
   console.error('Vue Error:', err, info)
-  // 可以发送到错误追踪服务
-  if (window.gtag) {
-    gtag('event', 'exception', {
-      'description': err.message || err.toString(),
-      'fatal': false,
-      'error_info': info
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'exception', {
+      description: err.message || err.toString(),
+      fatal: false,
+      error_info: info
     })
   }
 }

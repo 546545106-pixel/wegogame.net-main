@@ -30,8 +30,10 @@ const router = createRouter({
           component: () => import(/* webpackChunkName: "detailpage" */ "@/views/DetailPage/index.vue"),
           meta: {
             title: "Game Details - BreakPlay",
-            description: "Play this exciting game now!",
-            keywords: "online game, free game, browser game"
+            description:
+              "Browse free HTML5 games on BreakPlay: descriptions, controls, and in-browser play with no install required.",
+            keywords:
+              "HTML5 games, free online games, browser games, puzzle, action, casual",
           },
         },
       ]

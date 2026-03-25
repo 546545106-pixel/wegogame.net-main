@@ -1,18 +1,12 @@
-// 统一广告管理模块
-// 使用说明：
-// 1. 在这里配置你的 AdSense 信息：
-//    - 将 AD_CLIENT 改成你自己的 ca-pub-XXXXXX
-//    - 将 SLOT_CONFIG 中的 adSlot 改为你在 AdSense 后台创建的广告位 ID
-// 2. 游戏内部通过 /public/game-ad-api.js 调用 GameAdAPI.requestGameAd(slotId)
-// 3. 本模块会监听 window.postMessage，按 slotId 决定展示哪个广告
+// 游戏内广告：发布商 ID 来自 adSlots（ADSENSE_PUBLISHER_ID）；单元 ID 用环境变量配置。
+// 游戏 iframe 通过 /game-ad-api.js 发起 GameAdAPI.requestGameAd(slotId)，本模块监听 postMessage 渲染广告。
 
-// 你的 AdSense 发布商 ID（与 index.html / AdSense接入指南.md 一致）
-const AD_CLIENT = 'ca-pub-5319587106206709'
+import { ADSENSE_PUBLISHER_ID, isValidAdSlot } from '@/config/adSlots'
 
-// 按广告位标识配置映射关系
-// key 必须和 GameAdAPI.requestGameAd(slotId) 里传入的 slotId 对应
-// 60 款游戏统一使用同一个游戏内广告位，你可在 AdSense 后台创建一个「游戏插屏」单元，把下面 adSlot 换成该单元 ID
-const GAME_INTERSTITIAL_SLOT = 'your-game-interstitial-slot-id' // 换成你在 AdSense 创建的游戏广告位 ID
+const AD_CLIENT = ADSENSE_PUBLISHER_ID
+
+// 游戏内广告：在 .env 设置 VITE_ADSENSE_SLOT_GAME_INTERSTITIAL=你的广告单元数字 ID
+const GAME_INTERSTITIAL_SLOT = import.meta.env.VITE_ADSENSE_SLOT_GAME_INTERSTITIAL || ''
 
 const SLOT_CONFIG = {
   // ===== 站内常规广告位 =====
@@ -127,6 +121,10 @@ function renderAdSenseIn(container, config) {
     console.warn(
       '[adManager] 请先在 src/utils/adManager.js 中配置你的 AD_CLIENT (ca-pub-...)',
     )
+    return
+  }
+
+  if (!config?.adSlot || !isValidAdSlot(String(config.adSlot))) {
     return
   }
 

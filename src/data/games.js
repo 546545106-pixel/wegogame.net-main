@@ -226,13 +226,14 @@ const games = [
   },
   {
     id: '16',
-    title: 'Casino Card Memory',
-    description: 'In this casino-themed memory game, you need to remember the positions of playing cards and find matching pairs. The game features multiple difficulty levels suitable for players of all ages.',
+    title: 'Playing Card Memory',
+    description:
+      'A family-friendly memory game with a standard deck theme: flip cards to find matching pairs. Multiple difficulty levels and clear rules suitable for all ages.',
     instructions: 'Click cards to flip them and find matching pairs. Remember card positions and find all pairs as quickly as possible.',
     url: '/games/game_16/16-赌场卡记忆/index.html',
     category: 'Puzzle',
     subcategory: 'Memory',
-    tags: 'memory,card,casino,puzzle,HTML5',
+    tags: 'memory,card,puzzle,HTML5',
     difficulty: 'Easy',
     thumb: '/games/game_16/thumb.jpg',
     link: 'game-16',

@@ -1,1 +1,4 @@
+# ads.txt — Google 会抓取 https://你的域名/ads.txt 校验发布商授权
+# 说明：https://support.google.com/adsense/answer/7532444
+
 google.com, pub-5319587106206709, DIRECT, f08c47fec0942fa0

@@ -682,8 +682,8 @@ button, a, .ui-optimized-game-card, .ui-optimized-button, .ui-optimized-category
   transform: scale(0.98);
 }
 
-/* ==================== 广告位占位符样式 ==================== */
-.gptslot.ad-slot {
+/* ==================== 广告位占位符样式（仅 AdSense） ==================== */
+.site-ad-slot.ad-slot {
   position: relative;
   border: 2px dashed #4A90E2;
   background-color: rgba(74, 144, 226, 0.05);
@@ -696,7 +696,7 @@ button, a, .ui-optimized-game-card, .ui-optimized-button, .ui-optimized-category
   margin: 20px auto;
 }
 
-.gptslot.ad-slot .ad-placeholder {
+.site-ad-slot.ad-slot .ad-placeholder {
   color: #4A90E2;
   font-size: 16px;
   font-weight: bold;
@@ -711,7 +711,7 @@ button, a, .ui-optimized-game-card, .ui-optimized-button, .ui-optimized-category
   margin-bottom: 10px;
 }
 
-.gptslot.ad-slot .ad-placeholder small {
+.site-ad-slot.ad-slot .ad-placeholder small {
   display: block;
   font-size: 12px;
   font-weight: normal;
@@ -719,23 +719,23 @@ button, a, .ui-optimized-game-card, .ui-optimized-button, .ui-optimized-category
   margin-top: 8px;
 }
 
-.gptslot.ad-slot:hover .ad-placeholder {
+.site-ad-slot.ad-slot:hover .ad-placeholder {
   background-color: rgba(74, 144, 226, 0.1);
 }
 
 /* 当AdSense广告加载后，隐藏占位符 */
-.gptslot.ad-slot:has(.adsbygoogle[data-adsbygoogle-status]),
-.gptslot.ad-slot:has(iframe),
-.gptslot.ad-slot:has(img[src*="googlesyndication"]),
-.gptslot.ad-slot:has(div[id*="google_ads"]) {
+.site-ad-slot.ad-slot:has(.adsbygoogle[data-adsbygoogle-status]),
+.site-ad-slot.ad-slot:has(iframe),
+.site-ad-slot.ad-slot:has(img[src*="googlesyndication"]),
+.site-ad-slot.ad-slot:has(div[id*="google_ads"]) {
   border: none;
   background-color: transparent;
 }
 
-.gptslot.ad-slot:has(.adsbygoogle[data-adsbygoogle-status]) .ad-placeholder,
-.gptslot.ad-slot:has(iframe) .ad-placeholder,
-.gptslot.ad-slot:has(img[src*="googlesyndication"]) .ad-placeholder,
-.gptslot.ad-slot:has(div[id*="google_ads"]) .ad-placeholder {
+.site-ad-slot.ad-slot:has(.adsbygoogle[data-adsbygoogle-status]) .ad-placeholder,
+.site-ad-slot.ad-slot:has(iframe) .ad-placeholder,
+.site-ad-slot.ad-slot:has(img[src*="googlesyndication"]) .ad-placeholder,
+.site-ad-slot.ad-slot:has(div[id*="google_ads"]) .ad-placeholder {
   display: none;
 }
 

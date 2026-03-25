@@ -64,7 +64,8 @@
       placeholder.style.fontSize = '12px'
       placeholder.style.color = '#999'
       placeholder.style.background = 'rgba(0,0,0,0.03)'
-      placeholder.innerHTML = 'Ad Slot: ' + slotId
+      placeholder.setAttribute('aria-hidden', 'true')
+      placeholder.innerHTML = ''
       container.appendChild(placeholder)
     }
 

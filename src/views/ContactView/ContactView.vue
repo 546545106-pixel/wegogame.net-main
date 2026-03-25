@@ -2,6 +2,7 @@
 import HeaderWidget from '@/components/HeaderWidget.vue'
 import FooterWidget from '@/components/FooterWidget.vue'
 import AdSenseAd from '@/components/AdSenseAd.vue'
+import { AD_SLOTS, isValidAdSlot } from '@/config/adSlots'
 </script>
 
 <template>
@@ -17,9 +18,7 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
       </p>
       <h2>联系方式</h2>
       <ul>
-        <li>电子邮件：contact@wegogame.net</li>
-        <li>微信：WeGoGameOfficial</li>
-        <li>QQ：1234567890</li>
+        <li>电子邮件：contact@wegogame.net（咨询、合作与侵权投诉请优先使用邮件，我们会在合理时间内回复）</li>
       </ul>
       <h2>常见问题</h2>
       <p>
@@ -48,10 +47,15 @@ import AdSenseAd from '@/components/AdSenseAd.vue'
         请通过上述联系方式与我们取得联系，我们将在1-3个工作日内回复您。
       </p>
     </article>
-    <!-- 底部广告位 -->
-    <div class="gptslot ad-slot contact-bottom-ad" data-adunitid="9" style="min-width: 300px; min-height: 250px; margin: 30px auto;">
-      <div class="ad-placeholder">Advertisement Slot #9<br/><small>请替换 your-ad-slot-id-9 为您的实际广告位ID</small></div>
-      <AdSenseAd ad-slot="your-ad-slot-id-9" :width="300" :height="250" />
+    <!-- 底部广告位（VITE_ADSENSE_SLOT_CONTACT_BOTTOM） -->
+    <div
+      v-if="isValidAdSlot(AD_SLOTS.contactBottom)"
+      class="site-ad-slot ad-slot contact-bottom-ad"
+      data-adunitid="9"
+      style="min-width: 300px; min-height: 250px; margin: 30px auto"
+    >
+      <div class="ad-placeholder">Advertisement</div>
+      <AdSenseAd :ad-slot="AD_SLOTS.contactBottom" :width="300" :height="250" />
     </div>
   </div>
   <FooterWidget />
