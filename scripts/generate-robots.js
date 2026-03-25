@@ -23,7 +23,7 @@ Allow: /detailpage
 Disallow: /api/
 Disallow: /admin/
 
-Sitemap: ${BASE_URL.replace(/\\/$/, '')}/sitemap.xml
+Sitemap: ${BASE_URL.replace(/\/$/, '')}/sitemap.xml
 `
 
 writeFileSync(outPath, content, 'utf-8')

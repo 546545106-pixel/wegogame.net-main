@@ -1,0 +1,13 @@
+# Netlify：构建命令与输出目录（与 Vite 默认一致）
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Vue Router history 模式：所有路径回退到 index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

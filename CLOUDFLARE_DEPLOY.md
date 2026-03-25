@@ -49,8 +49,12 @@ npm run build
 - **构建输出目录：** `dist`
 - **根目录：** `/`（默认）
 
-**环境变量（如果需要）：**
-- `NODE_VERSION`: `18`（可选，Cloudflare 会自动检测）
+**环境变量（建议）：**
+- `NODE_VERSION`: `20`（与仓库根目录 `.nvmrc` 一致；低于 18 时 Vite 5 可能构建失败）
+
+**若部署显示失败 / No deployment available：**
+- 确认 **构建输出目录** 为 **`dist`**（不是 `public` 或项目根目录）。
+- 在部署日志中查看是否出现 `vite: not found`：本项目已将 `vite` 等放入 `dependencies`，一般可避免仅安装生产依赖时的错误。
 
 ### 步骤 5：保存并部署
 
