@@ -7,7 +7,10 @@ import { fileURLToPath } from 'url'
 import { dirname, join } from 'path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const BASE_URL = 'https://wegogame.net'
+// NOTE:
+// For Cloudflare Pages / staging domains, Search Console may point to a different host
+// (e.g. *.pages.dev). Use env var to generate sitemap with the correct base URL.
+const BASE_URL = process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://wegogame.net'
 
 // 读取 games.js 并解析游戏 id
 const gamesPath = join(__dirname, '../src/data/games.js')
